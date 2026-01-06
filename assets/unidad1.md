@@ -213,3 +213,70 @@ mediana = np.median(datos)
 desviacion = np.std(datos)
 
 media, mediana, desviacion
+```
+
+
+## 1.3 Población y muestra de datos
+
+### Población
+La **población estadística** es el conjunto total de elementos sobre los cuales se desea realizar un estudio.
+
+**Ejemplos de población:**
+- Todos los estudiantes inscritos en una universidad
+- Todos los hogares de un país
+- Todas las transacciones de un sistema financiero en un año
+
+La población se describe mediante **parámetros**, los cuales generalmente son desconocidos:
+- Media poblacional: \( \mu \)
+- Varianza poblacional: \( \sigma^2 \)
+- Proporción poblacional: \( p \)
+
+---
+
+### Muestra
+Una **muestra** es un subconjunto representativo de la población.
+
+Las muestras se utilizan cuando:
+- La población es muy grande
+- El estudio completo es costoso o imposible
+- Se requiere rapidez en el análisis
+
+Las muestras se describen mediante **estadísticos**:
+- Media muestral: \( \bar{x} \)
+- Varianza muestral: \( s^2 \)
+- Proporción muestral: \( \hat{p} \)
+
+---
+
+### Ejemplo con fórmulas
+
+Se desea estimar el promedio de edad de una población.  
+Se selecciona una muestra de 5 personas con edades:
+
+\[
+X = \{22,\; 25,\; 30,\; 28,\; 35\}
+\]
+
+La media muestral es:
+
+\[
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i
+\]
+
+\[
+\bar{x} = \frac{22 + 25 + 30 + 28 + 35}{5} = \frac{140}{5} = 28
+\]
+
+📌 **Interpretación:**  
+La edad promedio de la muestra es de 28 años.
+
+---
+
+### Implementación en Python
+
+```python
+import numpy as np
+
+edades = [22, 25, 30, 28, 35]
+np.mean(edades)
+
