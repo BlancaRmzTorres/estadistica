@@ -80,6 +80,7 @@ import numpy as np
 
 calificaciones = [70, 75, 80, 85, 90, 90, 95, 100]
 np.mean(calificaciones)
+```
 
 ## 1.2 Definición y aplicación de la estadística
 
@@ -118,6 +119,7 @@ $$
 
 ```python
 28 / 40
+```
 
 
 ## 1.3 Población y muestra de datos
@@ -174,6 +176,7 @@ import numpy as np
 
 edades = [22, 25, 30, 28, 35]
 np.mean(edades)
+```
 
 ## 1.4 Tipos de variables y atributos
 
@@ -226,6 +229,7 @@ import numpy as np
 
 hijos = [0, 1, 2, 3, 2, 1, 4]
 np.mean(hijos)
+```
 
 ## 1.5 Medidas numéricas para la descripción de datos
 
@@ -321,6 +325,7 @@ mediana = np.median(ingresos)
 desv_std = np.std(ingresos, ddof=1)
 
 media, mediana, desv_std
+```
 
 ## 1.6 Fundamentos de la visualización de datos en estadística descriptiva
 
@@ -390,5 +395,5 @@ plt.xlabel("Calificación")
 plt.ylabel("Frecuencia")
 plt.title("Histograma de calificaciones")
 plt.show()
-
+```
 
