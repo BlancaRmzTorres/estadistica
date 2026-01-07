@@ -66,13 +66,11 @@ X = \{70, 75, 80, 85, 90, 90, 95, 100\}
 ### Media aritmética
 
 $$
-\[
-\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i
-\]
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+$$
 
-\[
+$$
 \bar{x} = \frac{685}{8} = 85.625
-\]
 $$
 
 #### En Python
