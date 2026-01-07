@@ -400,3 +400,269 @@ plt.title("Histograma de calificaciones")
 plt.show()
 ```
 
+## Ejercicios 
+
+# Ejemplo 1: Medidas de Tendencia Central y Dispersión
+
+## Datos
+
+\[
+85,\; 92,\; 78,\; 96,\; 88,\; 76,\; 95,\; 89,\; 84,\; 91, \\
+70,\; 82,\; 97,\; 73,\; 88,\; 90,\; 65,\; 94,\; 87,\; 81, \\
+79,\; 93,\; 75,\; 86,\; 98,\; 80,\; 72,\; 89,\; 91,\; 83
+\]
+
+Número de datos:
+
+\[
+n = 30
+\]
+
+---
+
+## 1. Media aritmética
+
+### Fórmula
+
+\[
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+\]
+
+### Cálculo
+
+\[
+\sum x_i = 2540
+\]
+
+\[
+\bar{x} = \frac{2540}{30} = 84.67
+\]
+
+---
+
+## 2. Mediana
+
+Datos ordenados:
+
+\[
+65,\; 70,\; 72,\; 73,\; 75,\; 76,\; 78,\; 79,\; 80,\; 81, \\
+82,\; 83,\; 84,\; 85,\; 86,\; 87,\; 88,\; 88,\; 89,\; 89, \\
+90,\; 91,\; 91,\; 92,\; 93,\; 94,\; 95,\; 96,\; 97,\; 98
+\]
+
+\[
+\text{Mediana} = \frac{86 + 87}{2} = 86.5
+\]
+
+---
+
+## 3. Moda
+
+Valores con mayor frecuencia:
+
+\[
+\text{Moda} = \{88,\; 89,\; 91\}
+\]
+
+---
+
+# Medidas de Dispersión
+
+## 4. Varianza
+
+### Varianza poblacional
+
+\[
+\sigma^2 = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2
+\]
+
+### Varianza muestral
+
+\[
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+\]
+
+---
+
+## 5. Desviación estándar
+
+### Desviación estándar poblacional
+
+\[
+\sigma = \sqrt{\sigma^2}
+\]
+
+### Desviación estándar muestral
+
+\[
+s = \sqrt{s^2}
+\]
+
+---
+
+# Implementación en Python
+
+```python
+import statistics
+import matplotlib.pyplot as plt
+
+datos = [
+    85, 92, 78, 96, 88, 76, 95, 89, 84, 91,
+    70, 82, 97, 73, 88, 90, 65, 94, 87, 81,
+    79, 93, 75, 86, 98, 80, 72, 89, 91, 83
+]
+
+# Medidas de tendencia central
+media = sum(datos) / len(datos)
+mediana = statistics.median(datos)
+moda = statistics.multimode(datos)
+
+# Medidas de dispersión
+varianza_poblacional = statistics.pvariance(datos)
+varianza_muestral = statistics.variance(datos)
+
+desv_poblacional = statistics.pstdev(datos)
+desv_muestral = statistics.stdev(datos)
+
+print("Media:", media)
+print("Mediana:", mediana)
+print("Moda:", moda)
+print("Varianza poblacional:", varianza_poblacional)
+print("Varianza muestral:", varianza_muestral)
+print("Desviación estándar poblacional:", desv_poblacional)
+print("Desviación estándar muestral:", desv_muestral)
+
+
+# Ejemplo 2: Medidas de Tendencia Central y Dispersión
+
+## Datos
+
+\[
+72,\; 85,\; 90,\; 68,\; 88,\; 91,\; 75,\; 84,\; 79,\; 87, \\
+92,\; 81,\; 77,\; 89,\; 94,\; 83,\; 76,\; 86,\; 80,\; 78, \\
+95,\; 82,\; 74,\; 88,\; 90
+\]
+
+Número de datos:
+
+\[
+n = 25
+\]
+
+---
+
+## 1. Media aritmética
+
+### Fórmula
+
+\[
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+\]
+
+### Cálculo
+
+\[
+\sum x_i = 2094
+\]
+
+\[
+\bar{x} = \frac{2094}{25} = 83.76
+\]
+
+---
+
+## 2. Mediana
+
+Datos ordenados:
+
+\[
+68,\; 72,\; 74,\; 75,\; 76,\; 77,\; 78,\; 79,\; 80,\; 81, \\
+82,\; 83,\; 84,\; 85,\; 86,\; 87,\; 88,\; 88,\; 89,\; 90, \\
+90,\; 91,\; 92,\; 94,\; 95
+\]
+
+Como \( n = 25 \) (impar):
+
+\[
+\text{Mediana} = x_{13} = 84
+\]
+
+---
+
+## 3. Moda
+
+Valores con mayor frecuencia:
+
+\[
+\text{Moda} = \{88,\; 90\}
+\]
+
+---
+
+# Medidas de Dispersión
+
+## 4. Varianza
+
+### Varianza poblacional
+
+\[
+\sigma^2 = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2
+\]
+
+### Varianza muestral
+
+\[
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+\]
+
+---
+
+## 5. Desviación estándar
+
+### Desviación estándar poblacional
+
+\[
+\sigma = \sqrt{\sigma^2}
+\]
+
+### Desviación estándar muestral
+
+\[
+s = \sqrt{s^2}
+\]
+
+---
+
+# Implementación en Python
+
+```python
+import statistics
+import matplotlib.pyplot as plt
+
+datos = [
+    72, 85, 90, 68, 88, 91, 75, 84, 79, 87,
+    92, 81, 77, 89, 94, 83, 76, 86, 80, 78,
+    95, 82, 74, 88, 90
+]
+
+# Medidas de tendencia central
+media = sum(datos) / len(datos)
+mediana = statistics.median(datos)
+moda = statistics.multimode(datos)
+
+# Medidas de dispersión
+varianza_poblacional = statistics.pvariance(datos)
+varianza_muestral = statistics.variance(datos)
+
+desv_poblacional = statistics.pstdev(datos)
+desv_muestral = statistics.stdev(datos)
+
+print("Media:", media)
+print("Mediana:", mediana)
+print("Moda:", moda)
+print("Varianza poblacional:", varianza_poblacional)
+print("Varianza muestral:", varianza_muestral)
+print("Desviación estándar poblacional:", desv_poblacional)
+print("Desviación estándar muestral:", desv_muestral)
+
+
