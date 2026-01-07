@@ -381,6 +381,8 @@ $$
 
 ---
 
+
+
 ### Implementación en Python
 
 #### Histograma
