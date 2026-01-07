@@ -143,9 +143,9 @@ Las poblaciones se describen mediante **parámetros**, los cuales generalmente s
 Una **muestra** es un subconjunto representativo de la población, utilizado cuando no es posible estudiar a todos los elementos.
 
 Las muestras se describen mediante **estadísticos**, tales como:
-- Media muestral: \( \bar{x} \)
-- Varianza muestral: \( s^2 \)
-- Proporción muestral: \( \hat{p} \)
+- **Media muestral:** $\bar{x}$
+- **Varianza muestral:** $s^2$
+- **Proporción muestral:** $\hat{p}$
 
 ---
 
