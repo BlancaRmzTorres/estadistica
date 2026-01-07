@@ -650,27 +650,32 @@ s = \sqrt{s^2}
 # Implementación en Python
 
 ```python
-import statistics
+import numpy as np
 import matplotlib.pyplot as plt
 
-datos = [
+# Datos
+datos = np.array([
     72, 85, 90, 68, 88, 91, 75, 84, 79, 87,
     92, 81, 77, 89, 94, 83, 76, 86, 80, 78,
     95, 82, 74, 88, 90
-]
+])
 
 # Medidas de tendencia central
-media = sum(datos) / len(datos)
-mediana = statistics.median(datos)
-moda = statistics.multimode(datos)
+media = np.mean(datos)
+mediana = np.median(datos)
+
+# Moda (puede haber más de una)
+valores, frecuencias = np.unique(datos, return_counts=True)
+moda = valores[frecuencias == np.max(frecuencias)]
 
 # Medidas de dispersión
-varianza_poblacional = statistics.pvariance(datos)
-varianza_muestral = statistics.variance(datos)
+varianza_poblacional = np.var(datos)          # ddof = 0
+varianza_muestral = np.var(datos, ddof=1)     # ddof = 1
 
-desv_poblacional = statistics.pstdev(datos)
-desv_muestral = statistics.stdev(datos)
+desv_poblacional = np.std(datos)
+desv_muestral = np.std(datos, ddof=1)
 
+# Resultados en consola
 print("Media:", media)
 print("Mediana:", mediana)
 print("Moda:", moda)
@@ -678,5 +683,17 @@ print("Varianza poblacional:", varianza_poblacional)
 print("Varianza muestral:", varianza_muestral)
 print("Desviación estándar poblacional:", desv_poblacional)
 print("Desviación estándar muestral:", desv_muestral)
+
+# Gráfica
+plt.hist(datos, bins=6)
+plt.axvline(media, linestyle='--', label=f"Media = {media:.2f}")
+plt.axvline(mediana, linestyle='-', label=f"Mediana = {mediana}")
+
+plt.xlabel("Calificación")
+plt.ylabel("Frecuencia")
+plt.title("Histograma de calificaciones")
+plt.legend()
+plt.show()
+
 ```
 
