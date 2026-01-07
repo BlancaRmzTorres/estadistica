@@ -381,6 +381,7 @@ $$
 
 ---
 
+<img width="657" height="486" alt="imagen1" src="https://github.com/user-attachments/assets/5c7c7f0d-744f-4811-84bc-2b82fbb6e2d3" />
 
 
 ### Implementación en Python
