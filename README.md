@@ -1,6 +1,6 @@
 ## Indice Temático
 
-#### 1. [INTRODUCCIÓN A LA ESTADÍSTICA DESCRIPTIVA Y VISUALIZACIÓN DE DATOS](assets/unidad_1.md)
+#### 1. [INTRODUCCIÓN A LA ESTADÍSTICA DESCRIPTIVA Y VISUALIZACIÓN DE DATOS](assets/unidad1.md)
 - 1.1 Conceptos fundamentales.
 - 1.2 Definición y aplicación de la estadística.
 - 1.3 Población y muestra de datos.
