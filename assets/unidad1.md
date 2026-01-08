@@ -133,9 +133,9 @@ La **población estadística** es el conjunto total de elementos que comparten u
 - Todos los registros de una base de datos administrativa
 
 Las poblaciones se describen mediante **parámetros**, los cuales generalmente son desconocidos:
-- Media poblacional: \( \mu \)
-- Varianza poblacional: \( \sigma^2 \)
-- Proporción poblacional: \( p \)
+- Media poblacional: $$\( \mu \)$$
+- Varianza poblacional: $$\( \sigma^2 \)$$
+- Proporción poblacional: $$\( p \)$$
 
 ---
 
