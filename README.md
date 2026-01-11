@@ -7,6 +7,10 @@
 - 1.4 Medidas numéricas para la descripción de datos
 - 1.5 Fundamentos de la visualización de datos en estadística descriptiva.
 
+#### 2. [PROBABILIDAD Y TEOREMA DE BAYES](assets/unidad2.md)
+- 2.1 Concepto y propiedades fundamentales de la probabilidad.
+- 2.2 Probabilidad condicionada e independencia de sucesos.
+- 2.3 Teorema de bayes y su aplicación en probabilidad.
 _______________
 
 #### Referencias bibliográficas (APA)
