@@ -19,20 +19,20 @@ P(A) = \frac{\text{Número de resultados favorables}}{\text{Número total de res
 ### Propiedades fundamentales de la probabilidad
 
 1. **No negatividad**
-$$ \[
+ \[
 P(A) \geq 0
-\] $$
+\] 
 
 2. **Normalización**
-$$ \[
+\[
 P(S) = 1
-\] $$
+\] 
 
 3. **Aditividad**
-$$ Si \( A \) y \( B \) son eventos mutuamente excluyentes:
+ Si \( A \) y \( B \) son eventos mutuamente excluyentes:
 \[
 P(A \cup B) = P(A) + P(B)
-\] $$
+\] 
 
 ---
 
