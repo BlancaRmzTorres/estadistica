@@ -21,23 +21,23 @@ P(A) = \frac{\text{Número de resultados favorables}}{\text{Número total de res
 - **No negatividad**  
   La probabilidad de cualquier evento es siempre mayor o igual que cero:
   
-  \[
+ $$ \[
   P(A) \geq 0
-  \]
+  \]$$
 
 - **Normalización**  
   La probabilidad del espacio muestral es igual a uno:
   
-  \[
+  $$\[
   P(S) = 1
-  \]
+  \]$$
 
 - **Aditividad**  
-  Si \( A \) y \( B \) son eventos mutuamente excluyentes, entonces:
+  Si $$\( A \)$$ y $$\( B \)$$ son eventos mutuamente excluyentes, entonces:
   
-  \[
+  $$\[
   P(A \cup B) = P(A) + P(B)
-  \]
+  \]$$
 
 
 ---
