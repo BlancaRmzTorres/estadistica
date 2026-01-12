@@ -262,7 +262,7 @@ Los eventos **no son independientes**, ya que el primer resultado afecta al segu
 | Probabilidad condicionada | El espacio muestral se reduce |
 | Eventos independientes | No se afectan entre sí |
 | Eventos dependientes | La probabilidad cambia |
-| Fórmula clave | \( P(A \mid B) = \frac{P(A \cap B)}{P(B)} \) |
+| Fórmula clave | $$\( P(A \mid B) = \frac{P(A \cap B)}{P(B)} \)$$ |
 
 ---
 
