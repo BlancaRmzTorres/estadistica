@@ -51,7 +51,7 @@ $$ \[
 P(A) = \frac{3}{6} = 0.5
 \] $$
 
-** Interpretación **
+**Interpretación**
 
 Sabiendo que un dado tiene 6 caras y que dentro de estas caras son 3 pares la probabilidad de que caiga un par sería $$ \[P(A) = \frac{3}{6}\] $$
 
