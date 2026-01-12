@@ -8,7 +8,7 @@ Su valor está comprendido entre **0 y 1**, donde:
 - 0 significa que el evento es imposible
 - 1 significa que el evento es seguro
 
-Formalmente, si un experimento tiene un espacio muestral \( S \) y un evento \( A \subseteq S \), la probabilidad se define como:
+Formalmente, si un experimento tiene un espacio muestral $$\( S \)$$ y un evento $$\( A \subseteq S \)$$, la probabilidad se define como:
 
 $$ \[
 P(A) = \frac{\text{Número de resultados favorables}}{\text{Número total de resultados posibles}}
