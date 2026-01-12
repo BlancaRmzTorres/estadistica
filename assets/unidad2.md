@@ -109,7 +109,7 @@ Cuando condicionamos, **ya no consideramos todos los resultados posibles**, solo
 
 ---
 
-### 🔹 Ejemplo 1: Cartas condicionadas (revisado)
+### Ejemplo 1: Cartas condicionadas (revisado)
 
 En una baraja estándar de 52 cartas:
 
