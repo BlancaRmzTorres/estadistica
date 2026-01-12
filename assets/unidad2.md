@@ -157,7 +157,7 @@ P(A \mid B) = \frac{2/6}{3/6} = \frac{2}{3}
 \]$$
 
 **Interpretación:**  
-Si sabemos que el número fue mayor que 3, la probabilidad de que sea par es \( \frac{2}{3} \).
+Si sabemos que el número fue mayor que 3, la probabilidad de que sea par es $$\( \frac{2}{3} \)$$.
 
 ---
 
