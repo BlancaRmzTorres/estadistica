@@ -70,7 +70,7 @@ P(B) = \frac{4}{52} = \frac{1}{13}
 \] $$
 
 **Interpretación:**
-Sabiendo que la carta es roja, la probabilidad de que sea un as es de ( \frac{1}{13} ).
+Sabiendo que la carta es roja, la probabilidad de que sea un as es de $$( \frac{1}{13} )$$.
 
 ### Ejemplo 4: Lanzamientos de moneda
 Se lanza una moneda dos veces:
