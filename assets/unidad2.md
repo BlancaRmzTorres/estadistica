@@ -64,48 +64,6 @@ P(B) = \frac{4}{52} = \frac{1}{13}
 ** Interpretación: **
 Sabiendo que la carta es roja, la probabilidad de que sea un as es de ( \frac{1}{13} ).
 
----
-
-## 2.2 Probabilidad condicionada e independencia de sucesos
-
-### Probabilidad condicionada
-La **probabilidad condicionada** es la probabilidad de que ocurra un evento \( A \), dado que ya ocurrió otro evento \( B \).
-
-Se define como:
-
-$$ \[
-P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \quad P(B) > 0
-\] $$
-
----
-
-### Ejemplo 3: Cartas condicionadas
-- Evento A: sacar un as  
-- Evento B: sacar una carta roja  
-
-Hay 26 cartas rojas y 2 de ellas son ases.
-
-$$ \[
-P(A \mid B) = \frac{2}{26} = \frac{1}{13}
-\] $$
-
----
-
-### Independencia de sucesos
-Dos eventos \( A \) y \( B \) son **independientes** si la ocurrencia de uno no afecta la probabilidad del otro.
-
-$$ \[
-P(A \mid B) = P(A)
-\] $$
-
-Equivalente a:
-
-$$ \[
-P(A \cap B) = P(A) \cdot P(B)
-\] $$
-
----
-
 ### Ejemplo 4: Lanzamientos de moneda
 Se lanza una moneda dos veces:
 - Evento A: cara en el primer lanzamiento
@@ -127,7 +85,7 @@ Los eventos son independientes.
 
 ---
 
-### 🔹 Probabilidad condicionada
+### Probabilidad condicionada
 
 La **probabilidad condicionada** mide la probabilidad de que ocurra un evento \( A \), **sabiendo que** ya ocurrió otro evento \( B \).  
 Es decir, el espacio muestral se **reduce** únicamente a los casos donde \( B \) sucede.
@@ -138,7 +96,7 @@ Se define como:
 P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \quad P(B) > 0
 \]
 
-📌 **Interpretación importante**  
+**Interpretación importante**  
 Cuando condicionamos, **ya no consideramos todos los resultados posibles**, solo aquellos donde ocurre \( B \).
 
 ---
@@ -160,12 +118,12 @@ Entonces:
 P(A \mid B) = \frac{2}{26} = \frac{1}{13}
 \]
 
-📌 **Interpretación:**  
+**Interpretación:**  
 Sabiendo que la carta es roja, la probabilidad de que sea un as es de \( \frac{1}{13} \).
 
 ---
 
-### 🔹 Ejemplo 2: Probabilidad condicionada con dados
+### Ejemplo 2: Probabilidad condicionada con dados
 
 Se lanza un dado justo.
 
@@ -190,12 +148,12 @@ P(A \cap B) = \frac{2}{6}, \quad P(B) = \frac{3}{6}
 P(A \mid B) = \frac{2/6}{3/6} = \frac{2}{3}
 \]
 
-📌 **Interpretación:**  
+**Interpretación:**  
 Si sabemos que el número fue mayor que 3, la probabilidad de que sea par es \( \frac{2}{3} \).
 
 ---
 
-### 🔹 Ejemplo 3: Probabilidad condicionada en contexto real
+### Ejemplo 3: Probabilidad condicionada en contexto real
 
 En una universidad:
 - El 60% de los alumnos cursa matemáticas
@@ -213,7 +171,7 @@ P(M) = 0.6, \quad P(M \cap E) = 0.3
 P(E \mid M) = \frac{0.3}{0.6} = 0.5
 \]
 
-📌 **Interpretación:**  
+**Interpretación:**  
 Dado que un alumno cursa matemáticas, hay un 50% de probabilidad de que también curse estadística.
 
 ---
@@ -236,7 +194,7 @@ P(A \cap B) = P(A)\cdot P(B)
 
 ---
 
-### 🔹 Ejemplo 4: Lanzamientos de moneda
+### Ejemplo 4: Lanzamientos de moneda
 
 Se lanza una moneda dos veces:
 
@@ -251,12 +209,12 @@ P(A) = \frac{1}{2}, \quad P(B) = \frac{1}{2}
 P(A \cap B) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
 \]
 
-📌 **Conclusión:**  
+**Conclusión:**  
 Los eventos son independientes porque el resultado del primer lanzamiento no afecta al segundo.
 
 ---
 
-### 🔹 Ejemplo 5: Independencia vs dependencia
+###  Ejemplo 5: Independencia vs dependencia
 
 Se extraen dos cartas **con reemplazo**:
 
@@ -271,7 +229,7 @@ P(A) = P(B) = \frac{26}{52} = \frac{1}{2}
 P(A \cap B) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
 \]
 
-📌 **Conclusión:**  
+**Conclusión:**  
 Los eventos son independientes porque la carta se regresa al mazo.
 
 ---
@@ -284,7 +242,7 @@ Ahora sin reemplazo:
 P(B \mid A) = \frac{25}{51} \neq \frac{26}{52}
 \]
 
-📌 **Conclusión:**  
+ **Conclusión:**  
 Los eventos **no son independientes**, ya que el primer resultado afecta al segundo.
 
 ---
@@ -300,9 +258,7 @@ Los eventos **no son independientes**, ya que el primer resultado afecta al segu
 
 ---
 
-## 📌 Recomendación académica
-Antes de calcular, **identifica si los eventos son dependientes o independientes**.  
-Esto evita errores conceptuales comunes en probabilidad.
+---
 
 
 ## 2.3 Teorema de Bayes y su aplicación en probabilidad
