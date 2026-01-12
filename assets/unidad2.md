@@ -349,6 +349,114 @@ $$\[
 P(A \mid R) = \frac{(0.7)(0.5)}{0.55} \approx 0.636
 \]$$
 
+## Ejemplo 3: Spam en correos electrónicos
+
+Una empresa sabe que:
+- El 20% de los correos son **spam**  
+- Un filtro detecta spam correctamente el 90% de las veces  
+- Marca como spam un correo legítimo el 10% de las veces  
+
+Definimos los eventos:
+- \( S \): el correo es spam  
+- \( F \): el correo es marcado como spam  
+
+\[
+P(S) = 0.20 \quad,\quad P(F \mid S) = 0.90 \quad,\quad P(F \mid S^c) = 0.10
+\]
+
+### Paso 1: Calcular \( P(F) \)
+
+\[
+P(F) = (0.90)(0.20) + (0.10)(0.80) = 0.18 + 0.08 = 0.26
+\]
+
+### Paso 2: Aplicar Bayes
+
+\[
+P(S \mid F) = \frac{(0.90)(0.20)}{0.26} \approx 0.692
+\]
+
+### Interpretación
+Si un correo fue marcado como spam, la probabilidad de que realmente lo sea es del **69.2%**.
+
+---
+
+## Ejemplo 4: Fábricas y defectos
+
+Una empresa tiene dos fábricas:
+
+- Fábrica A produce el 60% de los productos
+- Fábrica B produce el 40%
+
+Tasas de defectos:
+- \( P(D \mid A) = 0.02 \)
+- \( P(D \mid B) = 0.05 \)
+
+Se selecciona un producto defectuoso.  
+¿Cuál es la probabilidad de que provenga de la fábrica B?
+
+\[
+P(A) = 0.60 \quad,\quad P(B) = 0.40
+\]
+
+### Paso 1: Calcular \( P(D) \)
+
+\[
+P(D) = (0.02)(0.60) + (0.05)(0.40) = 0.012 + 0.020 = 0.032
+\]
+
+### Paso 2: Aplicar Bayes
+
+\[
+P(B \mid D) = \frac{(0.05)(0.40)}{0.032} = 0.625
+\]
+
+### Interpretación
+Si el producto es defectuoso, hay un **62.5%** de probabilidad de que haya sido producido por la fábrica B.
+
+---
+
+## Ejemplo 5: Examen diagnóstico universitario
+
+El 30% de los estudiantes reprueba un examen diagnóstico.
+
+- Si un estudiante reprueba, el sistema lo detecta correctamente el 85% de las veces  
+- Si aprueba, el sistema lo clasifica erróneamente como reprobado el 15%  
+
+Definimos:
+- \( R \): reprobar  
+- \( D \): detectado como reprobado  
+
+\[
+P(R) = 0.30 \quad,\quad P(D \mid R) = 0.85 \quad,\quad P(D \mid R^c) = 0.15
+\]
+
+### Paso 1: Calcular \( P(D) \)
+
+\[
+P(D) = (0.85)(0.30) + (0.15)(0.70) = 0.255 + 0.105 = 0.36
+\]
+
+### Paso 2: Aplicar Bayes
+
+\[
+P(R \mid D) = \frac{(0.85)(0.30)}{0.36} \approx 0.708
+\]
+
+### Interpretación
+Si el sistema indica que el estudiante reprobó, la probabilidad real es del **70.8%**.
+
+---
+
+## Conclusión
+
+El Teorema de Bayes es fundamental para:
+- Interpretar resultados de pruebas
+- Analizar sistemas de clasificación
+- Tomar decisiones con información incompleta
+
+Permite **actualizar probabilidades** conforme se obtiene nueva evidencia.
+
 ---
 
 ## Conclusión
