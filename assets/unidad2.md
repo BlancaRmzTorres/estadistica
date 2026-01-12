@@ -127,7 +127,7 @@ P(A \mid B) = \frac{2}{26} = \frac{1}{13}
 \]$$
 
 **Interpretación:**  
-Sabiendo que la carta es roja, la probabilidad de que sea un as es de \( \frac{1}{13} \).
+Sabiendo que la carta es roja, la probabilidad de que sea un as es de $$\( \frac{1}{13} \)$$.
 
 ---
 
