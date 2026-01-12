@@ -61,6 +61,9 @@ $$ \[
 P(B) = \frac{4}{52} = \frac{1}{13}
 \] $$
 
+** terpretación: **
+Sabiendo que la carta es roja, la probabilidad de que sea un as es de ( \frac{1}{13} ).
+
 ---
 
 ## 2.2 Probabilidad condicionada e independencia de sucesos
