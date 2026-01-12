@@ -100,9 +100,9 @@ Es decir, el espacio muestral se **reduce** únicamente a los casos donde \( B \
 
 Se define como:
 
-\[
+$$\[
 P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \quad P(B) > 0
-\]
+\]$$
 
 **Interpretación importante**  
 Cuando condicionamos, **ya no consideramos todos los resultados posibles**, solo aquellos donde ocurre \( B \).
@@ -122,9 +122,9 @@ Datos:
 
 Entonces:
 
-\[
+$$\[
 P(A \mid B) = \frac{2}{26} = \frac{1}{13}
-\]
+\]$$
 
 **Interpretación:**  
 Sabiendo que la carta es roja, la probabilidad de que sea un as es de \( \frac{1}{13} \).
@@ -138,23 +138,23 @@ Se lanza un dado justo.
 - Evento \( A \): obtener un número par  
 - Evento \( B \): obtener un número mayor que 3  
 
-\[
+$$\[
 A = \{2,4,6\}, \quad B = \{4,5,6\}
-\]
+\]$$
 
 Intersección:
-\[
+$$\[
 A \cap B = \{4,6\}
-\]
+\]$$
 
-Cálculos:
-\[
+**Cálculos:**
+$$\[
 P(A \cap B) = \frac{2}{6}, \quad P(B) = \frac{3}{6}
-\]
+\]$$
 
-\[
+$$\[
 P(A \mid B) = \frac{2/6}{3/6} = \frac{2}{3}
-\]
+\]$$
 
 **Interpretación:**  
 Si sabemos que el número fue mayor que 3, la probabilidad de que sea par es \( \frac{2}{3} \).
@@ -171,13 +171,13 @@ Sea:
 - \( M \): cursar matemáticas
 - \( E \): cursar estadística
 
-\[
+$$\[
 P(M) = 0.6, \quad P(M \cap E) = 0.3
-\]
+\]$$
 
-\[
+$$\[
 P(E \mid M) = \frac{0.3}{0.6} = 0.5
-\]
+\]$$
 
 **Interpretación:**  
 Dado que un alumno cursa matemáticas, hay un 50% de probabilidad de que también curse estadística.
@@ -186,19 +186,19 @@ Dado que un alumno cursa matemáticas, hay un 50% de probabilidad de que tambié
 
 ## 🔹 Independencia de sucesos
 
-Dos eventos \( A \) y \( B \) son **independientes** si la ocurrencia de uno **no modifica** la probabilidad del otro.
+Dos eventos $$\( A \)$$ y $$\( B \)$$ son **independientes** si la ocurrencia de uno **no modifica** la probabilidad del otro.
 
 Formalmente:
 
-\[
+$$\[
 P(A \mid B) = P(A)
-\]
+\]$$
 
 De forma equivalente:
 
-\[
+$$\[
 P(A \cap B) = P(A)\cdot P(B)
-\]
+\]$$
 
 ---
 
@@ -206,16 +206,16 @@ P(A \cap B) = P(A)\cdot P(B)
 
 Se lanza una moneda dos veces:
 
-- Evento \( A \): obtener cara en el primer lanzamiento
-- Evento \( B \): obtener cara en el segundo lanzamiento
+- Evento $$\( A \)$$: obtener cara en el primer lanzamiento
+- Evento $$\( B \)$$: obtener cara en el segundo lanzamiento
 
-\[
+$$\[
 P(A) = \frac{1}{2}, \quad P(B) = \frac{1}{2}
-\]
+\]$$
 
-\[
+$$\[
 P(A \cap B) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
-\]
+\]$$
 
 **Conclusión:**  
 Los eventos son independientes porque el resultado del primer lanzamiento no afecta al segundo.
@@ -226,16 +226,16 @@ Los eventos son independientes porque el resultado del primer lanzamiento no afe
 
 Se extraen dos cartas **con reemplazo**:
 
-- Evento \( A \): la primera carta es roja
-- Evento \( B \): la segunda carta es roja
+- Evento $$\( A \)$$: la primera carta es roja
+- Evento $$\( B \)$$: la segunda carta es roja
 
-\[
+$$\[
 P(A) = P(B) = \frac{26}{52} = \frac{1}{2}
-\]
+\]$$
 
-\[
+$$\[
 P(A \cap B) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
-\]
+\]$$
 
 **Conclusión:**  
 Los eventos son independientes porque la carta se regresa al mazo.
@@ -246,16 +246,16 @@ Los eventos son independientes porque la carta se regresa al mazo.
 
 Ahora sin reemplazo:
 
-\[
+$$\[
 P(B \mid A) = \frac{25}{51} \neq \frac{26}{52}
-\]
+\]$$
 
  **Conclusión:**  
 Los eventos **no son independientes**, ya que el primer resultado afecta al segundo.
 
 ---
 
-## 🧠 Resumen conceptual
+## Resumen conceptual
 
 | Concepto | Idea clave |
 |--------|-----------|
@@ -265,9 +265,6 @@ Los eventos **no son independientes**, ya que el primer resultado afecta al segu
 | Fórmula clave | \( P(A \mid B) = \frac{P(A \cap B)}{P(B)} \) |
 
 ---
-
----
-
 
 ## 2.3 Teorema de Bayes y su aplicación en probabilidad
 
