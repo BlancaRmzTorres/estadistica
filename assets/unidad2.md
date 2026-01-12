@@ -242,7 +242,7 @@ Los eventos son independientes porque la carta se regresa al mazo.
 
 ---
 
-### 🔹 Ejemplo 6: Eventos dependientes (contraste)
+### Ejemplo 6: Eventos dependientes (contraste)
 
 Ahora sin reemplazo:
 
