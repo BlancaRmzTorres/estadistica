@@ -72,7 +72,7 @@ P(B) = \frac{4}{52} = \frac{1}{13}
 **Interpretación:**
 Sabiendo que la carta es roja, la probabilidad de que sea un as es de $$( \frac{1}{13} )$$.
 
-### Ejemplo 4: Lanzamientos de moneda
+### Ejemplo 3: Lanzamientos de moneda
 Se lanza una moneda dos veces:
 - Evento A: cara en el primer lanzamiento
 - Evento B: cara en el segundo lanzamiento
@@ -282,7 +282,7 @@ Donde:
 
 ---
 
-### Ejemplo 5: Prueba médica
+### Ejemplo 1: Prueba médica
 Una enfermedad afecta al 1% de la población:
 $$\[
 P(E) = 0.01
@@ -326,7 +326,7 @@ Aunque la prueba dio positivo, la probabilidad real de estar enfermo es solo del
 
 ---
 
-### Ejemplo 6: Urnas
+### Ejemplo 2: Urnas
 Una urna A contiene bolas rojas con probabilidad 0.7  
 Una urna B contiene bolas rojas con probabilidad 0.4  
 
