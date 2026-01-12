@@ -184,7 +184,7 @@ Dado que un alumno cursa matemáticas, hay un 50% de probabilidad de que tambié
 
 ---
 
-## 🔹 Independencia de sucesos
+## Independencia de sucesos
 
 Dos eventos $$\( A \)$$ y $$\( B \)$$ son **independientes** si la ocurrencia de uno **no modifica** la probabilidad del otro.
 
