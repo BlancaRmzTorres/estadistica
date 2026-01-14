@@ -78,7 +78,7 @@ Sabiendo que la carta sea un as, la probabilidad de que sea un as es de $$( \fra
 De una baraja estándar de 52 cartas:
 - Evento B: sacar una carta que sea (AS | Roja)
 
-## Solución:
+### Solución:
 
 
 ---
@@ -100,11 +100,16 @@ Los eventos son independientes.
 
 ---
 
-### Ejemplo 5: Lanzamiento de un dado y una moneda
+### Ejemplo 5: Lanzamiento de un dado y una moneda - Resolver
 Se realiza el siguiente experimento:
 Se lanza un dado y una moneda al mismo tiempo.
 - Evento A: obtener un número par en el dado.
 - Evento B: obtener cara en la moneda.
+
+### Solución
+
+
+---
 
 ## 2.2 Probabilidad condicionada e independencia de sucesos
 
