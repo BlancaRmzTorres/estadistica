@@ -106,7 +106,7 @@ Se lanza un dado y una moneda al mismo tiempo.
 - Evento A: obtener un número par en el dado.
 - Evento B: obtener cara en la moneda.
 
-### Solución
+### Solución:
 
 
 ---
