@@ -63,7 +63,7 @@ P(A) = \frac{3}{6}
 
 ### Ejemplo 2: Cartas
 De una baraja estándar de 52 cartas:
-- Evento B: sacar una carta roja y que sea as
+- Evento B: sacar una carta que sea as
 
 $$ \[
 P(B) = \frac{4}{52} = \frac{1}{13}
