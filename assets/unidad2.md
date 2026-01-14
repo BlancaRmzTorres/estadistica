@@ -71,6 +71,7 @@ P(B) = \frac{4}{52} = \frac{1}{13}
 
 **Interpretación:**
 Sabiendo que la carta sea un as, la probabilidad de que sea un as es de $$( \frac{1}{13} )$$.
+---
 
 ### Ejemplo 3: Cartas Resolver 
 
@@ -82,7 +83,7 @@ De una baraja estándar de 52 cartas:
 
 ---
 
-### Ejemplo 3: Lanzamientos de moneda
+### Ejemplo 4: Lanzamientos de moneda
 Se lanza una moneda dos veces:
 - Evento A: cara en el primer lanzamiento
 - Evento B: cara en el segundo lanzamiento
