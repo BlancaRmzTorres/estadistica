@@ -72,8 +72,8 @@ P(B) = \frac{4}{52} = \frac{1}{13}
 **Interpretación:**
 Sabiendo que la carta sea un as, la probabilidad de que sea un as es de $$( \frac{1}{13} )$$.
 ---
-
-### Ejemplo 3: Cartas Resolver 
+ 
+### Ejemplo 3: Cartas - Resolver 
 
 De una baraja estándar de 52 cartas:
 - Evento B: sacar una carta que sea (AS | Roja)
@@ -99,6 +99,12 @@ P(A \cap B) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
 Los eventos son independientes.
 
 ---
+
+### Ejemplo 5: Lanzamiento de un dado y una moneda
+Se realiza el siguiente experimento:
+Se lanza un dado y una moneda al mismo tiempo.
+- Evento A: obtener un número par en el dado.
+- Evento B: obtener cara en la moneda.
 
 ## 2.2 Probabilidad condicionada e independencia de sucesos
 
