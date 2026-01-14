@@ -79,6 +79,9 @@ De una baraja estándar de 52 cartas:
 
 ## Solución:
 
+
+---
+
 ### Ejemplo 3: Lanzamientos de moneda
 Se lanza una moneda dos veces:
 - Evento A: cara en el primer lanzamiento
