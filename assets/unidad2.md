@@ -298,9 +298,9 @@ P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}
 \] $$
 
 Donde:
-- $$\( P(A) \)$$ es la probabilidad a priori
-- $$\( P(B \mid A) \)$$ es la probabilidad condicional
-- $$\( P(A \mid B) \)$$ es la probabilidad a posteriori
+- $$\( P(A) \)$$ es la probabilidad a priori (Se refiere a la probabilidad inicial de que ocurra el evento A, antes de conocer cualquier información adicional)
+- $$\( P(B \mid A) \)$$ es la probabilidad condicional (Es la probabilidad de que ocurra el evento 𝐵 dado que ya ocurrió el evento A)
+- $$\( P(A \mid B) \)$$ es la probabilidad a posteriori (Es la probabilidad de que ocurra el evento A después de haber observado que ocurrió el evento B.)
 
 ---
 
