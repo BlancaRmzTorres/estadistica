@@ -11,6 +11,11 @@
 - 2.1 Concepto y propiedades fundamentales de la probabilidad.
 - 2.2 Probabilidad condicionada e independencia de sucesos.
 - 2.3 Teorema de bayes y su aplicación en probabilidad.
+
+#### 3. [VARIABLES ALEATORIAS Y DISTRIBUCIONES DE PROBABILIDAD](assets/unidad3.md)
+- 3.1 Definición y características de variables aleatorias.
+- 3.2 Distribuciones discretas y continuas de probabilidad.
+- 3.3 Exploración de distribuciones discretas y análisis de distribuciones continuas.
 _______________
 
 #### Referencias bibliográficas (APA)
