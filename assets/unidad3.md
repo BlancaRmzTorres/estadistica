@@ -135,9 +135,7 @@ Datos:
 - k = 1  
 - p = 0.05  
 
-### Sustitución:
-## 📊 Distribución Binomial
-
+### 📊 Sustitución:
 La función de probabilidad de una variable aleatoria binomial  
 \( X \sim \text{Bin}(n, p) \) está dada por:
 
@@ -201,9 +199,7 @@ Datos:
 - k = 3  
 - p = 0.5  
 
-### Sustitución:
-## Distribución Binomial
-
+### 📊 Sustitución:
 La función de probabilidad de una variable aleatoria binomial  
 \( X \sim \text{Bin}(n, p) \) está dada por:
 
@@ -268,9 +264,7 @@ Datos:
 - k = 2  
 - p = 0.2  
 
-### Sustitución:
-## Distribución Binomial
-
+### 📊 Sustitución:
 La función de probabilidad de una variable aleatoria binomial  
 \( X \sim \text{Bin}(n, p) \) está dada por:
 
@@ -335,9 +329,7 @@ Datos:
 - k = 4  
 - p = 0.6  
 
-### Sustitución:
-## Distribución Binomial
-
+### 📊 Sustitución:
 La función de probabilidad de una variable aleatoria binomial  
 \( X \sim \text{Bin}(n, p) \) está dada por:
 
