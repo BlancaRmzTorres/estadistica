@@ -394,20 +394,217 @@ P(X = k) = \frac{e^{-\lambda} \lambda^k}{k!}
 \]$$
 
 ---
+**La probabilidad de que la variable aleatoria X tome el valor k es igual a e elevado a menos lambda, multiplicado por lambda elevado a k, dividido entre 
+k factorial.**
 
-##### Ejemplo (Distribución de Poisson)
+---
 
-En promedio, llegan 3 personas por minuto a una ventanilla.
+## Significado de cada elemento
 
-**Datos:**
-- $$\( \lambda = 3 \)$$
-- $$\( k = 5 \)$$
+### $$\(P(X = k)\)$$
+- Probabilidad de que ocurran exactamente **$$\(k\)$$ eventos**.
 
+---
+
+### $$\(X\)$$
+- Variable aleatoria.
+- Representa el **número de veces que ocurre un evento** en un intervalo fijo.
+
+---
+
+### $$\(k\)$$
+- Número entero no negativo:
 $$\[
-P(X = 5) \approx 0.1008
+k = 0, 1, 2, 3, \dots
 \]$$
 
 ---
+
+### $$\(\lambda\)$$ (lambda)
+- **Tasa promedio de ocurrencias**.
+- Indica el número esperado de eventos en un intervalo.
+- \(\lambda > 0\)
+
+---
+
+### $$\(e\)$$
+- Número de Euler:
+$$\[
+e \approx 2.71828
+\]$$
+
+---
+
+### $$\(e^{-\lambda}\)$$
+- Probabilidad de que **no ocurra ningún evento** cuando el promedio es \(\lambda\).
+
+---
+
+### $$\(\lambda^{k}\)$$
+- Ajusta la tasa promedio al número de eventos deseados.
+
+---
+
+### $$\(k!\) (k factorial)$$
+- Factorial de \(k\):
+$$\[
+k! = k \cdot (k-1) \cdot (k-2) \cdots 1
+\]$$
+
+---
+
+## Interpretación general
+
+La distribución de Poisson se utiliza cuando:
+- Los eventos ocurren de manera **aleatoria**
+- En un **intervalo fijo**
+- Con una **tasa promedio constante**
+- Los eventos son **independientes**
+
+---
+
+## Ejemplo
+
+Si el promedio de llamadas por hora es \(\lambda = 3\), la probabilidad de recibir exactamente 2 llamadas es:
+
+$$\[
+P(X = 2) = \frac{e^{-3}3^{2}}{2!}
+\]$$
+
+---
+
+## Ejercicios – Distribución de Poisson
+
+Recordemos que la función de probabilidad de Poisson es:
+
+$$\[
+P(X = k) = \frac{e^{-\lambda}\lambda^{k}}{k!}
+\]$$
+
+donde:
+- $$\(X\)$$: número de eventos
+- $$\(k\)$$: número exacto de eventos
+- $$\(\lambda\)$$: tasa promedio de ocurrencias
+
+---
+
+## Ejercicio 1: Llamadas telefónicas
+
+En promedio llegan **2 llamadas por hora** a un call center.
+
+### ¿Cuál es la probabilidad de que lleguen exactamente 3 llamadas en una hora?
+
+### Datos:
+- $$\(\lambda = 2\)$$
+- $$\(k = 3\)$$
+
+### Cálculo:
+$$\[
+P(X = 3) = \frac{e^{-2}2^{3}}{3!}
+\]$$
+
+### Resultado:
+$$\[
+P(X = 3) \approx 0.1804
+\]$$
+
+---
+
+## Ejercicio 2: Errores de escritura
+
+Un documento tiene en promedio **1 error por página**.
+
+### ¿Cuál es la probabilidad de que una página no tenga errores?
+
+### Datos:
+- $$\(\lambda = 1\)$$
+- $$\(k = 0\)$$
+
+### Cálculo:
+$$\[
+P(X = 0) = \frac{e^{-1}1^{0}}{0!}
+\]$$
+
+### Resultado:
+$$\[
+P(X = 0) \approx 0.3679
+\]$$
+
+---
+
+## Ejercicio 3: Accidentes de tránsito
+
+En una avenida ocurren en promedio **4 accidentes por mes**.
+
+### ¿Cuál es la probabilidad de que ocurran exactamente 2 accidentes en un mes?
+
+### Datos:
+- $$\(\lambda = 4\)$$
+- $$\(k = 2\)$$
+
+### Cálculo:
+$$\[
+P(X = 2) = \frac{e^{-4}4^{2}}{2!}
+\]$$
+
+### Resultado:
+$$\[
+P(X = 2) \approx 0.1465
+\]$$
+
+---
+
+## Ejercicio 4: Llegadas a una tienda
+
+A una tienda llegan en promedio **6 clientes por hora**.
+
+### ¿Cuál es la probabilidad de que lleguen exactamente 5 clientes en una hora?
+
+### Datos:
+- $$\(\lambda = 6\)$$
+- $$\(k = 5\)$$
+
+### Cálculo:
+$$\[
+P(X = 5) = \frac{e^{-6}6^{5}}{5!}
+\]$$
+
+### Resultado:
+$$\[
+P(X = 5) \approx 0.1606
+\]$$
+
+---
+
+## Ejercicio 5: Fallas en una máquina
+
+Una máquina presenta en promedio **0.5 fallas por día**.
+
+### ¿Cuál es la probabilidad de que ocurra exactamente 1 falla en un día?
+
+### Datos:
+- $$\(\lambda = 0.5\)$$
+- $$\(k = 1\)$$
+
+### Cálculo:
+$$\[
+P(X = 1) = \frac{e^{-0.5}0.5^{1}}{1!}
+\]$$
+
+### Resultado:
+$$\[
+P(X = 1) \approx 0.3033
+\]$$
+
+---
+
+## Conclusión
+
+La distribución de Poisson es útil para modelar el número de eventos que ocurren:
+- De forma aleatoria
+- En un intervalo fijo
+- Con una tasa promedio constante
+
 
 ### Distribuciones continuas
 
