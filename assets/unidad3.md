@@ -89,9 +89,9 @@ Lectura:
 
 En un problema de distribución binomial, los valores clave son:
 
-n → número total de ensayos (por ejemplo, número de preguntas)
-p → probabilidad de éxito en un ensayo (por ejemplo, contestar bien)
-k → número de éxitos que queremos calcular
+- n → número total de ensayos (por ejemplo, número de preguntas)
+- p → probabilidad de éxito en un ensayo (por ejemplo, contestar bien)
+- k → número de éxitos que queremos calcular
 
 ##### Ejemplo (Distribución Binomial)
 
