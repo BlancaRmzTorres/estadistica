@@ -28,7 +28,7 @@ Una **variable aleatoria** es una función que asigna un valor numérico a cada 
 
 ### Ejemplos
 
-**Ejemplo 1 (Variable aleatoria discreta)**  
+**📊 Ejemplo 1 (Variable aleatoria discreta)**  
 - Experimento: lanzar un dado  
 - Variable aleatoria \( X \): número obtenido  
 
@@ -40,7 +40,7 @@ X = \{1, 2, 3, 4, 5, 6\}
 
 ---
 
-**Ejemplo 2 (Variable aleatoria continua)**  
+**📊 Ejemplo 2 (Variable aleatoria continua)**  
 - Experimento: medir el tiempo que tarda un alumno en resolver un examen  
 - Variable aleatoria \( X \): tiempo (en minutos)  
 
@@ -93,7 +93,7 @@ En un problema de distribución binomial, los valores clave son:
 - p → probabilidad de éxito en un ensayo (por ejemplo, contestar bien)
 - k → número de éxitos que queremos calcular
 
-### Ejemplo (Distribución Binomial)
+### 📊 Ejercicio 1
 
 Un examen tiene 10 preguntas… 
 ¿Cuál es la probabilidad de contestar correctamente 8 preguntas si la probabilidad de acertar cada una es 0.7?
@@ -125,7 +125,7 @@ P(X = 8) \approx 0.233
 → k sería 3
 
 
-## Ejemplo 2 — Productos defectuosos
+## 📊 Ejercicio 2 — Productos defectuosos
 
 Una fábrica produce tornillos con una tasa de defectos de p = 0.05.  
 Si se toman 20 tornillos al azar, ¿cuál es la probabilidad de que exactamente **1** sea defectuoso?
@@ -135,7 +135,7 @@ Datos:
 - k = 1  
 - p = 0.05  
 
-### 📊 Sustitución:
+### Sustitución:
 La función de probabilidad de una variable aleatoria binomial  
 $$\( X \sim \text{Bin}(n, p) \)$$ está dada por:
 
@@ -190,7 +190,7 @@ P(X = 1) = \binom{20}{1} (0.05)^1 (0.95)^{19} \approx 0.377
 **Respuesta:** La probabilidad de encontrar 1 tornillo defectuoso es ≈ **0.377**.
 
 
-## Ejemplo 3 — Moneda equilibrada
+## 📊 Ejercicio 3 — Moneda equilibrada
 
 Se lanza una moneda 6 veces. ¿Cuál es la probabilidad de obtener exactamente **3 caras**?
 
@@ -199,7 +199,7 @@ Datos:
 - k = 3  
 - p = 0.5  
 
-### 📊 Sustitución:
+### Sustitución:
 La función de probabilidad de una variable aleatoria binomial  
 $$\( X \sim \text{Bin}(n, p) \)$$ está dada por:
 
@@ -254,7 +254,7 @@ P(X = 3) = \binom{6}{3} (0.5)^3 (0.5)^3 = 0.3125
 
 
 
-## Ejemplo 4 — Éxito en llamadas
+## 📊 Ejercicio 4 — Éxito en llamadas
 
 La probabilidad de que un agente cierre una venta en una llamada es 0.2.  
 Si hace 12 llamadas, ¿cuál es la probabilidad de cerrar exactamente **2** ventas?
@@ -264,7 +264,7 @@ Datos:
 - k = 2  
 - p = 0.2  
 
-### 📊 Sustitución:
+### Sustitución:
 La función de probabilidad de una variable aleatoria binomial  
 $$\( X \sim \text{Bin}(n, p) \)$$ está dada por:
 
@@ -319,7 +319,7 @@ P(X = 2) = \binom{12}{2} (0.2)^2 (0.8)^{10} \approx 0.283
 
 
 
-## Ejemplo 5 — Encuesta
+## 📊 Ejercicio 5 — Encuesta
 
 En una encuesta, 60% de los clientes dice estar satisfecho con el servicio.  
 Si se eligen 5 clientes, ¿cuál es la probabilidad de que exactamente **4** estén satisfechos?
@@ -329,7 +329,7 @@ Datos:
 - k = 4  
 - p = 0.6  
 
-### 📊 Sustitución:
+### Sustitución:
 La función de probabilidad de una variable aleatoria binomial  
 $$\( X \sim \text{Bin}(n, p) \)$$ está dada por:
 
@@ -463,7 +463,7 @@ La distribución de Poisson se utiliza cuando:
 
 ---
 
-## Ejemplo
+## 📊 Ejemplo
 
 Si el promedio de llamadas por hora es \(\lambda = 3\), la probabilidad de recibir exactamente 2 llamadas es:
 
@@ -488,7 +488,7 @@ donde:
 
 ---
 
-## Ejercicio 1: Llamadas telefónicas
+## 📊 Ejercicio 1: Llamadas telefónicas
 
 En promedio llegan **2 llamadas por hora** a un call center.
 
@@ -510,7 +510,7 @@ P(X = 3) \approx 0.1804
 
 ---
 
-## Ejercicio 2: Errores de escritura
+## 📊 Ejercicio 2: Errores de escritura
 
 Un documento tiene en promedio **1 error por página**.
 
@@ -532,7 +532,7 @@ P(X = 0) \approx 0.3679
 
 ---
 
-## Ejercicio 3: Accidentes de tránsito
+## 📊 Ejercicio 3: Accidentes de tránsito
 
 En una avenida ocurren en promedio **4 accidentes por mes**.
 
@@ -554,7 +554,7 @@ P(X = 2) \approx 0.1465
 
 ---
 
-## Ejercicio 4: Llegadas a una tienda
+## 📊 Ejercicio 4: Llegadas a una tienda
 
 A una tienda llegan en promedio **6 clientes por hora**.
 
@@ -576,7 +576,7 @@ P(X = 5) \approx 0.1606
 
 ---
 
-## Ejercicio 5: Fallas en una máquina
+## 📊 Ejercicio 5: Fallas en una máquina
 
 Una máquina presenta en promedio **0.5 fallas por día**.
 
@@ -626,7 +626,7 @@ f(x) =
 
 ---
 
-##### Ejemplo (Uniforme Continua)
+##### 📊 Ejemplo (Uniforme Continua)
 
 El tiempo de espera de un alumno está entre 5 y 15 minutos.
 
@@ -640,100 +640,100 @@ P(X < 10) = \frac{10 - 5}{15 - 5} = 0.5
 
 ---
 
-## 📊 Distribución Uniforme Continua
+## Distribución Uniforme Continua
 
 En una **distribución uniforme continua**, todos los valores del intervalo  
-\([a, b]\) tienen la **misma probabilidad**.
+$$\([a, b]\)$$ tienen la **misma probabilidad**.
 
-### 📐 Función de densidad
+### Función de densidad
 
-\[
+$$\[
 f(x) =
 \begin{cases}
 \frac{1}{b - a}, & a \le x \le b \\
 0, & \text{en otro caso}
 \end{cases}
-\]
+\]$$
 
 ---
 
-## 📝 Ejercicio 1: Tiempo de espera
+## 📊 Ejercicio 1: Tiempo de espera
 
 El tiempo de espera de un cliente en una tienda está distribuido uniformemente  
 entre **5 y 15 minutos**.
 
-### ❓ ¿Cuál es la probabilidad de que el cliente espere **menos de 10 minutos**?
+### ¿Cuál es la probabilidad de que el cliente espere **menos de 10 minutos**?
 
-### 🔢 Datos:
-- \(a = 5\)
-- \(b = 15\)
+### Datos:
+- $$\(a = 5\)$$
+- $$\(b = 15\)$$
 
-### 📐 Cálculo:
+### Cálculo:
 
-\[
+$$\[
 P(X < 10) = \frac{10 - 5}{15 - 5}
-\]
+\]$$
 
-### ✅ Resultado:
+### Resultado:
 
-\[
+$$\[
 P(X < 10) = \frac{5}{10} = 0.5
-\]
+\]$$
 
 ---
 
-## 📝 Ejercicio 2: Temperatura
+## 📊 Ejercicio 2: Temperatura
 
 La temperatura durante el día varía de forma uniforme entre  
 **20 °C y 30 °C**.
 
-### ❓ ¿Cuál es la probabilidad de que la temperatura sea **mayor a 25 °C**?
+### ¿Cuál es la probabilidad de que la temperatura sea **mayor a 25 °C**?
 
-### 🔢 Datos:
-- \(a = 20\)
-- \(b = 30\)
+### Datos:
+- $$\(a = 20\)$$
+- $$\(b = 30\)$$
 
-### 📐 Cálculo:
+### Cálculo:
 
-\[
+$$\[
 P(X > 25) = \frac{30 - 25}{30 - 20}
-\]
+\]$$
 
-### ✅ Resultado:
+### Resultado:
 
-\[
+$$\[
 P(X > 25) = \frac{5}{10} = 0.5
-\]
+\]$$
 
 ---
 
-## 📝 Ejercicio 3: Llegada de un autobús
+## Ejercicio 3: Llegada de un autobús
 
 El tiempo de llegada de un autobús está distribuido uniformemente  
 entre **0 y 20 minutos**.
 
-### ❓ ¿Cuál es la probabilidad de que el autobús llegue entre  
+### ¿Cuál es la probabilidad de que el autobús llegue entre  
 **5 y 12 minutos**?
 
-### 🔢 Datos:
-- \(a = 0\)
-- \(b = 20\)
+### Datos:
+- $$\(a = 0\)$$
+- $$\(b = 20\)$$
 
-### 📐 Cálculo:
+### Cálculo:
 
-\[
+$$\[
 P(5 \le X \le 12) = \frac{12 - 5}{20 - 0}
-\]
+\]$$
 
-### ✅ Resultado:
+### Resultado:
 
-\[
+$$\[
 P(5 \le X \le 12) = \frac{7}{20} = 0.35
-\]
+\]$$
 
 ---
 
-## 📌 Conclusión
+## Conclusión
 
 En la distribución uniforme continua:
 - Todas las longitudes de subintervalos tienen la misma probabilidad
@@ -757,7 +757,7 @@ Donde:
 
 ---
 
-##### Ejemplo (Distribución Normal)
+##### 📊 Ejemplo (Distribución Normal)
 
 Las calificaciones siguen una distribución normal con:
 - $$\( \mu = 75 \)$$
@@ -788,7 +788,7 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
 
 ---
 
-## Ejercicio 1: Calificaciones altas
+## 📊 Ejercicio 1: Calificaciones altas
 
 Las calificaciones de un examen siguen una distribución normal con:
 - $$\( \mu = 70 \)$$
@@ -816,7 +816,7 @@ P(X > 78) \approx 0.1587
 
 ---
 
-## Ejercicio 2: Estatura de personas
+## 📊 Ejercicio 2: Estatura de personas
 
 La estatura de un grupo de personas sigue una distribución normal con:
 - $$\( \mu = 165 \)$$ cm
@@ -848,7 +848,7 @@ P(159 < X < 171) \approx 0.6826
 
 ---
 
-## Ejercicio 3: Tiempo de entrega
+## 📊 Ejercicio 3: Tiempo de entrega
 
 El tiempo de entrega de un servicio sigue una distribución normal con:
 - $$\( \mu = 48 \)$$ horas
@@ -899,7 +899,7 @@ E(X) = \sum x_i P(x_i)
 
 ---
 
-##### Ejemplo
+### Ejemplo
 
 | X | P(X) |
 |---|------|
@@ -954,7 +954,7 @@ Var(X) = E(X^2) - [E(X)]^2
 
 ---
 
-## Ejercicio 1
+## 📊 Ejercicio 1
 
 Sea la variable aleatoria \(X\) con la siguiente distribución:
 
@@ -992,7 +992,7 @@ Var(X) = 1.7 - (1.1)^2 = 0.49
 
 ---
 
-## Ejercicio 2
+## 📊 Ejercicio 2
 
 Sea la variable aleatoria \(Y\):
 
@@ -1030,7 +1030,7 @@ Var(Y) = 3.8 - (1.8)^2 = 0.56
 
 ---
 
-## Ejercicio 3
+## 📊 Ejercicio 3
 
 Sea la variable aleatoria \(Z\):
 
@@ -1073,9 +1073,6 @@ Var(Z) = 16.4 - (3.8)^2 = 1.96
 - El **valor esperado** representa el promedio teórico de la variable
 - La **varianza** mide qué tan dispersos están los valores
 - Ambos conceptos son fundamentales para analizar distribuciones discretas
-
-
-## Conclusión
 
 Las variables aleatorias y las distribuciones de probabilidad son herramientas fundamentales en estadística para modelar fenómenos aleatorios.  
 Su análisis permite comprender el comportamiento de los datos y tomar mejores decisiones en contextos reales.
