@@ -136,8 +136,58 @@ Datos:
 - p = 0.05  
 
 ### Sustitución:
-P(X = 1) = C(20, 1) * (0.05)^1 * (0.95)^19  
-P(X = 1) ≈ 0.377
+## 📊 Distribución Binomial
+
+La función de probabilidad de una variable aleatoria binomial  
+\( X \sim \text{Bin}(n, p) \) está dada por:
+
+\[
+P(X = k) = \binom{n}{k} p^{k} (1 - p)^{n - k}
+\]
+
+donde:
+- \( n \): número de ensayos  
+- \( k \): número de éxitos  
+- \( p \): probabilidad de éxito  
+- \( \binom{n}{k} \): coeficiente binomial  
+
+---
+
+## Aplicación al ejercicio
+
+Se tiene:
+- \( n = 20 \)
+- \( k = 1 \)
+- \( p = 0.05 \)
+
+Entonces:
+
+\[
+P(X = 1) = \binom{20}{1} (0.05)^1 (0.95)^{19}
+\]
+
+---
+
+## Resultado
+
+\[
+P(X = 1) \approx 0.377
+\]
+
+---
+
+## Notación completa
+
+La variable aleatoria se puede expresar como:
+
+\[
+X \sim \text{Bin}(20, 0.05)
+\]
+
+\[
+P(X = 1) = \binom{20}{1} (0.05)^1 (0.95)^{19} \approx 0.377
+\]
+
 
 **Respuesta:** La probabilidad de encontrar 1 tornillo defectuoso es ≈ **0.377**.
 
@@ -152,8 +202,57 @@ Datos:
 - p = 0.5  
 
 ### Sustitución:
-P(X = 3) = C(6, 3) * (0.5)^3 * (0.5)^3  
+## Distribución Binomial
+
+La función de probabilidad de una variable aleatoria binomial  
+\( X \sim \text{Bin}(n, p) \) está dada por:
+
+\[
+P(X = k) = \binom{n}{k} p^{k} (1 - p)^{n - k}
+\]
+
+donde:
+- \( n \): número de ensayos  
+- \( k \): número de éxitos  
+- \( p \): probabilidad de éxito  
+
+---
+
+## Aplicación al ejercicio
+
+Se tiene:
+- \( n = 6 \)
+- \( k = 3 \)
+- \( p = 0.5 \)
+
+Entonces:
+
+\[
+P(X = 3) = \binom{6}{3} (0.5)^3 (0.5)^3
+\]
+
+---
+
+## Resultado
+
+\[
 P(X = 3) = 0.3125
+\]
+
+---
+
+## Notación completa
+
+La variable aleatoria se puede expresar como:
+
+\[
+X \sim \text{Bin}(6, 0.5)
+\]
+
+\[
+P(X = 3) = \binom{6}{3} (0.5)^3 (0.5)^3 = 0.3125
+\]
+
 
 **Respuesta:** La probabilidad de obtener 3 caras es **0.3125**.
 
@@ -170,8 +269,57 @@ Datos:
 - p = 0.2  
 
 ### Sustitución:
-P(X = 2) = C(12, 2) * (0.2)^2 * (0.8)^10  
-P(X = 2) ≈ 0.283
+## Distribución Binomial
+
+La función de probabilidad de una variable aleatoria binomial  
+\( X \sim \text{Bin}(n, p) \) está dada por:
+
+\[
+P(X = k) = \binom{n}{k} p^{k} (1 - p)^{n - k}
+\]
+
+donde:
+- \( n \): número de ensayos  
+- \( k \): número de éxitos  
+- \( p \): probabilidad de éxito  
+
+---
+
+## Aplicación al ejercicio
+
+Se tiene:
+- \( n = 12 \)
+- \( k = 2 \)
+- \( p = 0.2 \)
+
+Entonces:
+
+\[
+P(X = 2) = \binom{12}{2} (0.2)^2 (0.8)^{10}
+\]
+
+---
+
+## Resultado
+
+\[
+P(X = 2) \approx 0.283
+\]
+
+---
+
+## Notación completa
+
+La variable aleatoria se puede expresar como:
+
+\[
+X \sim \text{Bin}(12, 0.2)
+\]
+
+\[
+P(X = 2) = \binom{12}{2} (0.2)^2 (0.8)^{10} \approx 0.283
+\]
+
 
 **Respuesta:** La probabilidad de cerrar 2 ventas es ≈ **0.283**.
 
@@ -188,8 +336,57 @@ Datos:
 - p = 0.6  
 
 ### Sustitución:
-P(X = 4) = C(5, 4) * (0.6)^4 * (0.4)^1  
-P(X = 4) ≈ 0.2592
+## Distribución Binomial
+
+La función de probabilidad de una variable aleatoria binomial  
+\( X \sim \text{Bin}(n, p) \) está dada por:
+
+\[
+P(X = k) = \binom{n}{k} p^{k} (1 - p)^{n - k}
+\]
+
+donde:
+- \( n \): número de ensayos  
+- \( k \): número de éxitos  
+- \( p \): probabilidad de éxito  
+
+---
+
+## Aplicación al ejercicio
+
+Se tiene:
+- \( n = 5 \)
+- \( k = 4 \)
+- \( p = 0.6 \)
+
+Entonces:
+
+\[
+P(X = 4) = \binom{5}{4} (0.6)^4 (0.4)^1
+\]
+
+---
+
+## Resultado
+
+\[
+P(X = 4) \approx 0.2592
+\]
+
+---
+
+## Notación completa
+
+La variable aleatoria se puede expresar como:
+
+\[
+X \sim \text{Bin}(5, 0.6)
+\]
+
+\[
+P(X = 4) = \binom{5}{4} (0.6)^4 (0.4)^1 \approx 0.2592
+\]
+
 
 **Respuesta:** La probabilidad de que 4 clientes estén satisfechos es ≈ **0.2592**.
 
