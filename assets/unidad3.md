@@ -76,16 +76,27 @@ Modela el número de éxitos en un número fijo de ensayos independientes.
 
 ##### Fórmula
 
+La fórmula de la distribución binomial se escribe así:
+
 $$\[
 P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}
 \]$$
 
 ---
 
+Lectura:
+**"La probabilidad de que X sea igual a k es igual a n sobre k, multiplicado por p a la k, por uno menos p a la (n menos k)."**
+
+En un problema de distribución binomial, los valores clave son:
+
+n → número total de ensayos (por ejemplo, número de preguntas)
+p → probabilidad de éxito en un ensayo (por ejemplo, contestar bien)
+k → número de éxitos que queremos calcular
+
 ##### Ejemplo (Distribución Binomial)
 
-Un examen tiene 10 preguntas de opción múltiple.  
-La probabilidad de contestar correctamente una pregunta es 0.7.
+Un examen tiene 10 preguntas… 
+¿Cuál es la probabilidad de contestar correctamente 8 preguntas si la probabilidad de acertar cada una es 0.7?
 
 **Datos:**
 - $$\( n = 10 \)$$
@@ -101,6 +112,87 @@ P(X = 8) \approx 0.233
 \]$$
 
 ---
+
+### Ejemplo para entenderlo mejor
+
+**¿Cuál es la probabilidad de que saques exactamente 7 aciertos?**
+→ k sería 7
+
+**¿Cuál es la probabilidad de que aciertes todas (10)?**
+→ k sería 10
+
+**¿Cuál es la probabilidad de que solo aciertes 3?**
+→ k sería 3
+
+
+## Ejemplo 2 — Productos defectuosos
+
+Una fábrica produce tornillos con una tasa de defectos de p = 0.05.  
+Si se toman 20 tornillos al azar, ¿cuál es la probabilidad de que exactamente **1** sea defectuoso?
+
+Datos:
+- n = 20  
+- k = 1  
+- p = 0.05  
+
+### Sustitución:
+P(X = 1) = C(20, 1) * (0.05)^1 * (0.95)^19  
+P(X = 1) ≈ 0.377
+
+**Respuesta:** La probabilidad de encontrar 1 tornillo defectuoso es ≈ **0.377**.
+
+
+## Ejemplo 3 — Moneda equilibrada
+
+Se lanza una moneda 6 veces. ¿Cuál es la probabilidad de obtener exactamente **3 caras**?
+
+Datos:
+- n = 6  
+- k = 3  
+- p = 0.5  
+
+### Sustitución:
+P(X = 3) = C(6, 3) * (0.5)^3 * (0.5)^3  
+P(X = 3) = 0.3125
+
+**Respuesta:** La probabilidad de obtener 3 caras es **0.3125**.
+
+
+
+## Ejemplo 4 — Éxito en llamadas
+
+La probabilidad de que un agente cierre una venta en una llamada es 0.2.  
+Si hace 12 llamadas, ¿cuál es la probabilidad de cerrar exactamente **2** ventas?
+
+Datos:
+- n = 12  
+- k = 2  
+- p = 0.2  
+
+### Sustitución:
+P(X = 2) = C(12, 2) * (0.2)^2 * (0.8)^10  
+P(X = 2) ≈ 0.283
+
+**Respuesta:** La probabilidad de cerrar 2 ventas es ≈ **0.283**.
+
+
+
+## Ejemplo 5 — Encuesta
+
+En una encuesta, 60% de los clientes dice estar satisfecho con el servicio.  
+Si se eligen 5 clientes, ¿cuál es la probabilidad de que exactamente **4** estén satisfechos?
+
+Datos:
+- n = 5  
+- k = 4  
+- p = 0.6  
+
+### Sustitución:
+P(X = 4) = C(5, 4) * (0.6)^4 * (0.4)^1  
+P(X = 4) ≈ 0.2592
+
+**Respuesta:** La probabilidad de que 4 clientes estén satisfechos es ≈ **0.2592**.
+
 
 #### Distribución de Poisson
 
