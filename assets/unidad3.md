@@ -773,114 +773,114 @@ P(X > 85) \approx 0.1587
 
 ---
 
-## 📊 Distribución Normal
+## Distribución Normal
 
 La **distribución normal** es la distribución continua más importante en estadística.
 Se caracteriza por su forma de campana y está determinada por dos parámetros:
-- \( \mu \): media
-- \( \sigma \): desviación estándar
+- $$\( \mu \)$$: media
+- $$\( \sigma \)$$: desviación estándar
 
-### 📐 Función de densidad
+### Función de densidad
 
-\[
+$$\[
 f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
-\]
+\]$$
 
 ---
 
-## 📝 Ejercicio 1: Calificaciones altas
+## Ejercicio 1: Calificaciones altas
 
 Las calificaciones de un examen siguen una distribución normal con:
-- \( \mu = 70 \)
-- \( \sigma = 8 \)
+- $$\( \mu = 70 \)$$
+- $$\( \sigma = 8 \)$$
 
-### ❓ ¿Cuál es la probabilidad de que un estudiante obtenga una calificación **mayor a 78**?
+### ¿Cuál es la probabilidad de que un estudiante obtenga una calificación **mayor a 78**?
 
-### 🔢 Paso 1: Estandarizar la variable
+### Paso 1: Estandarizar la variable
 
-\[
+$$\[
 Z = \frac{78 - 70}{8} = 1
-\]
+\]$$
 
-### 🔢 Paso 2: Buscar el valor en la tabla Z
+### Paso 2: Buscar el valor en la tabla Z
 
-\[
+$$\[
 P(Z > 1) \approx 0.1587
-\]
+\]$$
 
-### ✅ Resultado:
+### Resultado:
 
-\[
+$$\[
 P(X > 78) \approx 0.1587
-\]
+\]$$
 
 ---
 
-## 📝 Ejercicio 2: Estatura de personas
+## Ejercicio 2: Estatura de personas
 
 La estatura de un grupo de personas sigue una distribución normal con:
-- \( \mu = 165 \) cm
-- \( \sigma = 6 \) cm
+- $$\( \mu = 165 \)$$ cm
+- $$\( \sigma = 6 \)$$ cm
 
-### ❓ ¿Cuál es la probabilidad de que una persona mida entre **159 cm y 171 cm**?
+### ¿Cuál es la probabilidad de que una persona mida entre **159 cm y 171 cm**?
 
-### 🔢 Paso 1: Calcular los valores Z
+### Paso 1: Calcular los valores Z
 
-\[
+$$\[
 Z_1 = \frac{159 - 165}{6} = -1
-\]
+\]$$
 
-\[
+$$\[
 Z_2 = \frac{171 - 165}{6} = 1
-\]
+\]$$
 
-### 🔢 Paso 2: Usar la tabla Z
+### Paso 2: Usar la tabla Z
 
-\[
+$$\[
 P(-1 < Z < 1) \approx 0.6826
-\]
+\]$$
 
-### ✅ Resultado:
+### Resultado:
 
-\[
+$$\[
 P(159 < X < 171) \approx 0.6826
-\]
+\]$$
 
 ---
 
-## 📝 Ejercicio 3: Tiempo de entrega
+## Ejercicio 3: Tiempo de entrega
 
 El tiempo de entrega de un servicio sigue una distribución normal con:
-- \( \mu = 48 \) horas
-- \( \sigma = 5 \) horas
+- $$\( \mu = 48 \)$$ horas
+- $$\( \sigma = 5 \)$$ horas
 
-### ❓ ¿Cuál es la probabilidad de que un pedido tarde **menos de 43 horas**?
+### ¿Cuál es la probabilidad de que un pedido tarde **menos de 43 horas**?
 
-### 🔢 Paso 1: Estandarizar
+### Paso 1: Estandarizar
 
-\[
+$$\[
 Z = \frac{43 - 48}{5} = -1
-\]
+\]$$
 
-### 🔢 Paso 2: Buscar en la tabla Z
+### Paso 2: Buscar en la tabla Z
 
-\[
+$$\[
 P(Z < -1) \approx 0.1587
-\]
+\]$$
 
-### ✅ Resultado:
+### Resultado:
 
-\[
+$$\[
 P(X < 43) \approx 0.1587
-\]
+\]$$
 
 ---
 
-## 📌 Conclusión
+## Conclusión
 
 Para resolver problemas con distribución normal:
-1. Identifica \( \mu \) y \( \sigma \)
-2. Convierte la variable a \( Z \)
+1. Identifica $$\( \mu \)$$ y $$\( \sigma \)$$
+2. Convierte la variable a $$\( Z \)$$
 3. Usa la tabla Z
 4. Interpreta el resultado
 
@@ -928,6 +928,152 @@ Var(X) = E(X^2) - [E(X)]^2
 - El área bajo la curva representa la probabilidad
 
 ---
+
+## 3.3 Exploración de distribuciones discretas  
+### Valor esperado y varianza
+
+---
+
+## Valor esperado (media)
+
+Para una variable aleatoria discreta, el **valor esperado** se define como:
+
+$$\[
+E(X) = \sum x_i P(x_i)
+\]$$
+
+---
+
+## Varianza
+
+La **varianza** mide la dispersión de los valores respecto a la media y se define como:
+
+$$\[
+Var(X) = E(X^2) - [E(X)]^2
+\]$$
+
+---
+
+## Ejercicio 1
+
+Sea la variable aleatoria \(X\) con la siguiente distribución:
+
+| X | P(X) |
+|---|------|
+| 0 | 0.2  |
+| 1 | 0.5  |
+| 2 | 0.3  |
+
+### Cálculo del valor esperado
+
+$$\[
+E(X) = (0)(0.2) + (1)(0.5) + (2)(0.3)
+\]$$
+
+$$\[
+E(X) = 0 + 0.5 + 0.6 = 1.1
+\]$$
+
+### Cálculo de \(E(X^2)\)
+
+$$\[
+E(X^2) = (0^2)(0.2) + (1^2)(0.5) + (2^2)(0.3)
+\]$$
+
+$$\[
+E(X^2) = 0 + 0.5 + 1.2 = 1.7
+\]$$
+
+### Varianza
+
+$$\[
+Var(X) = 1.7 - (1.1)^2 = 0.49
+\]$$
+
+---
+
+## Ejercicio 2
+
+Sea la variable aleatoria \(Y\):
+
+| Y | P(Y) |
+|---|------|
+| 1 | 0.4  |
+| 2 | 0.4  |
+| 3 | 0.2  |
+
+### Valor esperado
+
+$$\[
+E(Y) = (1)(0.4) + (2)(0.4) + (3)(0.2)
+\]$$
+
+$$\[
+E(Y) = 0.4 + 0.8 + 0.6 = 1.8
+\]$$
+
+### $$\(E(Y^2)\)$$
+
+$$\[
+E(Y^2) = (1^2)(0.4) + (2^2)(0.4) + (3^2)(0.2)
+\]$$
+
+$$\[
+E(Y^2) = 0.4 + 1.6 + 1.8 = 3.8
+\]$$
+
+### Varianza
+
+$$\[
+Var(Y) = 3.8 - (1.8)^2 = 0.56
+\]$$
+
+---
+
+## Ejercicio 3
+
+Sea la variable aleatoria \(Z\):
+
+| Z | P(Z) |
+|---|------|
+| 2 | 0.3  |
+| 4 | 0.5  |
+| 6 | 0.2  |
+
+### Valor esperado
+
+$$\[
+E(Z) = (2)(0.3) + (4)(0.5) + (6)(0.2)
+\]$$
+
+$$\[
+E(Z) = 0.6 + 2.0 + 1.2 = 3.8
+\]$$
+
+### $$\(E(Z^2)\)$$
+
+$$\[
+E(Z^2) = (2^2)(0.3) + (4^2)(0.5) + (6^2)(0.2)
+\]$$
+
+$$\[
+E(Z^2) = 1.2 + 8.0 + 7.2 = 16.4
+\]$$
+
+### Varianza
+
+$$\[
+Var(Z) = 16.4 - (3.8)^2 = 1.96
+\]$$
+
+---
+
+## Conclusión
+
+- El **valor esperado** representa el promedio teórico de la variable
+- La **varianza** mide qué tan dispersos están los valores
+- Ambos conceptos son fundamentales para analizar distribuciones discretas
+
 
 ## Conclusión
 
