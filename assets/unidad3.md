@@ -170,9 +170,9 @@ Un inspector revisa componentes electrónicos. Cada componente tiene una probabi
 Se inspeccionan \(n = 4\) componentes.
 
 Sea:  
-##\[
+$$\[
 X = \text{número de componentes defectuosos}
-\]##
+\]$$
 
 ### **a) Probabilidad de que fallen exactamente 2**
 
