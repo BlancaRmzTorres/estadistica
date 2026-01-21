@@ -122,6 +122,8 @@ $$\[
 E[X] = \sum x \cdot P(X=x)
 \]$$
 
+**La fórmula se le la esperanza de X es igual a la suma de cada valor x multiplicado por la probabilidad de que X sea igual a x**
+
 $$\[
 E[X] = 0(0.1) + 1(0.3) + 2(0.4) + 3(0.2)
 \]$$
