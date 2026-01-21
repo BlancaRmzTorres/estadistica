@@ -158,6 +158,11 @@ Var(X) = 3.7 - (1.7)^2 = 3.7 - 2.89 = 0.81
 
 **Varianza: $$\(Var(X) = 0.81\)$$**
 
+**Interpretación:**
+- En promedio, la tienda recibe 1.7 llamadas por día.
+- La mayor parte del tiempo, la tienda recibirá entre 1 y 2 llamadas, y ese es el nivel típico de demanda.
+- Las llamadas recibidas al día son relativamente consistentes.
+
 ---
 
 # 📊 Ejercicio 2: Variable Aleatoria Discreta (Binomial)  
