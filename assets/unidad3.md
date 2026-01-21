@@ -50,10 +50,226 @@ X \in [0, \infty)
 
 ---
 
-### Función de probabilidad
+# Diferencias entre Variable Aleatoria Discreta y Variable Aleatoria Continua
 
-- Variables discretas: **función de masa de probabilidad (fmp)**
-- Variables continuas: **función de densidad de probabilidad (fdp)**
+## Variable Aleatoria Discreta
+Una **variable aleatoria discreta** es aquella que solo puede tomar **valores específicos y enumerables**, normalmente finitos o infinitos contables.
+
+### Características
+- Toma valores **puntuales** (generalmente enteros).
+- Sus valores pueden **enumerarse**.
+- Representa **conteos**.
+- La probabilidad se asigna a **cada valor individual**.
+- Se utiliza una **función de probabilidad** (*Probability Mass Function*, PMF).
+
+### Ejemplos
+- Número de llamadas en un día.
+- Resultado de un dado (1 a 6).
+- Número de fallas en una máquina.
+
+---
+
+## Variable Aleatoria Continua
+Una **variable aleatoria continua** puede tomar **cualquier valor dentro de un intervalo**, es decir, **infinitos valores no contables**.
+
+### Características
+- Representa **mediciones**.
+- La probabilidad no se asigna a un valor exacto, sino a **intervalos**.
+- Se describe mediante una **función de densidad** (*Probability Density Function*, PDF).
+- La probabilidad de que tome un valor exacto es **0**.
+
+### Ejemplos
+- Peso de una persona.
+- Tiempo de espera.
+- Temperatura ambiente.
+
+---
+
+# Tabla Comparativa
+
+| Característica | Variable Aleatoria Discreta | Variable Aleatoria Continua |
+|----------------|------------------------------|------------------------------|
+| Tipo de valores | Específicos, enumerables | Infinitos dentro de intervalos |
+| Naturaleza | Conteos | Mediciones |
+| Probabilidad | A cada valor puntual | A intervalos |
+| Función asociada | PMF (función de probabilidad) | PDF (función de densidad) |
+| Ejemplos | Resultado de un dado, número de alumnos | Peso, tiempo, temperatura |
+
+---
+
+# 📊 Ejercicio 1: Variable Aleatoria Discreta  
+Una tienda recibe llamadas de servicio al día. Sea la variable aleatoria  
+\( X = \) número de llamadas por día.  
+Se tiene la siguiente distribución de probabilidad:
+
+| x (llamadas) | 0 | 1 | 2 | 3 |
+|--------------|---|---|---|---|
+| P(X = x)     | 0.1 | 0.3 | 0.4 | 0.2 |
+
+### **a) Verificar que es una distribución válida**
+
+Se comprueba que la suma de probabilidades sea 1:
+
+$$\[
+0.1 + 0.3 + 0.4 + 0.2 = 1
+\]$$
+
+Sí es una distribución válida.
+
+### **b) Calcular la esperanza \(E[X]\)**
+
+$$\[
+E[X] = \sum x \cdot P(X=x)
+\]$$
+
+$$\[
+E[X] = 0(0.1) + 1(0.3) + 2(0.4) + 3(0.2)
+\]$$
+
+$$\[
+E[X] = 0 + 0.3 + 0.8 + 0.6 = 1.7
+\]$$
+
+**Esperanza: \(E[X] = 1.7\) llamadas por día**
+
+### **c) Calcular la varianza \(Var(X)\)**
+
+Primero calculamos $$\(E[X^2]\)$$:
+
+$$\[
+E[X^2] = 0^2(0.1) + 1^2(0.3) + 2^2(0.4) + 3^2(0.2)
+\]$$
+
+$$\[
+E[X^2] = 0 + 0.3 + 1.6 + 1.8 = 3.7
+\]$$
+
+Ahora aplicamos:
+
+$$\[
+Var(X) = E[X^2] - (E[X])^2
+\]$$
+
+$$\[
+Var(X) = 3.7 - (1.7)^2 = 3.7 - 2.89 = 0.81
+\]$$
+
+**Varianza: $$\(Var(X) = 0.81\)$$**
+
+---
+
+# 📊 Ejercicio 2: Variable Aleatoria Discreta (Binomial)  
+Un inspector revisa componentes electrónicos. Cada componente tiene una probabilidad de falla de \(p = 0.1\).  
+Se inspeccionan \(n = 4\) componentes.
+
+Sea:  
+##\[
+X = \text{número de componentes defectuosos}
+\]##
+
+### **a) Probabilidad de que fallen exactamente 2**
+
+Usamos la distribución binomial:
+
+$$\[
+P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}
+\]$$
+
+Sustituimos:
+
+$$\[
+P(X=2) = \binom{4}{2} (0.1)^2 (0.9)^2
+\]$$
+
+$$\[
+= 6 \cdot 0.01 \cdot 0.81
+\]$$
+
+$$\[
+= 6 \cdot 0.0081 = 0.0486
+\]$$
+
+**Probabilidad: 0.0486**
+
+### **b) Probabilidad de que falle al menos 1**
+
+$$\[
+P(X \ge 1) = 1 - P(X=0)
+\]$$
+
+$$\[
+P(X=0) = (0.9)^4 = 0.6561
+\]$$
+
+$$\[
+P(X \ge 1) = 1 - 0.6561 = 0.3439
+\]$$
+
+**Probabilidad: 0.3439**
+
+---
+
+## Ejercicio 3: Variable Aleatoria Continua  
+La variable aleatoria continua \(X\) tiene la siguiente función de densidad:
+
+$$\[
+f(x) = \begin{cases}
+2x & 0 \le x \le 1 \\
+0 & \text{otro caso}
+\end{cases}
+\]$$
+
+### **a) Verificar que es una función de densidad válida**
+
+Debe cumplirse:
+
+$$\[
+\int_0^1 2x \, dx = 1
+\]$$
+
+Calculamos:
+
+$$\[
+\int_0^1 2x \, dx = \left[ x^2 \right]_0^1 = 1^2 - 0 = 1
+\]$$
+
+Sí es una PDF válida.
+
+### **b) Calcular la probabilidad $$\(P(0.2 \le X \le 0.6)\)$$**
+
+$$\[
+P(0.2 \le X \le 0.6) = \int_{0.2}^{0.6} 2x \, dx
+\]$$
+
+$$\[
+= \left[ x^2 \right]_{0.2}^{0.6}
+\]$$
+
+$$\[
+= (0.6)^2 - (0.2)^2
+\]$$
+
+$$\[
+= 0.36 - 0.04 = 0.32
+\]$$
+
+**Probabilidad: 0.32**
+
+### **c) Calcular la esperanza $$\(E[X]\)$$**
+
+$$\[
+E[X] = \int_0^1 x(2x) \, dx
+\]$$
+
+$$\[
+E[X] = \int_0^1 2x^2 \, dx
+\]$$
+
+$$\[
+= \left[ \frac{2x^3}{3} \right]_0^1 = \frac{2}{3}
+\]$$
+
+**Esperanza: $$\(E[X] = \frac{2}{3}\)$$**
 
 ---
 
