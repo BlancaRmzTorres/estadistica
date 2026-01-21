@@ -640,6 +640,107 @@ P(X < 10) = \frac{10 - 5}{15 - 5} = 0.5
 
 ---
 
+## 📊 Distribución Uniforme Continua
+
+En una **distribución uniforme continua**, todos los valores del intervalo  
+\([a, b]\) tienen la **misma probabilidad**.
+
+### 📐 Función de densidad
+
+\[
+f(x) =
+\begin{cases}
+\frac{1}{b - a}, & a \le x \le b \\
+0, & \text{en otro caso}
+\end{cases}
+\]
+
+---
+
+## 📝 Ejercicio 1: Tiempo de espera
+
+El tiempo de espera de un cliente en una tienda está distribuido uniformemente  
+entre **5 y 15 minutos**.
+
+### ❓ ¿Cuál es la probabilidad de que el cliente espere **menos de 10 minutos**?
+
+### 🔢 Datos:
+- \(a = 5\)
+- \(b = 15\)
+
+### 📐 Cálculo:
+
+\[
+P(X < 10) = \frac{10 - 5}{15 - 5}
+\]
+
+### ✅ Resultado:
+
+\[
+P(X < 10) = \frac{5}{10} = 0.5
+\]
+
+---
+
+## 📝 Ejercicio 2: Temperatura
+
+La temperatura durante el día varía de forma uniforme entre  
+**20 °C y 30 °C**.
+
+### ❓ ¿Cuál es la probabilidad de que la temperatura sea **mayor a 25 °C**?
+
+### 🔢 Datos:
+- \(a = 20\)
+- \(b = 30\)
+
+### 📐 Cálculo:
+
+\[
+P(X > 25) = \frac{30 - 25}{30 - 20}
+\]
+
+### ✅ Resultado:
+
+\[
+P(X > 25) = \frac{5}{10} = 0.5
+\]
+
+---
+
+## 📝 Ejercicio 3: Llegada de un autobús
+
+El tiempo de llegada de un autobús está distribuido uniformemente  
+entre **0 y 20 minutos**.
+
+### ❓ ¿Cuál es la probabilidad de que el autobús llegue entre  
+**5 y 12 minutos**?
+
+### 🔢 Datos:
+- \(a = 0\)
+- \(b = 20\)
+
+### 📐 Cálculo:
+
+\[
+P(5 \le X \le 12) = \frac{12 - 5}{20 - 0}
+\]
+
+### ✅ Resultado:
+
+\[
+P(5 \le X \le 12) = \frac{7}{20} = 0.35
+\]
+
+---
+
+## 📌 Conclusión
+
+En la distribución uniforme continua:
+- Todas las longitudes de subintervalos tienen la misma probabilidad
+- La probabilidad se calcula como la **razón de longitudes**
+- No se requieren integrales para casos simples
+
+
 #### Distribución Normal
 
 Es la distribución continua más importante en estadística.
@@ -671,6 +772,118 @@ P(X > 85) \approx 0.1587
 \]$$
 
 ---
+
+## 📊 Distribución Normal
+
+La **distribución normal** es la distribución continua más importante en estadística.
+Se caracteriza por su forma de campana y está determinada por dos parámetros:
+- \( \mu \): media
+- \( \sigma \): desviación estándar
+
+### 📐 Función de densidad
+
+\[
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+\]
+
+---
+
+## 📝 Ejercicio 1: Calificaciones altas
+
+Las calificaciones de un examen siguen una distribución normal con:
+- \( \mu = 70 \)
+- \( \sigma = 8 \)
+
+### ❓ ¿Cuál es la probabilidad de que un estudiante obtenga una calificación **mayor a 78**?
+
+### 🔢 Paso 1: Estandarizar la variable
+
+\[
+Z = \frac{78 - 70}{8} = 1
+\]
+
+### 🔢 Paso 2: Buscar el valor en la tabla Z
+
+\[
+P(Z > 1) \approx 0.1587
+\]
+
+### ✅ Resultado:
+
+\[
+P(X > 78) \approx 0.1587
+\]
+
+---
+
+## 📝 Ejercicio 2: Estatura de personas
+
+La estatura de un grupo de personas sigue una distribución normal con:
+- \( \mu = 165 \) cm
+- \( \sigma = 6 \) cm
+
+### ❓ ¿Cuál es la probabilidad de que una persona mida entre **159 cm y 171 cm**?
+
+### 🔢 Paso 1: Calcular los valores Z
+
+\[
+Z_1 = \frac{159 - 165}{6} = -1
+\]
+
+\[
+Z_2 = \frac{171 - 165}{6} = 1
+\]
+
+### 🔢 Paso 2: Usar la tabla Z
+
+\[
+P(-1 < Z < 1) \approx 0.6826
+\]
+
+### ✅ Resultado:
+
+\[
+P(159 < X < 171) \approx 0.6826
+\]
+
+---
+
+## 📝 Ejercicio 3: Tiempo de entrega
+
+El tiempo de entrega de un servicio sigue una distribución normal con:
+- \( \mu = 48 \) horas
+- \( \sigma = 5 \) horas
+
+### ❓ ¿Cuál es la probabilidad de que un pedido tarde **menos de 43 horas**?
+
+### 🔢 Paso 1: Estandarizar
+
+\[
+Z = \frac{43 - 48}{5} = -1
+\]
+
+### 🔢 Paso 2: Buscar en la tabla Z
+
+\[
+P(Z < -1) \approx 0.1587
+\]
+
+### ✅ Resultado:
+
+\[
+P(X < 43) \approx 0.1587
+\]
+
+---
+
+## 📌 Conclusión
+
+Para resolver problemas con distribución normal:
+1. Identifica \( \mu \) y \( \sigma \)
+2. Convierte la variable a \( Z \)
+3. Usa la tabla Z
+4. Interpreta el resultado
+
 
 ## 3.3 Exploración de distribuciones discretas y análisis de distribuciones continuas
 
