@@ -266,6 +266,62 @@ $$\[
 P(X = 8) = \binom{10}{8}(0.7)^8(0.3)^2
 \]$$
 
+## 1. Fórmula del coeficiente binomial
+
+$$
+\binom{n}{x} = \frac{n!}{x!(n-x)!}
+$$
+
+Sustituyendo los valores:
+
+$$
+\binom{10}{8} = \frac{10!}{8!(10-8)!}
+$$
+
+---
+
+## 2. Desarrollo paso a paso
+
+Calculamos el denominador:
+
+$$
+8!(2!) = 8! \cdot 2
+$$
+
+Ahora sustituimos:
+
+$$
+\frac{10!}{8! \cdot 2!}
+$$
+
+Expresamos `10!`:
+
+$$
+10! = 10 \cdot 9 \cdot 8!
+$$
+
+Entonces:
+
+$$
+\frac{10 \cdot 9 \cdot 8!}{8! \cdot 2}
+$$
+
+Se cancela `8!`:
+
+$$
+\frac{90}{2} = 45
+$$
+
+---
+
+## 3. Resultado final
+
+$$
+\binom{10}{8} = 45
+$$
+
+---
+
 $$\[
 P(X = 8) \approx 0.233
 \]$$
@@ -324,6 +380,86 @@ P(X = 1) = \binom{20}{1} (0.05)^1 (0.95)^{19}
 \]$$
 
 ---
+
+# Coeficiente Binomial en la Distribución Binomial
+
+La expresión:
+
+$$
+\binom{20}{1}
+$$
+
+se llama **coeficiente binomial** y se lee como **“20 sobre 1”**.  
+Es un elemento fundamental de la **distribución binomial**.
+
+---
+
+## 1. ¿Qué representa?
+
+En una distribución binomial:
+
+- `n`: número total de ensayos  
+- `x`: número de éxitos  
+
+El coeficiente binomial indica cuántas formas distintas existen de obtener `x` éxitos en `n` ensayos.
+
+En este caso:
+
+- `n = 20`  
+- `x = 1`
+
+---
+
+## 2. Fórmula del coeficiente binomial
+
+$$
+\binom{n}{x} = \frac{n!}{x!(n-x)!}
+$$
+
+Sustituyendo los valores:
+
+$$
+\binom{20}{1} = \frac{20!}{1!(20-1)!}
+$$
+
+---
+
+## 3. Desarrollo paso a paso
+
+$$
+\frac{20!}{1! \cdot 19!}
+$$
+
+Sabemos que:
+
+- `1! = 1`
+- `20! = 20 \cdot 19!`
+
+Entonces:
+
+$$
+\frac{20 \cdot 19!}{1 \cdot 19!}
+$$
+
+Se cancela `19!`:
+
+$$
+= 20
+$$
+
+---
+
+## 4. Resultado final
+
+$$
+\binom{20}{1} = 20
+$$
+
+---
+
+**Conclusión**  
+El coeficiente binomial calcula el número de combinaciones posibles y es esencial para determinar probabilidades en experimentos binomiales.
+
 
 ## Resultado
 
