@@ -979,9 +979,9 @@ $$
 
 ## 6. Resultado final
 
-$$
-P(X = 3) \approx 0.1804
-$$
+ $$
+  P(X = 3) \approx 0.1804
+ $$
 ---
 
 ## 📊 Ejercicio 2: Errores de escritura
