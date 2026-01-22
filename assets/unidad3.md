@@ -799,7 +799,7 @@ P(X = 4) = \binom{5}{4} (0.6)^4 (0.4)^1 \approx 0.2592
 **Respuesta:** La probabilidad de que 4 clientes estén satisfechos es ≈ **0.2592**.
 
 
-#### Distribución de Poisson
+## Distribución de Poisson
 
 Modela el número de eventos que ocurren en un intervalo fijo de tiempo o espacio.
 
