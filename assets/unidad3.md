@@ -524,6 +524,40 @@ P(X = 3) = \binom{6}{3} (0.5)^3 (0.5)^3
 
 ---
 
+## Desarrollo paso a paso
+
+$$
+\frac{6!}{3! \cdot 3!}
+$$
+
+Calculamos los factoriales:
+
+- \(6! = 6 \cdot 5 \cdot 4 \cdot 3!\)
+
+Entonces:
+
+$$
+\frac{6 \cdot 5 \cdot 4 \cdot 3!}{3! \cdot 3!}
+$$
+
+Se cancela un \(3!\):
+
+$$
+\frac{6 \cdot 5 \cdot 4}{3 \cdot 2 \cdot 1}
+$$
+
+$$
+= \frac{120}{6} = 20
+$$
+
+---
+
+## Resultado final
+
+$$
+\binom{6}{3} = 20
+$$
+
 ## Resultado
 
 $$\[
@@ -589,6 +623,49 @@ P(X = 2) = \binom{12}{2} (0.2)^2 (0.8)^{10}
 
 ---
 
+$$
+\binom{12}{2} = \frac{12!}{2!(12-2)!}
+$$
+
+---
+
+## Desarrollo paso a paso
+
+$$
+\frac{12!}{2! \cdot 10!}
+$$
+
+Expresamos `12!`:
+
+$$
+12! = 12 \cdot 11 \cdot 10!
+$$
+
+Entonces:
+
+$$
+\frac{12 \cdot 11 \cdot 10!}{2! \cdot 10!}
+$$
+
+Se cancela `10!`:
+
+$$
+\frac{12 \cdot 11}{2}
+$$
+
+$$
+= \frac{132}{2} = 66
+$$
+
+---
+
+## Resultado final
+
+$$
+\binom{12}{2} = 66
+$$
+
+
 ## Resultado
 
 $$\[
@@ -653,6 +730,50 @@ P(X = 4) = \binom{5}{4} (0.6)^4 (0.4)^1
 \]$$
 
 ---
+
+$$
+\binom{n}{x} = \frac{n!}{x!(n-x)!}
+$$
+
+Sustituyendo valores:
+
+$$
+\binom{5}{4} = \frac{5!}{4!(5-4)!}
+$$
+
+---
+
+## Desarrollo paso a paso
+
+$$
+\frac{5!}{4! \cdot 1!}
+$$
+
+Expresamos `5!`:
+
+$$
+5! = 5 \cdot 4!
+$$
+
+Entonces:
+
+$$
+\frac{5 \cdot 4!}{4! \cdot 1}
+$$
+
+Se cancela `4!`:
+
+$$
+= 5
+$$
+
+---
+
+## Resultado final
+
+$$
+\binom{5}{4} = 5
+$$
 
 ## Resultado
 
