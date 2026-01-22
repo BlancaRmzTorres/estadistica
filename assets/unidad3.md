@@ -919,11 +919,69 @@ $$\[
 P(X = 3) = \frac{e^{-2}2^{3}}{3!}
 \]$$
 
-### Resultado:
-$$\[
-P(X = 3) \approx 0.1804
-\]$$
+## 2. Sustitución en la fórmula
 
+Sustituimos los valores en la fórmula de Poisson:
+
+$$
+P(X = 3) = \frac{e^{-2} \cdot 2^3}{3!}
+$$
+
+---
+
+## 3. Cálculo de cada componente
+
+### a) Potencia
+
+$$
+2^3 = 8
+$$
+
+---
+
+### b) Factorial
+
+$$
+3! = 3 \cdot 2 \cdot 1 = 6
+$$
+
+---
+
+### c) Exponencial
+
+$$
+e^{-2} \approx 0.135335
+$$
+
+---
+
+## 4. Sustitución de valores numéricos
+
+$$
+P(X = 3) = \frac{0.135335 \cdot 8}{6}
+$$
+
+Multiplicamos el numerador:
+
+$$
+0.135335 \cdot 8 = 1.08268
+$$
+
+---
+
+## 5. División final
+
+$$
+P(X = 3) = \frac{1.08268}{6} \approx 0.1804
+$$
+
+---
+
+## 6. Resultado final
+
+$$
+P(X = 3) \approx 0.1804
+$$
 ---
 
 ## 📊 Ejercicio 2: Errores de escritura
@@ -936,16 +994,49 @@ Un documento tiene en promedio **1 error por página**.
 - $$\(\lambda = 1\)$$
 - $$\(k = 0\)$$
 
-### Cálculo:
-$$\[
-P(X = 0) = \frac{e^{-1}1^{0}}{0!}
-\]$$
+### a) Potencia
 
-### Resultado:
-$$\[
+$$
+1^0 = 1
+$$
+
+---
+
+### b) Factorial
+
+$$
+0! = 1
+$$
+
+---
+
+### c) Exponencial
+
+$$
+e^{-1} \approx 0.367879
+$$
+
+---
+
+## Sustitución de valores numéricos
+
+$$
+P(X = 0) = \frac{0.367879 \cdot 1}{1}
+$$
+
+---
+
+## Resultado final
+
+$$
 P(X = 0) \approx 0.3679
-\]$$
+$$
 
+---
+
+## Interpretación
+
+La probabilidad de que una página **no tenga errores** es aproximadamente **36.79%**.
 ---
 
 ## 📊 Ejercicio 3: Accidentes de tránsito
@@ -963,10 +1054,95 @@ $$\[
 P(X = 2) = \frac{e^{-4}4^{2}}{2!}
 \]$$
 
-### Resultado:
-$$\[
+# Distribución de Poisson – Probabilidad de 2 accidentes
+
+En una avenida ocurren en promedio **4 accidentes por mes**.  
+Se desea calcular la probabilidad de que ocurran **exactamente 2 accidentes** en un mes.
+
+---
+
+## Fórmula de la distribución de Poisson
+
+$$
+P(X = k) = \frac{e^{-\lambda}\lambda^k}{k!}
+$$
+
+---
+
+## Datos
+
+- \( \lambda = 4 \) (promedio de accidentes por mes)
+- \( k = 2 \) (número de accidentes)
+
+---
+
+## Sustitución en la fórmula
+
+$$
+P(X = 2) = \frac{e^{-4} \cdot 4^2}{2!}
+$$
+
+---
+
+## Cálculo de cada componente
+
+### a) Potencia
+
+$$
+4^2 = 16
+$$
+
+---
+
+### b) Factorial
+
+$$
+2! = 2 \cdot 1 = 2
+$$
+
+---
+
+### c) Exponencial
+
+$$
+e^{-4} \approx 0.018315
+$$
+
+---
+
+## Sustitución de valores numéricos
+
+$$
+P(X = 2) = \frac{0.018315 \cdot 16}{2}
+$$
+
+Multiplicamos el numerador:
+
+$$
+0.018315 \cdot 16 = 0.29304
+$$
+
+---
+
+## División final
+
+$$
+P(X = 2) = \frac{0.29304}{2} \approx 0.1465
+$$
+
+---
+
+## Resultado final
+
+$$
 P(X = 2) \approx 0.1465
-\]$$
+$$
+
+---
+
+## Interpretación
+
+La probabilidad de que ocurran **exactamente 2 accidentes en un mes**, cuando en promedio ocurren **4**, es aproximadamente **14.65%**
 
 ---
 
@@ -980,39 +1156,67 @@ A una tienda llegan en promedio **6 clientes por hora**.
 - $$\(\lambda = 6\)$$
 - $$\(k = 5\)$$
 
-### Cálculo:
-$$\[
-P(X = 5) = \frac{e^{-6}6^{5}}{5!}
-\]$$
+## Cálculo de cada componente
 
-### Resultado:
-$$\[
+### a) Potencia
+
+$$
+6^5 = 7776
+$$
+
+---
+
+### b) Factorial
+
+$$
+5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120
+$$
+
+---
+
+### c) Exponencial
+
+$$
+e^{-6} \approx 0.002479
+$$
+
+---
+
+## Sustitución de valores numéricos
+
+$$
+P(X = 5) = \frac{0.002479 \cdot 7776}{120}
+$$
+
+Multiplicamos el numerador:
+
+$$
+0.002479 \cdot 7776 \approx 19.277
+$$
+
+---
+
+## División final
+
+$$
+P(X = 5) = \frac{19.277}{120} \approx 0.1606
+$$
+
+---
+
+## Resultado final
+
+$$
 P(X = 5) \approx 0.1606
-\]$$
+$$
 
 ---
 
-## 📊 Ejercicio 5: Fallas en una máquina
+## Interpretación
 
-Una máquina presenta en promedio **0.5 fallas por día**.
-
-### ¿Cuál es la probabilidad de que ocurra exactamente 1 falla en un día?
-
-### Datos:
-- $$\(\lambda = 0.5\)$$
-- $$\(k = 1\)$$
-
-### Cálculo:
-$$\[
-P(X = 1) = \frac{e^{-0.5}0.5^{1}}{1!}
-\]$$
-
-### Resultado:
-$$\[
-P(X = 1) \approx 0.3033
-\]$$
-
+La probabilidad de que lleguen **exactamente 5 clientes en una hora**, cuando en promedio llegan **6**, es aproximadamente **16.06%**.
 ---
+
 
 ## Conclusión
 
