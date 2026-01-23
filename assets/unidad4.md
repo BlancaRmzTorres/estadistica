@@ -365,3 +365,16 @@ else:
 | Valores por defecto          | Evitar error cuando falta una clave                                         | `dic.get("clave", defecto)`            | `persona.get("edad", "N/D")`              |
 | Limpiar diccionario          | Vaciar todas las entradas                                                   | `dic.clear()`                          | `persona.clear()`                         |
 
+
+### 4.4 Datos temporales ###
+Los datos temporales permiten trabajar con fechas y horas, siendo fundamentales para:
+
+- Registros
+- Eventos
+- Control de tiempos
+
+### Incluyen: ###
+
+- Fecha (date)
+- Hora (time)
+- Fecha y hora (datetime)
