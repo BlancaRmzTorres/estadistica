@@ -480,7 +480,7 @@ print("Convertido a UTC:", ahora_utc)
 ```
 
 ### 5) Extra: zoneinfo (zonas reales con horario de verano) ###
-``python
+```python
 from datetime import datetime
 from zoneinfo import ZoneInfo  # Python 3.9+
 
@@ -493,5 +493,5 @@ print("CDMX:", ahora_mx)
 # Convertir a otra zona
 ahora_ny = ahora_mx.astimezone(ny)
 print("Nueva York:", ahora_ny)
-``
+```
 
