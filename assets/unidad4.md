@@ -1,7 +1,4 @@
 # TIPOS DE DATOS Y ALGORITMOS APLICADOS I  
-**LIA05 – Ciclo Escolar**  
-**Clave de la Asignatura:** ___________
-
 ---
 
 ## 4.1 Números y secuencias
