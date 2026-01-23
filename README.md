@@ -16,6 +16,12 @@
 - 3.1 Definición y características de variables aleatorias.
 - 3.2 Distribuciones discretas y continuas de probabilidad.
 - 3.3 Exploración de distribuciones discretas y análisis de distribuciones continuas.
+
+#### 4. TIPOS DE DATOS Y ALGORITMOS APLICADOS I](assets/unidad4.md)
+- 4.1 Números y secuencias.
+- 4.2 Conjuntos y cadenas de caracteres.
+- 4.3 Diccionarios y booleanos.
+- 4.4 Datos temporales.
 _______________
 
 #### Referencias bibliográficas (APA)
