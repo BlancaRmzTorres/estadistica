@@ -10,14 +10,14 @@ Los **números** son uno de los tipos de datos fundamentales en programación y 
 **Tipos de números más comunes:**
 - **Enteros (int):** números sin parte decimal.
 - **Reales (float):** números con decimales.
-- **Complejos (complex):** números con parte real e imaginaria.
+- **Complejos (complex):** números con parte real e imaginaria. (numero_complejo = 3 + 4j)
 
 Una **secuencia** es una colección ordenada de elementos numéricos, donde cada elemento ocupa una posición específica.
 
 Ejemplos de secuencias:
-- Arreglos (listas)
-- Rangos
-- Series numéricas
+- Arreglos (listas) | [10, 20, 30, 40]
+- Rangos | range(inicio, fin, paso)
+- Series numéricas | \[a_n = a_1 + (n - 1)d\]
 
 ### Ejemplo en Python
 
