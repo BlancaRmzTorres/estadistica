@@ -378,3 +378,120 @@ Los datos temporales permiten trabajar con fechas y horas, siendo fundamentales 
 - Fecha (date)
 - Hora (time)
 - Fecha y hora (datetime)
+
+### 1) Fecha (date) ###
+
+```python
+from datetime import date
+
+# Fecha actual
+hoy = date.today()
+print("Hoy:", hoy)  # Ej: 2026-01-22
+
+# Crear una fecha específica: año, mes, día
+cumple = date(1990, 7, 15)
+print("Cumpleaños:", cumple)  # 1990-07-15
+
+# Componentes individuales
+print("Año:", hoy.year)
+print("Mes:", hoy.month)
+print("Día:", hoy.day)
+
+# Formatear fecha (a texto)
+print("Formateado:", hoy.strftime("%d/%m/%Y"))  # Ej: 22/01/2026
+
+# Parsear texto a fecha
+from datetime import datetime
+texto = "31-12-2025"
+fecha_parseada = datetime.strptime(texto, "%d-%m-%Y").date()
+print("Fecha parseada:", fecha_parseada)  # 2025-12-31
+```
+
+### 2) Hora (time) ###
+```python
+from datetime import time
+
+# Crear una hora: hora, minuto, segundo, microsegundo (opcional)
+hora_simple = time(14, 30)
+hora_completa = time(14, 30, 45, 123456)
+
+print("Hora simple:", hora_simple)       # 14:30:00
+print("Hora completa:", hora_completa)   # 14:30:45.123456
+
+# Componentes individuales
+print("Hora:", hora_completa.hour)
+print("Minuto:", hora_completa.minute)
+print("Segundo:", hora_completa.second)
+print("Microsegundo:", hora_completa.microsecond)
+
+# Formatear hora
+print("Formateada:", hora_completa.strftime("%H:%M:%S"))  # 14:30:45
+```
+
+###  3) Fecha y hora (datetime) ###
+```python
+from datetime import datetime, timedelta, timezone
+
+# Fecha y hora actual (naive, sin zona horaria)
+ahora = datetime.now()
+print("Ahora (local):", ahora)
+
+# Fecha y hora actual en UTC (con tzinfo)
+ahora_utc = datetime.now(timezone.utc)
+print("Ahora (UTC):", ahora_utc)
+
+# Crear un datetime específico
+evento = datetime(2026, 2, 1, 9, 45, 0)
+print("Evento:", evento)  # 2026-02-01 09:45:00
+
+# Formatear datetime
+print("Formato legible:", evento.strftime("%d/%m/%Y %I:%M %p"))  # 01/02/2026 09:45 AM
+
+# Parsear texto a datetime
+texto_dt = "2026-03-10 18:20:00"
+dt_parseado = datetime.strptime(texto_dt, "%Y-%m-%d %H:%M:%S")
+print("Datetime parseado:", dt_parseado)
+
+# Aritmética con timedelta (sumas/restas)
+inicio = datetime(2026, 1, 1, 8, 0, 0)
+duracion = timedelta(hours=2, minutes=30)
+fin = inicio + duracion
+print("Inicio:", inicio)
+print("Duración:", duracion)
+print("Fin:", fin)  # 2026-01-01 10:30:00
+
+# Diferencia entre dos datetimes (duración)
+delta = fin - inicio
+print("Delta en segundos:", delta.total_seconds())  # 9000.0
+``
+```
+### 4) Zonas horarias (básico con timezone) ###
+```python
+from datetime import datetime, timezone, timedelta
+
+# Crear un datetime consciente de zona horaria (ej. UTC-6)
+tz_utc_minus_6 = timezone(timedelta(hours=-6))
+ahora_local = datetime.now(tz_utc_minus_6)
+print("Ahora UTC-6:", ahora_local)
+
+# Convertir entre zonas (UTC ↔ UTC-6)
+ahora_utc = ahora_local.astimezone(timezone.utc)
+print("Convertido a UTC:", ahora_utc)
+```
+
+### 5) Extra: zoneinfo (zonas reales con horario de verano) ###
+``python
+from datetime import datetime
+from zoneinfo import ZoneInfo  # Python 3.9+
+
+mx = ZoneInfo("America/Mexico_City")
+ny = ZoneInfo("America/New_York")
+
+ahora_mx = datetime.now(mx)
+print("CDMX:", ahora_mx)
+
+# Convertir a otra zona
+ahora_ny = ahora_mx.astimezone(ny)
+print("Nueva York:", ahora_ny)
+``
+
