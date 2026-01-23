@@ -82,7 +82,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-###Complejos (complex)
+###Complejos (complex)###
 - Su parte real
 - Su parte imaginaria
 - Su módulo
