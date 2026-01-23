@@ -95,7 +95,7 @@ print("Parte imaginaria:", z.imag)
 print("Módulo:", abs(z))
 ```
 
-### 4.2 Conjuntos y cadenas de caracteres###
+### 4.2 Conjuntos y cadenas de caracteres ###
 Un **conjunto (set)** es una colección no ordenada de elementos únicos, es decir, no permite duplicados.
 Una **cadena de caracteres (string)** es una secuencia de símbolos que representa texto.
 
