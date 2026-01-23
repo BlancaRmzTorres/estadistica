@@ -247,7 +247,121 @@ resultado = " ".join(palabras)
 print(resultado)   # Hola mundo Python
 
 ```
+### Tabla Resumen de Manipulación de Cadenas en Python ###
+
+| Operación                | Descripción                                    | Ejemplo Simplificado                           |
+|--------------------------|------------------------------------------------|-------------------------------------------------|
+| Concatenar               | Une dos o más cadenas                          | `"Hola" + " Mundo"`                            |
+| Concatenar (f-string)    | Inserta variables dentro de una cadena         | `f"{nombre} {apellido}"`                       |
+| Dividir (split)          | Separa la cadena según un separador            | `"a,b,c".split(",")`                           |
+| Buscar (find)            | Devuelve la posición de una subcadena          | `"Hola".find("la")`                             |
+| Buscar con operador `in` | Verifica si un texto existe dentro de otro     | `"Py" in "Python"`                              |
+| Reemplazar (replace)     | Cambia partes del texto                        | `"Hola mundo".replace("mundo", "Python")`      |
+| Mayúsculas (upper)       | Convierte toda la cadena a mayúsculas          | `"hola".upper()`                                |
+| Minúsculas (lower)       | Convierte toda la cadena a minúsculas          | `"HOLA".lower()`                                |
+| Estilo título (title)    | Primer letra de cada palabra en mayúsculas     | `"hola mundo".title()`                          |
+| Capitalizar (capitalize) | Primera letra en mayúscula únicamente          | `"python".capitalize()`                         |
+| Quitar espacios (strip)  | Elimina espacios al inicio y al final          | `"  hola  ".strip()`                            |
+| Quitar izq. (lstrip)     | Elimina espacios a la izquierda                | `"  hola".lstrip()`                             |
+| Quitar der. (rstrip)     | Elimina espacios a la derecha                  | `"hola  ".rstrip()`                             |
+| Slicing (subcadenas)     | Extraer partes de una cadena                   | `"Python"[0:3]`                                 |
+| Contar ocurrencias       | Cuenta cuántas veces aparece un texto          | `"banana".count("a")`                           |
+| Unir cadenas (join)      | Une elementos de una lista con un separador    | `" ".join(["Hola","mundo"])`                   |
 
 
+### 4.3 Diccionarios y booleanos ###
+Un **diccionario** es una estructura de datos que almacena información en pares clave–valor.
+Un ***booleano** representa valores lógicos:
 
+**- True**
+**- False**
+
+Se utilizan principalmente en:
+- Condiciones
+- Control de flujo
+- Validaciones
+
+### 1. Ejemplo de Diccionario (clave–valor) ###
+
+```python
+# Diccionario con información de una persona
+persona = {
+    "nombre": "Blanca",
+    "edad": 30,
+    "ciudad": "Aguascalientes"
+}
+
+# Acceder a elementos
+print(persona["nombre"])
+print(persona["ciudad"])
+
+# Agregar un nuevo valor
+persona["ocupacion"] = "Desarrolladora"
+
+print(persona)
+```
+### 2. Ejemplo de Booleanos ###
+
+```python
+es_mayor = True
+es_menor = False
+
+print(es_mayor)   # True
+print(es_menor)   # False
+```
+
+### 3. Booleanos en condiciones ###
+
+```python
+edad = 20
+
+if edad >= 18:
+    print("Eres mayor de edad.")
+else:
+    print("Eres menor de edad.")
+```
+
+### 4. Booleanos en control de flujo ###
+
+```python
+activo = True
+
+while activo:
+    print("El sistema está activo.")
+    activo = False  # Finaliza el ciclo cambiando el booleano
+```
+
+### 5. Booleanos en validaciones ###
+
+```python
+usuario = "admin"
+password = "1234"
+
+es_valido = (usuario == "admin") and (password == "1234")
+
+if es_valido:
+    print("Acceso permitido.")
+else:
+    print("Acceso denegado.")
+```
+
+### Tabla Resumen: Diccionarios y Booleanos en Python ###
+
+
+| Concepto                      | Descripción                                                                 | Sintaxis común                         | Ejemplo breve                           |
+|------------------------------|-----------------------------------------------------------------------------|----------------------------------------|-------------------------------------------|
+| **Diccionario**              | Estructura clave–valor, mutable y ordenada desde Python 3.7                 | `{clave: valor}`                       | `{"nombre": "Blanca", "edad": 30}`        |
+| Acceso a valor               | Obtener un valor usando su clave                                            | `dic["clave"]` / `dic.get("clave")`    | `persona["nombre"]`                       |
+| Insertar / actualizar        | Agregar o cambiar un valor del diccionario                                  | `dic["clave"] = valor`                 | `persona["ciudad"] = "AGS"`               |
+| Eliminar                     | Remover un par clave–valor                                                  | `del dic["clave"]` / `pop()`           | `del persona["edad"]`                     |
+| Recorrer claves/valores      | Iterar sobre un diccionario                                                 | `dic.items()`                          | `for k, v in persona.items()`             |
+| **Booleano**                 | Valor lógico que representa verdadero o falso                               | `True`, `False`                        | `activo = True`                           |
+| Operadores lógicos           | Combinan condiciones                                                        | `and`, `or`, `not`                     | `(a > 0) and es_admin`                    |
+| Comparaciones                | Evalúan expresiones que devuelven booleanos                                 | `==`, `!=`, `>`, `<`, `>=`, `<=`       | `edad >= 18`                              |
+| Condiciones (`if/elif`)      | Control de ejecución basado en booleanos                                    | `if cond:`                             | `if es_valido: "OK"`                      |
+| Control de flujo (`while`)   | Repite mientras la condición sea verdadera                                  | `while cond:`                          | `while activo:`                           |
+| Validaciones compuestas      | Reglas con múltiples condiciones                                            | `and` / `or`                           | `user=="admin" and pwd_correcta`          |
+| Existencia en diccionario    | Comprobar si una clave está presente                                        | `"clave" in dic`                       | `"edad" in persona`                       |
+| Valores por defecto          | Evitar error cuando falta una clave                                         | `dic.get("clave", defecto)`            | `persona.get("edad", "N/D")`              |
+| Limpiar diccionario          | Vaciar todas las entradas                                                   | `dic.clear()`                          | `persona.clear()`                         |
 
