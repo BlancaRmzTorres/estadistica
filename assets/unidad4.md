@@ -82,7 +82,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-###Complejos (complex)###
+### Complejos (complex) ###
 - Su parte real
 - Su parte imaginaria
 - Su módulo
@@ -99,7 +99,7 @@ print("Módulo:", abs(z))
 Un **conjunto (set)** es una colección no ordenada de elementos únicos, es decir, no permite duplicados.
 Una **cadena de caracteres (string)** es una secuencia de símbolos que representa texto.
 
-###Características principales:###
+### Características principales: ###
 
 Los conjuntos permiten operaciones matemáticas como unión e intersección.
 Las cadenas permiten manipulación de texto (concatenar, dividir, buscar).
