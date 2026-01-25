@@ -199,9 +199,9 @@ P(Z > 2) = 0.0228
 
 La probabilidad de que la media muestral sea mayor que 105 es:
 
-$$\[
-\boxed{0.0228 \; (2.28\%)}
-\]$$
+$$
+\fbox{0.0228 \quad (2.28\%)}
+$$
 
 ---
 
