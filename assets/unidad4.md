@@ -115,9 +115,9 @@ $$\[
 ### Ejercicio 2 (Paso a paso)
 
 Una población tiene:
-- Media poblacional \(\mu = 50\)
-- Desviación estándar \(\sigma = 10\)
-- Tamaño de muestra \(n = 25\)
+- Media poblacional $$\(\mu = 50\)$$
+- Desviación estándar $$\(\sigma = 10\)$$
+- Tamaño de muestra $$\(n = 25\)$$
 
 #### Paso 1: Media de la distribución muestral
 $$\[
