@@ -52,46 +52,6 @@ s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
 
 ---
 
-# 📊 Tema 4.1: Poblaciones y Muestras  
-**Ejercicios resueltos paso a paso**
-
----
-
-## 🧠 Conceptos clave
-
-### 📌 Población
-Es el **conjunto total de elementos** que se desea estudiar y que comparten una característica común.
-
-**Ejemplos:**
-- Todos los estudiantes de una universidad  
-- Todas las piezas producidas en una fábrica  
-- Todos los habitantes de un país  
-
----
-
-### 📌 Muestra
-Es un **subconjunto de la población**, seleccionado para realizar un estudio estadístico.
-
-El objetivo de una muestra es **obtener información de la población sin analizar todos los elementos**.
-
----
-
-### 📌 Parámetros poblacionales
-
-**Media poblacional:**
-
-\[
-\mu = \frac{1}{N}\sum_{i=1}^{N} X_i
-\]
-
-**Varianza poblacional:**
-
-\[
-\sigma^2 = \frac{1}{N}\sum_{i=1}^{N} (X_i - \mu)^2
-\]
-
----
-
 ### Ejercicio 1: Identificación de población y muestra
 
 ### Enunciado
