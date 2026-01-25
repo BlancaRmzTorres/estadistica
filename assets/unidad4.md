@@ -55,7 +55,7 @@ s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
 ### Ejercicio 1 (Paso a paso)
 
 Una población tiene los valores:
-
+10, 12, 14, 16, 18
 
 #### Paso 1: Identificar población
 Todos los datos forman la población, por lo tanto $$\( N = 5 \)$$.
