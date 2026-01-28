@@ -51,7 +51,7 @@ Se selecciona una muestra de 50 empleados y se obtiene un salario promedio de \$
 - Parámetro  
 - Estadístico
 
-### 📌 Paso 1: Identificar la población
+### Paso 1: Identificar la población
 
 La **población** es el conjunto total de elementos que se desean estudiar.
 
@@ -63,7 +63,7 @@ $$\[
 
 ---
 
-### 📌 Paso 2: Identificar la muestra
+### Paso 2: Identificar la muestra
 
 La **muestra** es un subconjunto representativo de la población.
 
@@ -75,7 +75,7 @@ $$\[
 
 ---
 
-### 📌 Paso 3: Identificar el parámetro
+### Paso 3: Identificar el parámetro
 
 Un **parámetro** es una medida numérica que describe una característica de la **población**.
 
@@ -93,7 +93,7 @@ $$\[
 
 ---
 
-### 📌 Paso 4: Identificar el estadístico
+### Paso 4: Identificar el estadístico
 
 Un **estadístico** es una medida numérica calculada a partir de una **muestra**.
 
@@ -117,7 +117,7 @@ $$\[
 
 ---
 
-### 🧮 Ejercicio 4.1.2
+### 🧮 Ejercicio 4.1.2 (caso estadístico)
 
 De una población de 10,000 viviendas se seleccionan 400 para estimar el consumo promedio de agua.
 
@@ -126,6 +126,63 @@ De una población de 10,000 viviendas se seleccionan 400 para estimar el consumo
 
 #### Solución:
 Es un **estadístico**, porque proviene de una **muestra**.
+
+---
+
+### 🧮 Ejercicio 4.1.3 (caso paramétrico)
+
+#### Enunciado
+
+En una ciudad existen **10,000 viviendas** y se conoce el **consumo promedio real de agua** de **todas** las viviendas.
+
+El consumo promedio registrado es de **250 litros por vivienda al día**.
+
+---
+
+### Paso 1: Identificar la población
+
+La población está formada por **todas las viviendas de la ciudad**:
+
+$$\[
+\text{Población} = 10{,}000 \text{ viviendas}
+\]$$
+
+---
+
+### Paso 2: Identificar el valor calculado
+
+El consumo promedio de agua fue calculado considerando **a todas las viviendas**, no solo una parte de ellas.
+
+El valor obtenido es:
+
+$$\[
+\mu = 250 \text{ litros/día}
+\]$$
+
+---
+
+### Paso 3: Clasificación del valor
+
+Como el promedio se obtuvo usando **toda la población**, este valor corresponde a un **parámetro**.
+
+---
+
+### Respuesta final
+
+| Concepto | Valor |
+|--------|------|
+| **Tipo de medida** | Parámetro |
+| **Símbolo** | \(\mu\) |
+| **Valor** | 250 litros por vivienda al día |
+
+---
+
+### Conclusión
+
+Un **parámetro** describe una característica de **toda la población**, mientras que un **estadístico** describe una característica obtenida a partir de una **muestra**.
+
+En este ejemplo, el consumo promedio de **250 litros diarios** es un **parámetro**, ya que se calculó usando la información de las **10,000 viviendas**.
+
 
 ---
 
