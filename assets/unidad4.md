@@ -550,6 +550,174 @@ Esto significa que hay una **probabilidad del 2.28%** de que el promedio de una 
 
 ---
 
+### Ejercicio 3
+
+# Ejercicio 1: Promedio muestral menor a un valor dado
+
+Una máquina envasa café con:
+- Media poblacional: $$\(\mu = 250 \, \text{g}\)$$
+- Desviación estándar: $$\(\sigma = 20 \, \text{g}\)$$
+
+Se toma una muestra de:
+- $$\(n = 25\)$$ paquetes
+
+Calcular:
+
+$$\[
+P(\bar{X} < 245)
+\]$$
+
+---
+
+## 1. Calcular la desviación estándar del promedio muestral
+
+$$\[
+\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}
+\]$$
+
+Sustituyendo:
+
+$$\[
+\sigma_{\bar{X}} = \frac{20}{\sqrt{25}} = \frac{20}{5} = 4
+\]$$
+
+---
+
+## 2. Tipificación (convertir a Z)
+
+$$\[
+Z = \frac{\bar{X} - \mu}{\sigma_{\bar{X}}}
+\]$$
+
+Sustituimos:
+
+$$\[
+Z = \frac{245 - 250}{4}
+\]$$
+
+Numerador:
+
+$$\[
+245 - 250 = -5
+\]$$
+
+Entonces:
+
+$$\[
+Z = \frac{-5}{4} = -1.25
+\]$$
+
+---
+
+## 3. Cálculo de la probabilidad
+
+Queremos:
+
+$$\[
+P(Z < -1.25)
+\]$$
+
+De la tabla Z:
+
+$$\[
+P(Z < -1.25) = 0.1056
+\]$$
+
+---
+
+## Resultado final
+
+$$\[
+P(\bar{X} < 245) = 0.1056
+\]$$
+
+Esto significa que existe un **10.56%** de probabilidad de que el promedio muestral sea menor a 245 g.
+``
+
+### Ejercicio 4 - Resolver 
+
+# Ejercicio 2: Probabilidad de que el promedio muestral sea mayor a cierto valor
+
+Una fábrica llena frascos de miel con:
+- Media poblacional: $$\(\mu = 800 \, \text{ml}\)$$
+- Desviación estándar: $$\(\sigma = 40 \, \text{ml}\)$$
+
+Se toma una muestra de:
+- $$\(n = 64\)$$ frascos
+
+Calcular:
+
+$$\[
+P(\bar{X} > 810)
+\]$$
+
+---
+
+## 1. Calcular la desviación estándar del promedio muestral
+
+$$\[
+\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}
+\]$$
+
+Sustituimos:
+
+$$\[
+\sigma_{\bar{X}} = \frac{40}{\sqrt{64}} = \frac{40}{8} = 5
+\]$$
+
+---
+
+## 2. Tipificación (convertir a Z)
+
+$$\[
+Z = \frac{\bar{X} - \mu}{\sigma_{\bar{X}}}
+\]$$
+
+Sustituyendo:
+
+$$\[
+Z = \frac{810 - 800}{5}
+\]$$
+
+Numerador:
+
+$$\[
+810 - 800 = 10
+\]$$
+
+Entonces:
+
+$$\[
+Z = \frac{10}{5} = 2
+\]$$
+
+---
+
+## 3. Cálculo de la probabilidad
+
+Queremos:
+
+$$\[
+P(Z > 2)
+\]$$
+
+De la tabla Z:
+
+$$\[
+P(Z > 2) = 0.0228
+\]$$
+
+---
+
+## Resultado final
+
+$$\[
+P(\bar{X} > 810) = 0.0228
+\]$$
+
+Esto significa que existe un **2.28%** de probabilidad de que el promedio muestral sea mayor a 810 ml.
+
+
 ## Conclusión
 
 Las distribuciones muestrales y el Teorema Central del Límite son pilares de la estadística inferencial, ya que permiten hacer inferencias confiables sobre poblaciones a partir de muestras.
