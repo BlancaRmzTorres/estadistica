@@ -124,8 +124,45 @@ De una población de 10,000 viviendas se seleccionan 400 para estimar el consumo
 **Pregunta:**  
 ¿El consumo promedio calculado es un parámetro o un estadístico?
 
-#### Solución:
-Es un **estadístico**, porque proviene de una **muestra**.
+### Explicación paso a paso
+
+1. **La población** está formada por todas las viviendas:
+$$\[
+\text{Población} = 10{,}000 \text{ viviendas}
+\]$$
+
+2. **La muestra** es solo una parte de la población:
+$$\[
+\text{Muestra} = 400 \text{ viviendas}
+\]$$
+
+3. El **consumo promedio de agua** se calcula **únicamente** con los datos de esas 400 viviendas, no con las 10,000.
+
+4. Toda medida numérica que se obtiene a partir de una **muestra** se denomina **estadístico**.
+
+---
+
+### Respuesta final
+
+El consumo promedio calculado es un **estadístico**, porque:
+
+- Se obtiene a partir de una **muestra**
+- No describe directamente a toda la población
+- Se usa para **estimar** el valor real del parámetro poblacional
+
+Matemáticamente, se representa como:
+
+$$\[
+\bar{x} = \text{consumo promedio muestral}
+\]$$
+
+---
+
+### Conclusión
+
+Un **estadístico** describe características de una **muestra**, mientras que un **parámetro** describe características de **toda la población**.
+
+En este ejercicio, como el promedio se calcula con solo **400 de las 10,000 viviendas**, el resultado es un **estadístico**.
 
 ---
 
