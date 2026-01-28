@@ -320,6 +320,7 @@ $$\[
 \bar{x} \sim N\left(\mu, \frac{\sigma}{\sqrt{n}}\right)
 \]$$
 
+**La fórmula se lee "La media muestral se distribuye como una Normal con media μ y desviación estándar σ entre la raíz cuadrada de n."
 ---
 
 ### Importancia del TCL
