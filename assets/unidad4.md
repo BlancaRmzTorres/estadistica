@@ -501,7 +501,7 @@ $$\[
 
 ---
 
-## 2. Tipificación (convertir \(\bar{X}\) a un valor Z)
+## 2. Tipificación (convertir $$\(\bar{X}\)$$ a un valor Z)
 
 Usamos la fórmula:
 
