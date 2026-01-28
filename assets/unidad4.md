@@ -370,6 +370,10 @@ $$\[
 P(Z > 1) = 0.1587
 \]$$
 
+### Tabla de la distribución normal
+
+<img width="486" height="600" alt="imagen1" src="/assets/tabladistribucion.png" />
+
 ---
 
 ### 🧮 Ejercicio 4.3.2
