@@ -54,8 +54,8 @@ Se selecciona una muestra de 50 empleados y se obtiene un salario promedio de \$
 #### Solución:
 - **Población:** 500 empleados  
 - **Muestra:** 50 empleados  
-- **Parámetro:** \(\mu = 12,000\)  
-- **Estadístico:** \(\bar{x} = 11,800\)
+- **Parámetro:** $$\(\mu = 12,000\)$$  
+- **Estadístico:** $$\(\bar{x} = 11,800\)$$
 
 ---
 
@@ -77,14 +77,14 @@ Es un **estadístico**, porque proviene de una **muestra**.
 Es una función de los datos muestrales. Algunos ejemplos:
 
 - Media muestral:
-\[
+$$\[
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-\]
+\]$$
 
 - Varianza muestral:
-\[
+$$\[
 s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
-\]
+\]$$
 
 ---
 
@@ -100,29 +100,29 @@ La más importante es la **distribución muestral de la media**.
 Si la población tiene media \(\mu\) y desviación estándar \(\sigma\):
 
 - Media de la media muestral:
-\[
+$$\[
 E(\bar{x}) = \mu
-\]
+\]$$
 
 - Varianza:
-\[
+$$\[
 Var(\bar{x}) = \frac{\sigma^2}{n}
-\]
+\]$$
 
 - Desviación estándar (error estándar):
-\[
+$$\[
 \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}
-\]
+\]$$
 
 ---
 
 ### 🧮 Ejercicio 4.2.1
 
 Una población tiene:
-- \(\mu = 70\)
-- \(\sigma = 10\)
+- $$\(\mu = 70\)$$
+- $$\(\sigma = 10\)$$
 
-Se toma una muestra de tamaño \(n = 25\).
+Se toma una muestra de tamaño $$\(n = 25\)$$.
 
 Calcula:
 1. Media de la distribución muestral  
@@ -131,26 +131,26 @@ Calcula:
 #### Solución:
 
 1.  
-\[
+$$\[
 E(\bar{x}) = \mu = 70
-\]
+\]$$
 
 2.  
-\[
+$$\[
 \sigma_{\bar{x}} = \frac{10}{\sqrt{25}} = \frac{10}{5} = 2
-\]
+\]$$
 
 ---
 
 ### 🧮 Ejercicio 4.2.2
 
-Si \(\sigma = 12\) y \(n = 36\), calcula el error estándar.
+Si $$\(\sigma = 12\)$$ y $$\(n = 36\)$$, calcula el error estándar.
 
 #### Solución:
 
-\[
+$$\[
 \sigma_{\bar{x}} = \frac{12}{\sqrt{36}} = \frac{12}{6} = 2
-\]
+\]$$
 
 ---
 
@@ -161,12 +161,12 @@ Si \(\sigma = 12\) y \(n = 36\), calcula el error estándar.
 Si se toman muestras aleatorias de tamaño suficientemente grande (\(n \ge 30\)) de **cualquier población** con media \(\mu\) y varianza finita \(\sigma^2\), entonces la distribución muestral de la media:
 
 - Se aproxima a una **distribución normal**
-- Tiene media \(\mu\)
-- Tiene desviación estándar \(\sigma / \sqrt{n}\)
+- Tiene media $$\(\mu\)$$
+- Tiene desviación estándar $$\(\sigma / \sqrt{n}\)$$
 
-\[
+$$\[
 \bar{x} \sim N\left(\mu, \frac{\sigma}{\sqrt{n}}\right)
-\]
+\]$$
 
 ---
 
@@ -183,39 +183,39 @@ Si se toman muestras aleatorias de tamaño suficientemente grande (\(n \ge 30\))
 ### 🧮 Ejercicio 4.3.1
 
 El peso promedio de una población es:
-- \(\mu = 65\) kg
-- \(\sigma = 8\) kg
+- $$\(\mu = 65\)$$ kg
+- $$\(\sigma = 8\)$$ kg
 
-Se toma una muestra de \(n = 64\).
+Se toma una muestra de $$\(n = 64\)$$.
 
 Calcula:
 1. Media de la distribución muestral  
 2. Desviación estándar  
-3. Probabilidad de que \(\bar{x} > 66\)
+3. Probabilidad de que $$\(\bar{x} > 66\)$$
 
 ---
 
 #### Solución paso a paso
 
 1.  
-\[
+$$\[
 E(\bar{x}) = 65
-\]
+\]$$
 
 2.  
-\[
+$$\[
 \sigma_{\bar{x}} = \frac{8}{\sqrt{64}} = \frac{8}{8} = 1
-\]
+\]$$
 
 3. Tipificación:
-\[
+$$\[
 Z = \frac{66 - 65}{1} = 1
-\]
+\]$$
 
 Buscando en la tabla normal:
-\[
+$$\[
 P(Z > 1) = 0.1587
-\]
+\]$$
 
 ---
 
@@ -231,19 +231,19 @@ Calcula la probabilidad de que el promedio muestral sea menor a 495 ml.
 #### Solución
 
 1.  
-\[
+$$\[
 \sigma_{\bar{x}} = \frac{15}{\sqrt{36}} = 2.5
-\]
+\]$$
 
 2.  
-\[
+$$\[
 Z = \frac{495 - 500}{2.5} = -2
-\]
+\]$$
 
 3.  
-\[
+$$\[
 P(Z < -2) = 0.0228
-\]
+\]$$
 
 ---
 
@@ -252,6 +252,3 @@ P(Z < -2) = 0.0228
 Las distribuciones muestrales y el Teorema Central del Límite son pilares de la estadística inferencial, ya que permiten hacer inferencias confiables sobre poblaciones a partir de muestras.
 
 ---
-
-📘 **Nivel:** Universitario  
-📘 **Aplicable a:** Estadística, Probabilidad, Inferencia Estadística
