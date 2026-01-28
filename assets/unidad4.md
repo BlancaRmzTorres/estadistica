@@ -1,392 +1,260 @@
 # 4. DISTRIBUCIONES MUESTRALES Y TEOREMA CENTRAL DEL LÍMITE  
 ---
 
+# 4. DISTRIBUCIONES MUESTRALES Y TEOREMA CENTRAL DEL LÍMITE
+
 ## 4.1 Concepto de poblaciones y muestras
 
-En estadística, se distinguen dos conceptos fundamentales:
-
 ### Población
-Es el **conjunto total de elementos** que se desea estudiar y que comparten una característica común.
+Es el **conjunto total de elementos** sobre los cuales se desea realizar un estudio estadístico.
 
-Ejemplos:
-- Todos los estudiantes de una universidad
-- Todas las piezas producidas en una fábrica
-- Todos los habitantes de un país
+**Ejemplos:**
+- Todos los estudiantes de una universidad  
+- Todas las viviendas de una ciudad  
+- Todos los productos fabricados en una semana  
+
+Se denota comúnmente con **N** (tamaño de la población).
+
+---
 
 ### Muestra
-Es un **subconjunto de la población**, seleccionado para realizar un estudio estadístico.
+Es un **subconjunto representativo de la población**, seleccionado para realizar el estudio.
 
-> El objetivo de una muestra es **obtener información sobre la población** sin analizar todos sus elementos.
-
----
-
-### Parámetros poblacionales
-
-Son valores numéricos que describen a la población:
-
-- Media poblacional:  
-$$\[
-\mu = \frac{1}{N} \sum_{i=1}^{N} X_i
-\]$$
-
-- Varianza poblacional:  
-$$\[
-\sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (X_i - \mu)^2
-\]$$
+Se denota con **n** (tamaño de la muestra), donde:
+\[
+n < N
+\]
 
 ---
 
-### Estadísticos muestrales
+### Parámetros vs Estadísticos
 
-Son valores calculados a partir de una muestra:
+| Concepto | Descripción |
+|--------|------------|
+| Parámetro | Medida numérica de la población |
+| Estadístico | Medida numérica de la muestra |
 
-- Media muestral:  
-$$\[
-\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
-\]$$
-
-- Varianza muestral:  
-$$\[
-s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
-\]$$
-
----
-
-### Ejercicio 1: Identificación de población y muestra
-
-### Enunciado
-Un investigador desea estudiar el **promedio de horas de estudio** de los alumnos de una preparatoria que tiene **800 estudiantes**.  
-Para el estudio selecciona **50 estudiantes al azar**.
-
-### Solución paso a paso
-
-- **Población:**  
-  Todos los **800 estudiantes** de la preparatoria.
-
-- **Muestra:**  
-  Los **50 estudiantes seleccionados**.
-
-### Conclusión
-- Población → 800 estudiantes  
-- Muestra → 50 estudiantes  
+| Parámetro | Estadístico |
+|---------|------------|
+| Media poblacional (\(\mu\)) | Media muestral (\(\bar{x}\)) |
+| Varianza poblacional (\(\sigma^2\)) | Varianza muestral (\(s^2\)) |
+| Desviación estándar (\(\sigma\)) | Desviación estándar (\(s\)) |
 
 ---
 
-## Ejercicio 2: Cálculo de la media poblacional (μ)
+### 🧮 Ejercicio 4.1.1
 
-### Enunciado
-Dada la siguiente población de datos:
+Una población de 500 empleados tiene un salario promedio real de \$12,000.
 
-$$\[
-X = \{4, 6, 8, 10, 12\}
-\]$$
+Se selecciona una muestra de 50 empleados y se obtiene un salario promedio de \$11,800.
 
-Calcular la **media poblacional**.
+**Identifica:**
+- Población  
+- Muestra  
+- Parámetro  
+- Estadístico  
 
----
-
-### Paso 1: Fórmula
-
-$$\[
-\mu = \frac{1}{N}\sum_{i=1}^{N} X_i
-\]$$
-
----
-
-### Paso 2: Número de datos
-
-$$\[
-N = 5
-\]$$
+#### Solución:
+- **Población:** 500 empleados  
+- **Muestra:** 50 empleados  
+- **Parámetro:** \(\mu = 12,000\)  
+- **Estadístico:** \(\bar{x} = 11,800\)
 
 ---
 
-###  Paso 3: Suma de los valores
+### 🧮 Ejercicio 4.1.2
 
-$$\[
-\sum X_i = 4 + 6 + 8 + 10 + 12 = 40
-\]$$
+De una población de 10,000 viviendas se seleccionan 400 para estimar el consumo promedio de agua.
 
----
+**Pregunta:**  
+¿El consumo promedio calculado es un parámetro o un estadístico?
 
-### Paso 4: Sustitución
-
-$$\[
-\mu = \frac{40}{5} = 8
-\]$$
+#### Solución:
+Es un **estadístico**, porque proviene de una **muestra**.
 
 ---
-
-### Resultado
-
-$$\[
-\mu = 8
-\]$$
-
----
-
-## Ejercicio 3: Varianza poblacional (σ²)
-
-### Enunciado
-Usando la misma población del ejercicio anterior:
-
-$$\[
-X = \{4, 6, 8, 10, 12\}
-\]$$
-
-Calcular la **varianza poblacional**.
-
----
-
-### Paso 1: Media poblacional
-
-$$\[
-\mu = 8
-\]$$
-
----
-
-### Paso 2: Cálculo de las diferencias al cuadrado
-
-| $$\(X_i\)$$ | $$\(X_i - \mu\)$$ | $$\((X_i - \mu)^2\)$$ |
-|--------|---------------|------------------|
-| 4 | \(4 - 8 = -4\) | 16 |
-| 6 | \(6 - 8 = -2\) | 4 |
-| 8 | \(8 - 8 = 0\) | 0 |
-| 10 | \(10 - 8 = 2\) | 4 |
-| 12 | \(12 - 8 = 4\) | 16 |
-
----
-
-### Paso 3: Suma de los cuadrados
-
-$$\[
-\sum (X_i - \mu)^2 = 16 + 4 + 0 + 4 + 16 = 40
-\]$$
-
----
-
-### Paso 4: Aplicar la fórmula
-
-$$\[
-\sigma^2 = \frac{40}{5} = 8
-\]$$
-
----
-
-### Resultado
-
-$$\[
-\sigma^2 = 8
-\]$$
-
----
-
-## Ejercicio 4: Población y muestra en un contexto real
-
-### Enunciado
-Una fábrica produce **2,000 piezas al día**.  
-El departamento de calidad revisa **120 piezas**.
-
----
-
-### Solución
-
-- **Población:**  
-  $$\[
-  N = 2000 \text{ piezas}
-  \]$$
-
-- **Muestra:**  
-  $$\[
-  n = 120 \text{ piezas}
-  \]$$
-
----
-
-### Conclusión
-La muestra permite analizar la calidad sin revisar toda la producción.
-
----
-
-## Ejercicio 5: Parámetro poblacional vs estadístico muestral
-
-### Enunciado
-Clasifica los siguientes valores:
-
-1. La **media de edad de todos los habitantes** de una ciudad  
-2. El **promedio de edad de 100 personas** seleccionadas
-
----
-
-### Solución
-
-1. **Parámetro poblacional**  
-   $$\[
-   \mu \rightarrow \text{describe a toda la población}
-   \]$$
-
-2. **Estadístico muestral**  
-   $$\[
-   \bar{x} \rightarrow \text{calculado a partir de una muestra}
-   \]$$
-
----
-
-## Resumen
-
-- **Población:** conjunto total de elementos  
-- **Muestra:** subconjunto representativo  
-- **Parámetros poblacionales:**  
-  - Media → $$\( \mu \)$$
-  - Varianza → $$\( \sigma^2 \)$$  
-- Se usan cuando se analiza **toda la población**
-
 
 ## 4.2 Estadísticos y distribuciones muestrales
 
-### Teoría
+### Estadístico
+Es una función de los datos muestrales. Algunos ejemplos:
 
-Un **estadístico** es cualquier medida calculada a partir de una muestra.
+- Media muestral:
+\[
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+\]
 
-Ejemplos:
-- Media muestral $$(\(\bar{x}\))$$
-- Proporción muestral $$(\(\hat{p}\))$$
-- Varianza muestral $$(\(s^2\))$$
+- Varianza muestral:
+\[
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+\]
 
 ---
 
 ### Distribución muestral
+Es la **distribución de probabilidad** de un estadístico cuando se consideran **todas las muestras posibles** de tamaño \(n\).
 
-Es la **distribución de probabilidad** de un estadístico cuando se consideran **todas las muestras posibles** de un tamaño fijo \(n\).
-
-Ejemplo:
-- Distribución muestral de la media
-- Distribución muestral de la proporción
+La más importante es la **distribución muestral de la media**.
 
 ---
 
-### Media y varianza de la media muestral
+### Propiedades de la media muestral
 
-Si la población tiene media $$\(\mu\)$$ y varianza $$\(\sigma^2\)$$, entonces:
+Si la población tiene media \(\mu\) y desviación estándar \(\sigma\):
 
-- Media de la distribución muestral:
-$$\[
+- Media de la media muestral:
+\[
 E(\bar{x}) = \mu
-\]$$
+\]
 
-- Varianza de la media muestral:
-$$\[
+- Varianza:
+\[
 Var(\bar{x}) = \frac{\sigma^2}{n}
-\]$$
+\]
 
 - Desviación estándar (error estándar):
-$$\[
+\[
 \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}
-\]$$
+\]
 
 ---
 
-### Ejercicio 2 (Paso a paso)
+### 🧮 Ejercicio 4.2.1
 
 Una población tiene:
-- Media poblacional $$\(\mu = 50\)$$
-- Desviación estándar $$\(\sigma = 10\)$$
-- Tamaño de muestra $$\(n = 25\)$$
+- \(\mu = 70\)
+- \(\sigma = 10\)
 
-#### Paso 1: Media de la distribución muestral
-$$\[
-E(\bar{x}) = 50
-\]$$
+Se toma una muestra de tamaño \(n = 25\).
 
-#### Paso 2: Error estándar
-$$\[
+Calcula:
+1. Media de la distribución muestral  
+2. Desviación estándar de la media  
+
+#### Solución:
+
+1.  
+\[
+E(\bar{x}) = \mu = 70
+\]
+
+2.  
+\[
 \sigma_{\bar{x}} = \frac{10}{\sqrt{25}} = \frac{10}{5} = 2
-\]$$
+\]
+
+---
+
+### 🧮 Ejercicio 4.2.2
+
+Si \(\sigma = 12\) y \(n = 36\), calcula el error estándar.
+
+#### Solución:
+
+\[
+\sigma_{\bar{x}} = \frac{12}{\sqrt{36}} = \frac{12}{6} = 2
+\]
 
 ---
 
 ## 4.3 Teorema Central del Límite (TCL)
 
-### Teoría
+### Enunciado del Teorema Central del Límite
 
-El **Teorema Central del Límite (TCL)** establece que:
+Si se toman muestras aleatorias de tamaño suficientemente grande (\(n \ge 30\)) de **cualquier población** con media \(\mu\) y varianza finita \(\sigma^2\), entonces la distribución muestral de la media:
 
-> Si el tamaño de la muestra es suficientemente grande $$(\(n \geq 30\))$$, la **distribución de la media muestral** se aproxima a una **distribución normal**, **independientemente de la forma de la población original**.
+- Se aproxima a una **distribución normal**
+- Tiene media \(\mu\)
+- Tiene desviación estándar \(\sigma / \sqrt{n}\)
 
----
-
-### Condiciones del TCL
-
-- Muestras aleatorias
-- Observaciones independientes
-- Tamaño de muestra grande (\(n \geq 30\))
+\[
+\bar{x} \sim N\left(\mu, \frac{\sigma}{\sqrt{n}}\right)
+\]
 
 ---
 
-### Distribución normal estándar
+### Importancia del TCL
 
-Para estandarizar una media muestral se utiliza:
-
-$$\[
-Z = \frac{\bar{x} - \mu}{\sigma / \sqrt{n}}
-\]$$
-
----
-
-### Ejercicio 3 (Paso a paso)
-
-Una población tiene:
-- $$\(\mu = 100\)$$
-- $$\(\sigma = 20\)$$
-
-Se toma una muestra de tamaño $$\(n = 64\)$$.
-
-¿Cuál es la probabilidad de que la media muestral sea mayor que 105?
+- Permite usar la **distribución normal** aunque la población no sea normal  
+- Es la base de:
+  - Intervalos de confianza  
+  - Pruebas de hipótesis  
+- Justifica la estadística inferencial
 
 ---
 
-#### Paso 1: Calcular el error estándar
+### 🧮 Ejercicio 4.3.1
 
-$$\[
-\sigma_{\bar{x}} = \frac{20}{\sqrt{64}} = \frac{20}{8} = 2.5
-\]$$
+El peso promedio de una población es:
+- \(\mu = 65\) kg
+- \(\sigma = 8\) kg
 
----
+Se toma una muestra de \(n = 64\).
 
-#### Paso 2: Calcular el valor Z
-
-$$\[
-Z = \frac{105 - 100}{2.5} = \frac{5}{2.5} = 2
-\]$$
-
----
-
-#### Paso 3: Consultar la tabla Z
-
-$$\[
-P(Z > 2) = 0.0228
-\]$$
+Calcula:
+1. Media de la distribución muestral  
+2. Desviación estándar  
+3. Probabilidad de que \(\bar{x} > 66\)
 
 ---
 
-### Respuesta final
+#### Solución paso a paso
 
-La probabilidad de que la media muestral sea mayor que 105 es:
+1.  
+\[
+E(\bar{x}) = 65
+\]
 
-$$
-0.0228 \quad (2.28\%)
-$$
+2.  
+\[
+\sigma_{\bar{x}} = \frac{8}{\sqrt{64}} = \frac{8}{8} = 1
+\]
+
+3. Tipificación:
+\[
+Z = \frac{66 - 65}{1} = 1
+\]
+
+Buscando en la tabla normal:
+\[
+P(Z > 1) = 0.1587
+\]
+
 ---
 
-## Importancia del Teorema Central del Límite
+### 🧮 Ejercicio 4.3.2
 
-- Permite usar la distribución normal en inferencia estadística
-- Fundamenta intervalos de confianza y pruebas de hipótesis
-- Facilita el análisis de datos reales
+Una máquina llena botellas con una media de 500 ml y desviación estándar de 15 ml.  
+Se toman muestras de 36 botellas.
+
+Calcula la probabilidad de que el promedio muestral sea menor a 495 ml.
 
 ---
 
+#### Solución
 
+1.  
+\[
+\sigma_{\bar{x}} = \frac{15}{\sqrt{36}} = 2.5
+\]
 
+2.  
+\[
+Z = \frac{495 - 500}{2.5} = -2
+\]
 
+3.  
+\[
+P(Z < -2) = 0.0228
+\]
+
+---
+
+## Conclusión
+
+Las distribuciones muestrales y el Teorema Central del Límite son pilares de la estadística inferencial, ya que permiten hacer inferencias confiables sobre poblaciones a partir de muestras.
+
+---
+
+📘 **Nivel:** Universitario  
+📘 **Aplicable a:** Estadística, Probabilidad, Inferencia Estadística
