@@ -209,7 +209,7 @@ Como el promedio se obtuvo usando **toda la población**, este valor corresponde
 | Concepto | Valor |
 |--------|------|
 | **Tipo de medida** | Parámetro |
-| **Símbolo** | \(\mu\) |
+| **Símbolo** | $$\(\mu\)$$ |
 | **Valor** | 250 litros por vivienda al día |
 
 ---
