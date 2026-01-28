@@ -550,7 +550,7 @@ Esto significa que hay una **probabilidad del 2.28%** de que el promedio de una 
 
 ---
 
-### Ejercicio 3. Promedio muestral menor a un valor dado
+### Ejercicio 4.3.3. Promedio muestral menor a un valor dado
 
 Una máquina envasa café con:
 - Media poblacional: $$\(\mu = 250 \, \text{g}\)$$
@@ -632,7 +632,7 @@ P(\bar{X} < 245) = 0.1056
 Esto significa que existe un **10.56%** de probabilidad de que el promedio muestral sea menor a 245 g.
 ``
 
-### Ejercicio 4. Probabilidad de que el promedio muestral sea mayor a cierto valor - Resolver 
+### Ejercicio 4.3.4. Probabilidad de que el promedio muestral sea mayor a cierto valor - Resolver 
 
 
 
