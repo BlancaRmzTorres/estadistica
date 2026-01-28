@@ -306,6 +306,155 @@ $$\[
 
 ---
 
+### 🧮 Ejercicio 4.2.3 — Distribución muestral de la media
+
+Una población tiene:
+- Media: $$\(\mu = 120\)$$
+- Desviación estándar: $$\(\sigma = 18\)$$
+
+Se toma una muestra de:
+- $$\(n = 36\)$$
+
+Calcular:
+1. La media de la distribución muestral  
+2. La desviación estándar del promedio muestral
+
+---
+
+### 1. Media de la distribución muestral
+
+$$\[
+E(\bar{X}) = \mu = 120
+\]$$
+
+---
+
+### 2. Error estándar (desviación estándar de la media)
+
+$$\[
+\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}
+\]$$
+
+Sustituimos:
+
+$$\[
+\sigma_{\bar{X}} = \frac{18}{\sqrt{36}}
+\]$$
+
+Como $$\(\sqrt{36} = 6\)$$:
+
+$$\[
+\sigma_{\bar{X}} = \frac{18}{6} = 3
+\]$$
+
+---
+
+###  Resultado final
+
+- Media de la distribución muestral: **120**  
+- Error estándar: **3**
+
+### 🧮 Ejercicio 4.2.4 - Propiedades de la distribución muestral (Resolver)
+
+Una población tiene:
+- Media: $$\(\mu = 45\)$$
+- Desviación estándar: $$\(\sigma = 6\)$$
+
+Se toma una muestra de:
+- $$\(n = 49\)$$
+
+Calcular:
+1. La media de la distribución muestral  
+2. La desviación estándar del promedio muestral  
+
+---
+
+### 1. Media de la distribución muestral
+
+$$\[
+E(\bar{X}) = \mu = 45
+\]$$
+
+---
+
+### 2. Error estándar (desviación estándar de la media)
+
+$$\[
+\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}
+\]$$
+
+Sustituimos:
+
+$$\[
+\sigma_{\bar{X}} = \frac{6}{\sqrt{49}}
+\]$$
+
+$$\[
+\sqrt{49} = 7
+\]$$
+
+$$\[
+\sigma_{\bar{X}} = \frac{6}{7} \approx 0.857
+\]$$
+
+---
+
+## Resultado final
+
+- Media de la distribución muestral: **45**  
+- Error estándar: **0.857**
+
+### 🧮 Ejercicio 4.2.5 - Propiedades de la distribución muestral (Resolver)
+
+Una población tiene:
+- Media: $$\(\mu = 300\)$$
+- Desviación estándar: $$\(\sigma = 50\)$$
+
+Se toma una muestra de:
+- $$\(n = 100\)$$
+
+Calcular:
+1. La media de la distribución muestral  
+2. El error estándar (desviación estándar de la media)  
+
+---
+
+## 1. Media de la distribución muestral
+
+$$\[
+E(\bar{X}) = \mu = 300
+\]$$
+
+---
+
+## 2. Error estándar
+
+$$\[
+\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}
+\]$$
+
+Sustituimos:
+
+$$\[
+\sigma_{\bar{X}} = \frac{50}{\sqrt{100}}
+\]$$
+
+$$\[
+\sqrt{100} = 10
+\]$$
+
+$$\[
+\sigma_{\bar{X}} = \frac{50}{10} = 5
+\]$$
+
+---
+
+## Resultado final
+
+- Media de la distribución muestral: **300**  
+- Error estándar: **5**
+
+
 ## 4.3 Teorema Central del Límite (TCL)
 
 ### Enunciado del Teorema Central del Límite
@@ -550,7 +699,7 @@ Esto significa que hay una **probabilidad del 2.28%** de que el promedio de una 
 
 ---
 
-### Ejercicio 4.3.3. Promedio muestral menor a un valor dado
+### 🧮 Ejercicio 4.3.3. Promedio muestral menor a un valor dado
 
 Una máquina envasa café con:
 - Media poblacional: $$\(\mu = 250 \, \text{g}\)$$
@@ -632,9 +781,7 @@ P(\bar{X} < 245) = 0.1056
 Esto significa que existe un **10.56%** de probabilidad de que el promedio muestral sea menor a 245 g.
 ``
 
-### Ejercicio 4.3.4. Probabilidad de que el promedio muestral sea mayor a cierto valor - Resolver 
-
-
+### 🧮 Ejercicio 4.3.4. Probabilidad de que el promedio muestral sea mayor a cierto valor (Resolver )
 
 Una fábrica llena frascos de miel con:
 - Media poblacional: $$\(\mu = 800 \, \text{ml}\)$$
@@ -714,6 +861,61 @@ P(\bar{X} > 810) = 0.0228
 \]$$
 
 Esto significa que existe un **2.28%** de probabilidad de que el promedio muestral sea mayor a 810 ml.
+
+### 🧮 Ejercicio 4.3.5 — Probabilidad con la distribución muestral (Resolver)
+
+Una población tiene:
+- Media: $$\(\mu = 50\)$$
+- Desviación estándar: $$\(\sigma = 8\)$$
+
+Se toma una muestra de:
+- $$\(n = 64\)$$
+
+Calcular la probabilidad:
+
+$$\[
+P(\bar{X} > 52)
+\]$$
+
+---
+
+## 1. Error estándar
+
+$$\[
+\sigma_{\bar{X}} = \frac{8}{\sqrt{64}} = \frac{8}{8} = 1
+\]$$
+
+---
+
+## 2. Tipificación
+
+$$\[
+Z = \frac{\bar{X} - \mu}{\sigma_{\bar{X}}}
+\]$$
+
+$$\[
+Z = \frac{52 - 50}{1} = 2
+\]$$
+
+---
+
+## 3. Cálculo de probabilidad
+
+Tablas Z:
+
+$$\[
+P(Z > 2) = 0.0228
+\]$$
+
+---
+
+## Resultado final
+
+$$\[
+P(\bar{X} > 52) = 0.0228
+\]$$
+
+Hay **2.28%** de probabilidad de que el promedio muestral sea mayor a 52.
 
 
 ## Conclusión
