@@ -33,9 +33,9 @@ n < N
 
 | Parámetro | Estadístico |
 |---------|------------|
-| Media poblacional (\(\mu\)) | Media muestral (\(\bar{x}\)) |
-| Varianza poblacional (\(\sigma^2\)) | Varianza muestral (\(s^2\)) |
-| Desviación estándar (\(\sigma\)) | Desviación estándar (\(s\)) |
+| Media poblacional $$(\(\mu\))$$ | Media muestral $$(\(\bar{x}\))$$ |
+| Varianza poblacional $$(\(\sigma^2\))$$ | Varianza muestral $$(\(s^2\))$$ |
+| Desviación estándar $$(\(\sigma\))$$ | Desviación estándar $$(\(s\))$$ |
 
 ---
 
