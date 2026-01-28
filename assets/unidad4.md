@@ -387,10 +387,63 @@ $$\[
 Z = \frac{66 - 65}{1} = 1
 \]$$
 
+## Tipificación y cálculo de probabilidad
+
+Queremos calcular la probabilidad:
+
+\[
+P(X > 66)
+\]
+
+Para una variable normal con media \(\mu = 65\) y desviación estándar \(\sigma = 1\).
+
+---
+
+## 1. Tipificación (transformar a un valor Z)
+
+Aplicamos la fórmula:
+
+\[
+Z = \frac{X - \mu}{\sigma}
+\]
+
+Sustituimos:
+
+\[
+Z = \frac{66 - 65}{1} = 1
+\]
+
+---
+
+## 2. Buscar en la tabla normal estándar
+
+Buscamos:
+
+\[
+P(Z > 1)
+\]
+
+La tabla normalmente da valores de:
+
+\[
+P(Z < 1) = 0.8413
+\]
+
+Por lo tanto:
+
+\[
+P(Z > 1) = 1 - 0.8413 = 0.1587
+\]
+
+---
+
 Buscando en la tabla normal:
 $$\[
 P(Z > 1) = 0.1587
 \]$$
+
+Esto significa que hay un **15.87%** de probabilidad de que la variable normal tome un valor mayor que 66.
+
 
 ### Tabla de la distribución normal
 
