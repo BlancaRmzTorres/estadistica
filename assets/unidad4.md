@@ -462,20 +462,97 @@ Calcula la probabilidad de que el promedio muestral sea menor a 495 ml.
 
 #### Solución
 
-1.  
+# Cálculo de la probabilidad de que el promedio muestral sea menor a 495 ml
+
+Tenemos una máquina que llena botellas con:
+- Media poblacional: \(\mu = 500 \, \text{ml}\)
+- Desviación estándar poblacional: \(\sigma = 15 \, \text{ml}\)
+
+Se toma una muestra de:
+- \(n = 36\) botellas
+
+Queremos calcular:
+
+\[
+P(\bar{X} < 495)
+\]
+
+---
+
+## 1. Desviación estándar del promedio muestral
+
+La desviación estándar de la media muestral (también llamada **error estándar**) se calcula con:
+
 $$\[
-\sigma_{\bar{x}} = \frac{15}{\sqrt{36}} = 2.5
+\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}
 \]$$
 
-2.  
+Sustituimos:
+
 $$\[
-Z = \frac{495 - 500}{2.5} = -2
+\sigma_{\bar{X}} = \frac{15}{\sqrt{36}}
 \]$$
 
-3.  
+Como $$\(\sqrt{36} = 6\)$$:
+
+$$\[
+\sigma_{\bar{X}} = \frac{15}{6} = 2.5
+\]$$
+
+---
+
+## 2. Tipificación (convertir \(\bar{X}\) a un valor Z)
+
+Usamos la fórmula:
+
+$$\[
+Z = \frac{\bar{X} - \mu}{\sigma_{\bar{X}}}
+\]$$
+
+Sustituimos:
+
+$$\[
+Z = \frac{495 - 500}{2.5}
+\]$$
+
+Calculamos el numerador:
+
+$$\[
+495 - 500 = -5
+\]$$
+
+Entonces:
+
+$$\[
+Z = \frac{-5}{2.5} = -2
+\]$$
+
+---
+
+## 3. Buscar la probabilidad en la tabla normal estándar
+
+Queremos:
+
+$$\[
+P(Z < -2)
+\]$$
+
+Según la tabla Z:
+
 $$\[
 P(Z < -2) = 0.0228
 \]$$
+
+---
+
+## Resultado final
+
+$$\[
+P(\bar{X} < 495) = 0.0228
+\]$$
+
+Esto significa que hay una **probabilidad del 2.28%** de que el promedio de una muestra de 36 botellas sea menor que 495 ml.
+
 
 ---
 
