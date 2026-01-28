@@ -357,11 +357,11 @@ E(\bar{x}) = 65
 
 #### ¿Qué significa $$E(xˉ)E(\bar{x})E(xˉ)$$?
 
-$$E(xˉ)E(\bar{x})E(xˉ)$$ es el valor esperado de la media muestral.
-La media muestral $$xˉ\bar{x}xˉ$$ es un estimador insesgado del valor verdadero de la población $$(μ\muμ)$$.
+$$\E(xˉ)E(\bar{x})E(xˉ)\$$ es el valor esperado de la media muestral.
+La media muestral $$\[xˉ\bar{x}xˉ\$$ es un estimador insesgado del valor verdadero de la población $$\[(μ\muμ)\$$.
 
 Por lo tanto:
-$$E(xˉ)=μE(\bar{x}) = \muE(xˉ)=μ$$
+$$\[E(xˉ)=μE(\bar{x}) = \muE(xˉ)=μ\$$
 
 #### ¿Por qué?
 Porque, al tomar muchas muestras aleatorias de la población, el promedio de todas las medias muestrales coincide con la media poblacional real.
