@@ -355,16 +355,27 @@ $$\[
 E(\bar{x}) = 65
 
 
-#### ¿Qué significa $$E(xˉ)E(\bar{x})E(xˉ)$$?
+## Relación entre $$\(E(\bar{x})\)$$ y $$\(\mu\)$$
 
-$$\E(xˉ)E(\bar{x})E(xˉ)\$$ es el valor esperado de la media muestral.
-La media muestral $$\[xˉ\bar{x}xˉ\$$ es un estimador insesgado del valor verdadero de la población $$\[(μ\muμ)\$$.
+En estadística, el valor esperado de la media muestral se expresa como:
 
-Por lo tanto:
-$$\[E(xˉ)=μE(\bar{x}) = \muE(xˉ)=μ\$$
+$$\[
+E(\bar{x}) = \mu
+\]$$
 
-#### ¿Por qué?
-Porque, al tomar muchas muestras aleatorias de la población, el promedio de todas las medias muestrales coincide con la media poblacional real.
+### ¿Qué significa esto?
+
+- $$\(E(\bar{x})\)$$ es el **valor esperado de la media muestral**.
+- $$\(\bar{x}\)$$ es un **estimador insesgado** de la media poblacional.
+- Por lo tanto, cuando tomamos muchas muestras aleatorias, el promedio de todas las medias muestrales converge al valor real de la población, $$\(\mu\)$$.
+
+### Conclusión
+
+La media muestral es un estimador insesgado de la media poblacional, de modo que:
+
+$$\[
+E(\bar{x}) = \mu
+\]$$
 
 1.  
 $$\[
