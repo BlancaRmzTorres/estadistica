@@ -49,7 +49,65 @@ Se selecciona una muestra de 50 empleados y se obtiene un salario promedio de \$
 - Población  
 - Muestra  
 - Parámetro  
-- Estadístico  
+- Estadístico
+
+### 📌 Paso 1: Identificar la población
+
+La **población** es el conjunto total de elementos que se desean estudiar.
+
+En este caso:
+
+$$\[
+\text{Población} = 500 \text{ empleados}
+\]$$
+
+---
+
+### 📌 Paso 2: Identificar la muestra
+
+La **muestra** es un subconjunto representativo de la población.
+
+En este problema:
+
+$$\[
+\text{Muestra} = 50 \text{ empleados}
+\]$$
+
+---
+
+### 📌 Paso 3: Identificar el parámetro
+
+Un **parámetro** es una medida numérica que describe una característica de la **población**.
+
+El salario promedio real de toda la población es:
+
+$$\[
+\mu = 12{,}000
+\]$$
+
+Por lo tanto:
+
+$$\[
+\text{Parámetro} = \mu = 12{,}000
+\]$$
+
+---
+
+### 📌 Paso 4: Identificar el estadístico
+
+Un **estadístico** es una medida numérica calculada a partir de una **muestra**.
+
+El salario promedio obtenido de la muestra es:
+
+$$\[
+\bar{x} = 11{,}800
+\]$$
+
+Por lo tanto:
+
+$$\[
+\text{Estadístico} = \bar{x} = 11{,}800
+\]$$
 
 #### Solución:
 - **Población:** 500 empleados  
