@@ -310,7 +310,7 @@ $$\[
 
 ### Enunciado del Teorema Central del Límite
 
-Si se toman muestras aleatorias de tamaño suficientemente grande (\(n \ge 30\)) de **cualquier población** con media \(\mu\) y varianza finita \(\sigma^2\), entonces la distribución muestral de la media:
+Si se toman muestras aleatorias de tamaño suficientemente grande $$(\(n \ge 30\))$$ de **cualquier población** con media $$\(\mu\)$$ y varianza finita $$\(\sigma^2\)$$, entonces la distribución muestral de la media:
 
 - Se aproxima a una **distribución normal**
 - Tiene media $$\(\mu\)$$
