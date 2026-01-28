@@ -241,7 +241,7 @@ s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
 ---
 
 ### Distribución muestral
-Es la **distribución de probabilidad** de un estadístico cuando se consideran **todas las muestras posibles** de tamaño \(n\).
+Es la **distribución de probabilidad** de un estadístico cuando se consideran **todas las muestras posibles** de tamaño $$\(n\)$$.
 
 La más importante es la **distribución muestral de la media**.
 
@@ -249,7 +249,7 @@ La más importante es la **distribución muestral de la media**.
 
 ### Propiedades de la media muestral
 
-Si la población tiene media \(\mu\) y desviación estándar \(\sigma\):
+Si la población tiene media $$\(\mu\)$$ y desviación estándar $$\(\sigma\)$$:
 
 - Media de la media muestral:
 $$\[
