@@ -458,12 +458,6 @@ Se toman muestras de 36 botellas.
 
 Calcula la probabilidad de que el promedio muestral sea menor a 495 ml.
 
----
-
-#### Solución
-
-# Cálculo de la probabilidad de que el promedio muestral sea menor a 495 ml
-
 Tenemos una máquina que llena botellas con:
 - Media poblacional: $$\(\mu = 500 \, \text{ml}\)$$
 - Desviación estándar poblacional: $$\(\sigma = 15 \, \text{ml}\)$$
