@@ -465,17 +465,17 @@ Calcula la probabilidad de que el promedio muestral sea menor a 495 ml.
 # Cálculo de la probabilidad de que el promedio muestral sea menor a 495 ml
 
 Tenemos una máquina que llena botellas con:
-- Media poblacional: \(\mu = 500 \, \text{ml}\)
-- Desviación estándar poblacional: \(\sigma = 15 \, \text{ml}\)
+- Media poblacional: $$\(\mu = 500 \, \text{ml}\)$$
+- Desviación estándar poblacional: $$\(\sigma = 15 \, \text{ml}\)$$
 
 Se toma una muestra de:
-- \(n = 36\) botellas
+- $$\(n = 36\)$$ botellas
 
 Queremos calcular:
 
-\[
+$$\[
 P(\bar{X} < 495)
-\]
+\]$$
 
 ---
 
