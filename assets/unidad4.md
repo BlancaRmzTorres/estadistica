@@ -391,11 +391,11 @@ Z = \frac{66 - 65}{1} = 1
 
 Queremos calcular la probabilidad:
 
-\[
+$$\[
 P(X > 66)
-\]
+\]$$
 
-Para una variable normal con media \(\mu = 65\) y desviación estándar \(\sigma = 1\).
+Para una variable normal con media $$\(\mu = 65\)$$ y desviación estándar $$\(\sigma = 1\)$$.
 
 ---
 
@@ -403,15 +403,15 @@ Para una variable normal con media \(\mu = 65\) y desviación estándar \(\sigma
 
 Aplicamos la fórmula:
 
-\[
+$$\[
 Z = \frac{X - \mu}{\sigma}
-\]
+\]$$
 
 Sustituimos:
 
-\[
+$$\[
 Z = \frac{66 - 65}{1} = 1
-\]
+\]$$
 
 ---
 
