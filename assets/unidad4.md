@@ -353,14 +353,25 @@ Calcula:
 1.  
 $$\[
 E(\bar{x}) = 65
-\]$$
 
-2.  
+
+#### ¿Qué significa $$E(xˉ)E(\bar{x})E(xˉ)$$?
+
+$$E(xˉ)E(\bar{x})E(xˉ)$$ es el valor esperado de la media muestral.
+La media muestral $$xˉ\bar{x}xˉ$$ es un estimador insesgado del valor verdadero de la población $$(μ\muμ)$$.
+
+Por lo tanto:
+$$E(xˉ)=μE(\bar{x}) = \muE(xˉ)=μ$$
+
+#### ¿Por qué?
+Porque, al tomar muchas muestras aleatorias de la población, el promedio de todas las medias muestrales coincide con la media poblacional real.
+
+1.  
 $$\[
 \sigma_{\bar{x}} = \frac{8}{\sqrt{64}} = \frac{8}{8} = 1
 \]$$
 
-3. Tipificación:
+2. Tipificación:
 $$\[
 Z = \frac{66 - 65}{1} = 1
 \]$$
