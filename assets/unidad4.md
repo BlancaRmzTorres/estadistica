@@ -231,12 +231,12 @@ Es una función de los datos muestrales. Algunos ejemplos:
 - Media muestral:
 $$\[
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-\]$$
+\]$$  La fórmula se lee "la media muestral es el promedio de todos los valores $$xix_ixi​$$, es decir, la suma de los datos dividida entre el número total de datos."
 
 - Varianza muestral:
 $$\[
 s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
-\]$$
+\]$$ La fórmula se lee "la varianza muestral es el promedio de los cuadrados de las diferencias entre cada dato y la media muestral, dividido entre n menos 1."
 
 ---
 
