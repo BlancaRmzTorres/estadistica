@@ -352,7 +352,7 @@ Calcula:
 
 1.  
 $$\[
-E(\bar{x}) = 65
+E(\bar{x}) = 65$$
 
 
 ## Relación entre $$\(E(\bar{x})\)$$ y $$\(\mu\)$$
