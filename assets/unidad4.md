@@ -278,7 +278,7 @@ Se toma una muestra de tamaño $$\(n = 25\)$$.
 
 Calcula:
 1. Media de la distribución muestral  
-2. Desviación estándar de la media  
+2. Desviación estándar de la media (error estándar) 
 
 #### Solución:
 
