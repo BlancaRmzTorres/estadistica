@@ -539,7 +539,7 @@ Z = \frac{66 - 65}{1} = 1
 ## Tipificación y cálculo de probabilidad
 
 ### ¿Por qué se hace la tipificación?
-La tipificación (o estandarización) se utiliza para convertir cualquier distribución normal con media $$μ\muμ$$ y desviación estándar σ\sigmaσ en la Normal Estándar (media 0 y desviación 1).
+La tipificación (o estandarización) se utiliza para convertir cualquier distribución normal con media $$\mu$$ y desviación estándar σ\sigmaσ en la Normal Estándar (media 0 y desviación 1).
 
 Queremos calcular la probabilidad:
 
