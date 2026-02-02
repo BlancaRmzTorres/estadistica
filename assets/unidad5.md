@@ -62,7 +62,7 @@ IC = \bar{x} \pm Z_{\alpha/2} \left( \frac{\sigma}{\sqrt{n}} \right)
 
 ---
 
-### **Z_{α/2}**
+### **$$Z_{α/2}$$**
 **Significa:**  
 “Valor crítico de Z para un nivel de confianza de alfa entre dos”.
 
@@ -73,7 +73,7 @@ Este valor depende del nivel de confianza:
 
 ---
 
-### **σ / √n**
+### **$$σ / √n$$**
 **Significa:**  
 “Desviación estándar poblacional dividida entre la raíz cuadrada del tamaño de la muestra”.
 
@@ -81,9 +81,9 @@ Este término es conocido como **error estándar de la media**.
 
 ---
 
-## 📘 Lectura completa de la fórmula
+## Lectura completa de la fórmula
 
-> **IC = x̄ ± Z_{α/2} (σ / √n)**  
+> **$$IC = x̄ ± Z_{α/2} (σ / √n)$$**  
 >  
 > Se lee como:  
 > **“El intervalo de confianza es la media muestral más o menos Z sub alfa sobre dos por sigma sobre raíz de n”.**
