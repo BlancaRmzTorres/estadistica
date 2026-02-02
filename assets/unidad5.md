@@ -96,8 +96,8 @@ Este término es conocido como **error estándar de la media**.
 Se desea estimar la media poblacional del tiempo de atención en una clínica.  
 Se toma una muestra de **64 pacientes** y se obtiene:
 
-- Media muestral: \(\bar{x} = 50\)
-- Desviación estándar poblacional: \(\sigma = 8\)
+- Media muestral: $$\(\bar{x} = 50\)$$
+- Desviación estándar poblacional: $$\(\sigma = 8\)$$
 - Nivel de confianza: **95%**
 
 ---
