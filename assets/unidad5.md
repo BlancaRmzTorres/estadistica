@@ -41,7 +41,7 @@ IC = \bar{x} \pm Z_{\alpha/2} \left( \frac{\sigma}{\sqrt{n}} \right)
 
 ## ¿Cómo se lee la fórmula del intervalo de confianza?
 
-**"El intervalo de confianza es la media muestral más–menos el valor Z crítico multiplicado por la desviación estándar poblacional dividida entre la raíz cuadrada del tamaño de la muestra."**
+> **"El intervalo de confianza es la media muestral más–menos el valor Z crítico multiplicado por la desviación estándar poblacional dividida entre la raíz cuadrada del tamaño de la muestra."**
 
 ---
 
@@ -277,6 +277,8 @@ Cuando la desviación poblacional no es conocida y la muestra es pequeña, se us
 $$\[
 IC = \bar{x} \pm t_{\alpha/2, n-1} \left( \frac{s}{\sqrt{n}} \right)
 \]$$
+
+> **" La fórmula se lee: El intervalo de confianza es la media muestral más o menos el valor t crítico con alfa entre dos y n menos uno grados de libertad, multiplicado por la desviación estándar muestral dividida entre la raíz cuadrada del tamaño de la muestra"
 
 #### Ejemplo 1
 
