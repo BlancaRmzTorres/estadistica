@@ -39,6 +39,55 @@ IC = \bar{x} \pm Z_{\alpha/2} \left( \frac{\sigma}{\sqrt{n}} \right)
 
 ---
 
+# ¿Cómo se lee la fórmula del intervalo de confianza?
+
+**"El intervalo de confianza es la media muestral más–menos el valor Z crítico multiplicado por la desviación estándar poblacional dividida entre la raíz cuadrada del tamaño de la muestra."**
+
+---
+
+## 📌 Desglose de cada elemento
+
+### **IC**
+**Significa:** “Intervalo de confianza”.
+
+---
+
+### **x̄**
+**Significa:** “Media muestral”.
+
+---
+
+### **±**
+**Significa:** “Más o menos”.
+
+---
+
+### **Z_{α/2}**
+**Significa:**  
+“Valor crítico de Z para un nivel de confianza de alfa entre dos”.
+
+Este valor depende del nivel de confianza:  
+- 90% → 1.645  
+- 95% → 1.96  
+- 99% → 2.575  
+
+---
+
+### **σ / √n**
+**Significa:**  
+“Desviación estándar poblacional dividida entre la raíz cuadrada del tamaño de la muestra”.
+
+Este término es conocido como **error estándar de la media**.
+
+---
+
+## 📘 Lectura completa de la fórmula
+
+> **IC = x̄ ± Z_{α/2} (σ / √n)**  
+>  
+> Se lee como:  
+> **“El intervalo de confianza es la media muestral más o menos Z sub alfa sobre dos por sigma sobre raíz de n”.**
+
 #### Ejemplo 2 (paso a paso)
 
 Datos:
