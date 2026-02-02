@@ -81,35 +81,190 @@ Este término es conocido como **error estándar de la media**.
 
 ---
 
-## Lectura completa de la fórmula
+### Lectura completa de la fórmula
 
 > **$$IC = x̄ ± Z_{α/2} (σ / √n)$$**  
 >  
 > Se lee como:  
 > **“El intervalo de confianza es la media muestral más o menos Z sub alfa sobre dos por sigma sobre raíz de n”.**
 
-#### Ejemplo 2 (paso a paso)
+### Ejemplos de Intervalos de Confianza
 
-Datos:
-- $$\(\bar{x} = 75\)$$
-- $$\(\sigma = 10\)$$
-- $$\(n = 100\)$$
-- Nivel de confianza = 95% → $$\(Z = 1.96\)$$
+### Ejemplo 1: Intervalo de confianza para la media poblacional (σ conocida)
 
-**Paso 1. Error estándar**
+### Planteamiento
+Se desea estimar la media poblacional del tiempo de atención en una clínica.  
+Se toma una muestra de **64 pacientes** y se obtiene:
+
+- Media muestral: \(\bar{x} = 50\)
+- Desviación estándar poblacional: \(\sigma = 8\)
+- Nivel de confianza: **95%**
+
+---
+
+### Fórmula
+
 $$\[
-\frac{\sigma}{\sqrt{n}} = \frac{10}{\sqrt{100}} = 1
+IC = \bar{x} \pm Z_{\alpha/2}\left(\frac{\sigma}{\sqrt{n}}\right)
 \]$$
 
-**Paso 2. Margen de error**
+---
+
+### Paso 1: Valor crítico
+
+Para un nivel de confianza del 95%:
+
+$$\[
+Z_{0.025} = 1.96
+\]$$
+
+---
+
+### Paso 2: Error estándar
+
+$$\[
+\frac{\sigma}{\sqrt{n}} = \frac{8}{\sqrt{64}} = 1
+\]$$
+
+---
+
+### Paso 3: Margen de error
+
 $$\[
 E = 1.96 \times 1 = 1.96
 \]$$
 
-**Paso 3. Intervalo de confianza**
+---
+
+### Paso 4: Intervalo de confianza
+
 $$\[
-(75 - 1.96,\; 75 + 1.96) = (73.04,\; 76.96)
+(50 - 1.96,\; 50 + 1.96) = (48.04,\; 51.96)
 \]$$
+
+---
+
+### Interpretación
+Con un **95% de confianza**, la media poblacional del tiempo de atención se encuentra entre **48.04 y 51.96** minutos.
+
+---
+
+### Ejemplo 2: Intervalo de confianza para la media poblacional (σ desconocida)
+
+### Planteamiento
+Se desea estimar el peso promedio de un grupo de estudiantes. Se obtiene:
+
+- Tamaño de muestra: $$\(n = 25\)$$
+- Media muestral: $$\(\bar{x} = 68\)$$
+- Desviación estándar muestral: $$\(s = 6\)$$
+- Nivel de confianza: **95%**
+
+---
+
+### Fórmula (distribución t de Student)
+
+$$\[
+IC = \bar{x} \pm t_{\alpha/2,\,n-1}\left(\frac{s}{\sqrt{n}}\right)
+\]$$
+
+---
+
+### Paso 1: Grados de libertad
+
+$$\[
+gl = n - 1 = 24
+\]$$
+
+De la tabla t:
+
+$$\[
+t_{0.025,24} = 2.064
+\]$$
+
+---
+
+### Paso 2: Error estándar
+
+$$\[
+\frac{s}{\sqrt{n}} = \frac{6}{\sqrt{25}} = 1.2
+\]$$
+
+---
+
+### Paso 3: Margen de error
+
+$$\[
+E = 2.064 \times 1.2 = 2.48
+\]$$
+
+---
+
+### Paso 4: Intervalo de confianza
+
+$$\[
+(68 - 2.48,\; 68 + 2.48) = (65.52,\; 70.48)
+\]$$
+
+---
+
+### Interpretación
+Con un **95% de confianza**, el peso promedio de los estudiantes se encuentra entre **65.52 y 70.48 kg**.
+
+---
+
+## Ejemplo 3: Intervalo de confianza para una proporción poblacional
+
+### Planteamiento
+En una encuesta aplicada a **400 personas**, **160** indicaron que usan transporte público.
+
+- Tamaño de muestra: $$\(n = 400\)$$
+- Proporción muestral:
+$$\[
+\hat{p} = \frac{160}{400} = 0.4
+\]$$
+- Nivel de confianza: **95%**
+
+---
+
+### Fórmula
+
+$$\[
+IC = \hat{p} \pm Z_{\alpha/2}
+\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\]$$
+
+---
+
+### Paso 1: Error estándar
+
+$$\[
+\sqrt{\frac{0.4(0.6)}{400}} = \sqrt{0.0006} = 0.0245
+\]$$
+
+---
+
+### Paso 2: Margen de error
+
+$$\[
+E = 1.96 \times 0.0245 = 0.048
+\]$$
+
+---
+
+### Paso 3: Intervalo de confianza
+
+$$\[
+(0.4 - 0.048,\; 0.4 + 0.048) = (0.352,\; 0.448)
+\]$$
+
+---
+
+### Interpretación
+Con un **95% de confianza**, la proporción poblacional de personas que usan transporte público se encuentra entre **35.2% y 44.8%**.
+
+---
+
+**Nota:** A mayor tamaño de muestra, menor será el margen de error del intervalo de confianza.
 
 ---
 
