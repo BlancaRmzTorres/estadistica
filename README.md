@@ -21,6 +21,11 @@
 - 4.1 Concepto de poblaciones y muestras.
 - 4.2 Estadísticos y distribuciones muestrales.
 - 4.3 Teorema central del límite y su importancia en estadística inferencial.
+
+#### 5. [INTERVALOS DE CONFIANZA Y ESTIMACIÓN PUNTUAL](assets/unidad5.md)
+- 5.1 Estimación puntual y por intervalos de confianza.
+- 5.2 Estimaciones para una y dos poblaciones.
+- 5.3 Intervalos de confianza para proporciones y grandes muestras.
 _______________
 
 #### Referencias bibliográficas (APA)
