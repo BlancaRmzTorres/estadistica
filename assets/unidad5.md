@@ -574,6 +574,136 @@ Si repitiéramos este proceso muchas veces, el **95% de los intervalos** calcula
 
 ### 5.2.1 Intervalo de confianza para una media (σ desconocida)
 
+### Intervalo de Confianza para una Media (σ desconocida)
+### Teoría completa en Markdown
+
+Cuando queremos estimar la **media poblacional μ** pero **no conocemos la desviación estándar de la población (σ)**, debemos utilizar la **distribución t de Student** en lugar de la distribución normal estándar.
+
+---
+
+### 1. Contexto del problema
+
+En la práctica, rara vez se conoce la desviación estándar poblacional σ.  
+Por ello, cuando trabajamos con:
+
+- una **muestra aleatoria**,  
+- tamaño de muestra **n**,  
+- desviación estándar muestral **s**,  
+- y distribución aproximadamente normal,
+
+la estimación de μ se basa en la distribución **t**.
+
+---
+
+## 2. Proporción muestral y estimación de σ
+
+### Media muestral
+$$\[
+\bar{X} = \frac{1}{n}\sum_{i=1}^{n} X_i
+\]$$
+
+### Desviación estándar muestral
+$$\[
+s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(X_i - \bar{X})^2}
+\]$$
+
+Esta s sustituye a σ, introduciendo más variabilidad, lo cual justifica el uso de t-Student.
+
+---
+
+## 3. Distribución t de Student
+
+Cuando σ es desconocida, el estadístico:
+
+$$\[
+t = \frac{\bar{X} - \mu}{\frac{s}{\sqrt{n}}}
+\]$$
+
+sigue una distribución **t con $$\( n-1 \)$$ grados de libertad**.
+
+La distribución t:
+
+- Es similar a la normal, pero con **colas más pesadas**.  
+- Se vuelve más parecida a la normal conforme $$\( n \)$$ aumenta.  
+- Ajusta la incertidumbre por usar **s en lugar de σ**.
+
+---
+
+## 4. Error estándar de la media
+
+$$\[
+SE = \frac{s}{\sqrt{n}}
+\]$$
+
+---
+
+## 5. Fórmula del intervalo de confianza
+
+Para un nivel de confianza $$\((1 - \alpha) \cdot 100\%\)$$, el intervalo de confianza es:
+
+$$\[
+IC = \bar{X} \pm t_{\alpha/2, \, n-1} \cdot \frac{s}{\sqrt{n}}
+\]$$
+
+Donde:
+
+- $$\( \bar{X} \)$$ = media muestral  
+- $$\( s \)$$ = desviación estándar muestral  
+- $$\( n \)$$ = tamaño de la muestra  
+- $$\( t_{\alpha/2, \, n-1} \)$$ = valor crítico t con $$\(n-1\)$$ grados de libertad  
+- $$\( SE = \frac{s}{\sqrt{n}} \)$$ = error estándar  
+
+---
+
+## 6. Valores t más comunes (colección)
+
+| Nivel de confianza | gl (df) | t crítico |
+|-------------------|---------|-----------|
+| 90% | grande | 1.645 (aprox. normal) |
+| 95% | grande | 1.96 (aprox. normal) |
+| 95% | n=10 | 2.262 |
+| 95% | n=20 | 2.093 |
+| 95% | n=30 | 2.042 |
+| 99% | n=10 | 3.169 |
+| 99% | n=20 | 2.845 |
+
+**Nota:** A medida que n crece, t se acerca al valor Z correspondiente.
+
+---
+
+## 7. Interpretación del intervalo
+
+Si el intervalo obtenido es, por ejemplo:
+
+$$\[
+(23.1,\; 27.8)
+\]$$
+
+la interpretación correcta es:
+
+> Con un nivel de confianza del (1 − α)·100%, si repitiéramos el proceso muchas veces, **aproximadamente ese porcentaje de intervalos contaría con el valor real de la media poblacional μ**.
+
+No se interpreta como probabilidad de que μ esté dentro del intervalo, porque μ es fija.
+
+---
+
+## 8. Resumen final
+
+Cuando **σ es desconocida**, usamos:
+
+- El valor t crítico (no Z).  
+- La desviación estándar muestral s.  
+- La fórmula:
+
+$$\[
+IC = \bar{X} \pm t_{\alpha/2, n-1}\left(\frac{s}{\sqrt{n}}\right)
+\]$$
+
+Este intervalo ajusta correctamente la incertidumbre adicional introducida por desconocer σ.
+
+---
+
+
 Cuando la desviación poblacional no es conocida y la muestra es pequeña, se usa la **distribución t de Student**.
 
 $$\[
