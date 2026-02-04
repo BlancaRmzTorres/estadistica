@@ -31,7 +31,7 @@ $$\[
 
 Un **intervalo de confianza (IC)** proporciona un rango de valores dentro del cual se espera que se encuentre el parámetro poblacional con un cierto nivel de confianza (95%, 99%, etc.).
 
-# ¿Para qué se utilizan los intervalos de confianza?
+### ¿Para qué se utilizan los intervalos de confianza?
 
 Los **intervalos de confianza** se utilizan en estadística para **estimar un valor desconocido de una población** (como una media o proporción) a partir de una muestra, indicando además **qué tan segura es esa estimación**.
 
