@@ -321,6 +321,166 @@ Con un 95% de confianza, la media poblacional se encuentra entre 68.04 y 71.96.
 
 ---
 
+## Ejemplo 2: Intervalo de confianza para una media (σ conocida)
+
+### Problema
+Una población tiene desviación estándar conocida  
+$$\[
+\sigma = 5
+\]$$
+
+Se toma una muestra de tamaño  
+$$\[
+n = 36
+\]$$
+
+y se obtiene una media muestral  
+$$\[
+\bar{x} = 50
+\]$$
+
+Construya un **intervalo de confianza del 90%** para la media poblacional.
+
+---
+
+### Solución paso a paso
+
+#### 1. Nivel de confianza
+Nivel de confianza: **90%**
+
+Valor crítico de la normal estándar:
+$$\[
+Z_{\alpha/2} = 1.645
+\]$$
+
+---
+
+#### 2. Fórmula del intervalo de confianza
+Para una media con desviación estándar conocida:
+
+$$\[
+IC = \bar{x} \pm Z_{\alpha/2}\left(\frac{\sigma}{\sqrt{n}}\right)
+\]$$
+
+---
+
+#### 3. Sustitución de valores
+$$\[
+IC = 50 \pm 1.645\left(\frac{5}{\sqrt{36}}\right)
+\]$$
+
+---
+
+#### 4. Cálculo
+
+Primero calculamos el error estándar:
+$$\[
+\frac{5}{\sqrt{36}} = \frac{5}{6} = 0.8333
+\]$$
+
+Luego:
+$$\[
+1.645(0.8333) = 1.37
+\]$$
+
+Por lo tanto:
+$$\[
+IC = 50 \pm 1.37
+\]$$
+
+---
+
+#### 5. Intervalo de confianza
+$$\[
+(48.63,\; 51.37)
+\]$$
+
+---
+
+### Interpretación
+Con un **90% de confianza**, la media poblacional se encuentra entre **48.63 y 51.37**.
+
+
+### Ejemplo 3: Intervalo de confianza para una media (σ conocida)
+
+### Problema
+Una población tiene desviación estándar conocida  
+$$\[
+\sigma = 12
+\]$$
+
+Se toma una muestra de tamaño  
+$$\[
+n = 100
+\]$$
+
+y se obtiene una media muestral  
+$$\[
+\bar{x} = 120
+\]$$
+
+Construya un **intervalo de confianza del 99%** para la media poblacional.
+
+---
+
+### Solución paso a paso
+
+### 1. Nivel de confianza
+Nivel de confianza: **99%**
+
+Valor crítico de la normal estándar:
+$$\[
+Z_{\alpha/2} = 2.576
+\]$$
+
+---
+
+### 2. Fórmula del intervalo de confianza
+Para una media con desviación estándar conocida:
+
+$$\[
+IC = \bar{x} \pm Z_{\alpha/2}\left(\frac{\sigma}{\sqrt{n}}\right)
+\]$$
+
+---
+
+### 3. Sustitución de valores
+$$\[
+IC = 120 \pm 2.576\left(\frac{12}{\sqrt{100}}\right)
+\]$$
+
+---
+
+### 4. Cálculo
+
+Primero calculamos el error estándar:
+$$\[
+\frac{12}{\sqrt{100}} = \frac{12}{10} = 1.2
+\]$$
+
+Luego:
+$$\[
+2.576(1.2) = 3.0912
+\]$$
+
+Por lo tanto:
+$$\[
+IC = 120 \pm 3.0912
+\]$$
+
+---
+
+### 5. Intervalo de confianza
+$$\[
+(116.91,\; 123.09)
+\]$$
+
+---
+
+### Interpretación
+Con un **99% de confianza**, la media poblacional se encuentra entre **116.91 y 123.09**.
+
+
 ### Estimación para dos poblaciones (diferencia de medias)
 
 Cuando se desea comparar **dos poblaciones independientes**, se estima la **diferencia de medias poblacionales**:
