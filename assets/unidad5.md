@@ -216,6 +216,109 @@ Con un **95% de confianza**, la media poblacional del tiempo de atención se enc
 
 ---
 
+### Intervalo de Confianza para una Proporción Poblacional
+
+### 1. ¿Qué es una proporción poblacional?
+
+Una **proporción poblacional** $$\( p \)$$ representa la fracción de individuos en una población que poseen cierta característica.
+
+Ejemplos:
+- Proporción de personas que apoyan una propuesta.
+- Porcentaje de defectos en una línea de producción.
+- Proporción de estudiantes que aprueban un examen.
+
+Como $$\( p \)$$ es desconocida, se estima mediante una muestra.
+
+---
+
+## 2. Proporción muestral
+
+Si en una muestra de tamaño $$\( n \)$$ se observan $$\( x \)$$ "éxitos", la **proporción muestral** es:
+
+$$\[
+\hat{p} = \frac{x}{n}
+\]$$
+
+Esta es la mejor estimación puntual del parámetro real $$\( p \)$$.
+
+---
+
+## 3. Distribución de la proporción muestral
+
+Bajo ciertas condiciones (criterio $$\( n\hat{p} \ge 5 \)$$ y $$\( n(1-\hat{p}) \ge 5 \))$$, la proporción muestral sigue una distribución:
+
+$$\[
+\hat{p} \sim N\left(p,\ \frac{p(1-p)}{n}\right)
+\]$$
+
+Como $$\( p \)$$ es desconocido, en el cálculo del intervalo se usa:
+
+$$\[
+SE = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\]$$
+
+Este valor es el **error estándar de la proporción**.
+
+---
+
+## 4. Fórmula del intervalo de confianza
+
+El intervalo de confianza para una proporción poblacional, con nivel $$\((1 - \alpha) \cdot 100\%\)$$, es:
+
+$$\[
+IC = \hat{p} \pm Z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\]$$
+
+Donde:
+
+- $$\( \hat{p} \)$$: proporción muestral  
+- $$\( n \)$$: tamaño de la muestra  
+- $$\( Z_{\alpha/2} \)$$: valor crítico de la distribución normal estándar  
+- $$\( SE \)$$: error estándar de la proporción  
+
+---
+
+## 5. Valores Z más comunes
+
+| Nivel de confianza | \( Z_{\alpha/2} \) |
+|-------------------|--------------------|
+| 90%               | 1.645              |
+| 95%               | 1.96               |
+| 99%               | 2.57               |
+
+Estos valores provienen de la distribución normal estándar y son constantes para cada nivel de confianza.
+
+---
+
+## 6. Interpretación del intervalo de confianza
+
+Si el intervalo calculado es, por ejemplo:
+
+$$\[
+IC = (0.39,\ 0.45)
+\]$$
+
+La interpretación correcta es:
+
+> Si tomáramos muchas muestras del mismo tamaño y construyéramos intervalos de confianza de la misma forma, aproximadamente el **(1 - α)·100%** de ellos contendrían la proporción verdadera $$\( p \)$$.
+
+**Nota importante:**  
+No se debe interpretar como “hay un 95% de probabilidad de que $$\( p \)$$ esté dentro del intervalo”, porque el parámetro no es aleatorio; lo aleatorio es el intervalo.
+
+---
+## 7. Resumen final
+
+El intervalo de confianza para una proporción poblacional se construye como:
+
+$$\[
+IC = \hat{p} \pm Z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\]$$
+
+Este intervalo permite estimar el rango en el cual probablemente se encuentra la verdadera proporción poblacional $$\( p \)$$, considerando la variabilidad natural del muestreo.
+
+---
+
+
 ### Ejemplo 2: Intervalo de confianza para la media poblacional (σ desconocida)
 
 ### Planteamiento
