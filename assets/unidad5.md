@@ -31,6 +31,53 @@ $$\[
 
 Un **intervalo de confianza (IC)** proporciona un rango de valores dentro del cual se espera que se encuentre el parámetro poblacional con un cierto nivel de confianza (95%, 99%, etc.).
 
+# ¿Para qué se utilizan los intervalos de confianza?
+
+Los **intervalos de confianza** se utilizan en estadística para **estimar un valor desconocido de una población** (como una media o proporción) a partir de una muestra, indicando además **qué tan segura es esa estimación**.
+
+---
+
+## 🧠 ¿Qué es un intervalo de confianza?
+
+Es un **rango de valores** dentro del cual es **muy probable** que se encuentre el parámetro real de la población.
+
+Ejemplo:  
+> “La media está entre 45 y 52 con un 95% de confianza”.
+
+---
+
+## 📌 ¿Para qué se utilizan?
+
+### 1. Expresar la incertidumbre de una estimación  
+Una sola medida (como la media muestral) es solo un punto.  
+El intervalo muestra **qué tan confiable** es esa estimación.
+
+### 2. Tomar decisiones basadas en datos  
+Se usan en investigaciones científicas, encuestas, medicina, ingeniería, economía, etc., para evaluar **fiabilidad**.
+
+### 3. Comparar grupos  
+Si los intervalos de dos grupos no se traslapan mucho, podría indicar una **diferencia significativa**.
+
+### 4. Evitar conclusiones engañosas  
+El intervalo evita depender solo de un valor puntual.
+
+### 5. Evaluar precisión  
+- Intervalo **estrecho** → mayor precisión  
+- Intervalo **amplio** → menor precisión
+
+---
+
+## 🧪 Ejemplo
+
+En una encuesta, 60% de personas apoyan una propuesta, con un intervalo de confianza del 95% entre 56% y 64%.
+
+**Interpretación:**  
+> Con un 95% de confianza, el apoyo real en la población está entre 56% y 64%.
+
+---
+
+¿Quieres que también te genere una versión con fórmulas matemáticas usando **LaTeX**?
+
 #### Intervalo de confianza para la media (σ conocida)
 
 $$\[
