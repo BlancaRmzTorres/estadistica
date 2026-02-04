@@ -278,42 +278,6 @@ donde:
 
 ---
 
-## Donde:
-
-### **IC**
-**Significa:** “Intervalo de confianza”.
-
----
-
-### **x̄**
-**Significa:** “Media muestral”.
-
----
-
-### **±**
-**Significa:** “Más o menos”.
-
----
-
-### **$$Z_{α/2}$$**
-**Significa:**  
-“Valor crítico de Z para un nivel de confianza de alfa entre dos”.
-
-Este valor depende del nivel de confianza:  
-- 90% → 1.645  
-- 95% → 1.96  
-- 99% → 2.575  
-
----
-
-### **$$σ / √n$$**
-**Significa:**  
-“Desviación estándar poblacional dividida entre la raíz cuadrada del tamaño de la muestra”.
-
-Este término es conocido como **error estándar de la media**.
-
----
-
 ### Lectura completa de la fórmula
 
 > **$$IC = x̄ ± Z_{α/2} (σ / √n)$$**  
