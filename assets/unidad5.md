@@ -75,7 +75,7 @@ En una encuesta, 60% de personas apoyan una propuesta, con un intervalo de confi
 ---
 
 #### Intervalo de confianza para la media (σ conocida)
-La fórmula general del intervalo de confianza (IC) para la media poblacional (\(\mu \)) con desviación estándar conocida (\(\sigma \)) es:
+La fórmula general del intervalo de confianza (IC) para la media poblacional $$(\(\mu \))$$ con desviación estándar conocida $$(\(\sigma \))$$ es:
 
 $$\[
 IC = \bar{x} \pm Z_{\alpha/2} \left( \frac{\sigma}{\sqrt{n}} \right)
