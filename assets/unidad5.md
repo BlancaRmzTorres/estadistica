@@ -381,3 +381,188 @@ Con un 95% de confianza, la diferencia entre las medias poblacionales se encuent
 - Para **dos poblaciones**, se estima la **diferencia de medias**.
 - Estos intervalos permiten **comparar grupos y tomar decisiones estadísticas fundamentadas**.
 
+## 5.3 Intervalos de confianza para proporciones y grandes muestras
+
+En muchos estudios estadísticos, el interés se centra en **estimar una proporción poblacional (p)**, como el porcentaje de personas que apoyan una propuesta o la proporción de productos defectuosos.
+
+Cuando el tamaño de la muestra es suficientemente grande, la distribución muestral de la proporción puede aproximarse por una **distribución normal**, lo que permite construir **intervalos de confianza**.
+
+---
+
+### Proporción poblacional y proporción muestral
+
+- **Proporción poblacional (p):** parámetro desconocido.
+- **Proporción muestral (p̂):** estimador puntual de p.
+
+$$\[
+\hat{p} = \frac{x}{n}
+\]$$
+
+donde:
+- $$\(x\)$$ = número de éxitos
+- $$\(n\)$$ = tamaño de la muestra
+
+---
+
+### Condición de gran muestra
+
+Para usar la aproximación normal se deben cumplir:
+
+- $$\(n\hat{p} \ge 5\)$$
+- $$\(n(1 - \hat{p}) \ge 5\)$$
+
+Si estas condiciones se cumplen, se puede utilizar la distribución **Z**.
+
+---
+
+### Intervalo de confianza para una proporción
+
+El intervalo de confianza para una proporción poblacional es:
+
+$$\[
+\hat{p} \pm Z_{\alpha/2}
+\sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}
+\]$$
+
+donde:
+- $$\(\hat{p}\)$$ = proporción muestral  
+- $$\(Z_{\alpha/2}\)$$ = valor crítico de la normal estándar  
+- $$\(n\)$$ = tamaño de la muestra  
+
+---
+
+### Ejemplo 1: Intervalo de confianza para una proporción
+
+**Problema:**  
+En una encuesta a 300 personas, 180 respondieron que están a favor de una política pública.  
+Construya un intervalo de confianza del 95% para la proporción poblacional.
+
+**Solución paso a paso:**
+
+1. Calcular la proporción muestral:
+
+$$\[
+\hat{p} = \frac{180}{300} = 0.60
+\]$$
+
+2. Verificar condición de gran muestra:
+
+- $$\(n\hat{p} = 300(0.60) = 180 \ge 5\)
+- $$\(n(1 - \hat{p}) = 300(0.40) = 120 \ge 5\)
+
+Se cumple la condición.
+
+3. Nivel de confianza del 95%:
+
+$$\[
+Z_{\alpha/2} = 1.96
+\]$$
+
+4. Sustituir en la fórmula:
+
+$$\[
+IC = 0.60 \pm 1.96
+\sqrt{\frac{0.60(0.40)}{300}}
+\]$$
+
+5. Cálculo:
+
+$$\[
+IC = 0.60 \pm 1.96(0.0283)
+\]$$
+
+$$\[
+IC = 0.60 \pm 0.055
+\]$$
+
+6. Intervalo de confianza:
+
+$$\[
+(0.545,\;0.655)
+\]$$
+
+**Interpretación:**  
+Con 95% de confianza, la proporción poblacional se encuentra entre 0.545 y 0.655.
+
+---
+
+### Intervalo de confianza para la diferencia de proporciones
+
+Cuando se comparan **dos poblaciones independientes**, se construye un intervalo de confianza para la diferencia:
+
+$$\[
+p_1 - p_2
+\]$$
+
+La fórmula es:
+
+$$\[
+(\hat{p}_1 - \hat{p}_2) \pm Z_{\alpha/2}
+\sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 - \hat{p}_2)}{n_2}}
+\]$$
+
+---
+
+### Ejemplo 2: Intervalo de confianza para la diferencia de proporciones
+
+**Problema:**  
+En dos ciudades se estudia el uso de transporte público:
+
+- Ciudad A: 120 de 200 personas lo usan.
+- Ciudad B: 90 de 180 personas lo usan.
+
+Construya un intervalo de confianza del 95% para la diferencia de proporciones.
+
+**Solución paso a paso:**
+
+1. Proporciones muestrales:
+
+$$\[
+\hat{p}_1 = \frac{120}{200} = 0.60
+\]$$
+
+$$\[
+\hat{p}_2 = \frac{90}{180} = 0.50
+\]$$
+
+2. Valor crítico:
+
+$$\[
+Z_{\alpha/2} = 1.96
+\]$$
+
+3. Sustituir en la fórmula:
+
+$$\[
+IC = (0.60 - 0.50) \pm 1.96
+\sqrt{\frac{0.60(0.40)}{200} + \frac{0.50(0.50)}{180}}
+\]$$
+
+4. Cálculo:
+
+$$\[
+IC = 0.10 \pm 1.96(0.048)
+\]$$
+
+$$\[
+IC = 0.10 \pm 0.094
+\]$$
+
+5. Intervalo de confianza:
+
+$$\[
+(0.006,\;0.194)
+\]$$
+
+**Interpretación:**  
+Con 95% de confianza, la diferencia entre las proporciones poblacionales se encuentra entre 0.006 y 0.194.
+
+---
+
+### Conclusión del tema 5.3
+
+- Las proporciones se estiman usando la **distribución normal** en muestras grandes.
+- Es fundamental verificar las **condiciones de gran muestra**.
+- Los intervalos permiten comparar poblaciones y apoyar la toma de decisiones estadísticas.
+
+---
