@@ -437,7 +437,140 @@ Con un **95% de confianza**, la proporción poblacional de personas que usan tra
 
 ---
 
-## 5.2 Estimaciones para una y dos poblaciones
+### Ejemplo 4. Intervalo de Confianza para una Proporción Poblacional
+
+### Planteamiento del problema
+
+Un investigador quiere estimar la proporción de empleados que están satisfechos con su trabajo.  
+En una muestra aleatoria de **250 empleados**, **170** respondieron que están satisfechos.
+
+Construye un **intervalo de confianza del 95%** para la proporción poblacional $$\( p \)$$.
+
+---
+
+### Calcular la proporción muestral
+
+$$\[
+\hat{p} = \frac{x}{n} = \frac{170}{250}
+\]$$
+
+$$\[
+\hat{p} = 0.68
+\]$$
+
+---
+
+### Verificar condiciones para usar la aproximación normal
+
+Se deben cumplir:
+
+$$\[
+n\hat{p} \ge 5, \qquad n(1 - \hat{p}) \ge 5
+\]$$
+
+Cálculo:
+
+$$\[
+n\hat{p} = 250 \cdot 0.68 = 170 \ge 5
+\]$$
+
+$$\[
+n(1 - \hat{p}) = 250 \cdot 0.32 = 80 \ge 5
+\]$$
+
+Ambas condiciones se cumplen.
+
+---
+
+### Calcular el error estándar (SE)
+
+$$\[
+SE = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\]$$
+
+$$\[
+SE = \sqrt{\frac{0.68(1 - 0.68)}{250}}
+\]$$
+
+$$\[
+SE = \sqrt{\frac{0.2176}{250}}
+\]$$
+
+$$\[
+SE = \sqrt{0.0008704} = 0.0295
+\]$$
+
+---
+
+### Valor crítico $$\( Z_{\alpha/2} \)$$
+
+Para un **95% de confianza**:
+
+$$\[
+Z_{\alpha/2} = 1.96
+\]$$
+
+---
+
+### Construcción del intervalo de confianza
+
+Fórmula:
+
+$$\[
+IC = \hat{p} \pm Z_{\alpha/2} \cdot SE
+\]$$
+
+Sustitución:
+
+$$\[
+IC = 0.68 \pm 1.96(0.0295)
+\]$$
+
+$$\[
+ME = 1.96 \cdot 0.0295 = 0.0578
+\]$$
+
+---
+
+### Cálculo de los límites
+
+### Límite inferior:
+
+$$\[
+0.68 - 0.0578 = 0.6222
+\]$$
+
+### Límite superior:
+
+$$\[
+0.68 + 0.0578 = 0.7378
+\]$$
+
+---
+
+### Resultado final
+
+El intervalo de confianza del **95%** para la proporción poblacional es:
+
+$$\[
+\boxed{(0.6222,\ 0.7378)}
+\]$$
+
+---
+
+### Interpretación
+
+Con un **95% de confianza**, la proporción verdadera de empleados satisfechos se encuentra entre:
+
+$$\[
+62.22\% \text{ y } 73.78\%
+\]$$
+
+Si repitiéramos este proceso muchas veces, el **95% de los intervalos** calculados de esta misma forma contendrían el valor real de $$\( p \)$$.
+
+---
+
+### 5.2 Estimaciones para una y dos poblaciones
 
 ### 5.2.1 Intervalo de confianza para una media (σ desconocida)
 
