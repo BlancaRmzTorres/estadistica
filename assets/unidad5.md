@@ -67,7 +67,7 @@ El intervalo de confianza se calcula a partir de las estadísticas de la muestra
 
 <img width="486" height="600" alt="imagen1" src="/assets/intervalos.png" />
 
-Los valores de 1.96 y 2.57 representan percentiles específicos de la curva normal estándar, por lo que estos son fijos
+Los valores de 1.96 y 2.57 representan percentiles específicos de la curva normal estándar, estos son fijos
 
 > - Z=1.96Z = 1.96Z=1.96 deja 2.5% en cada cola (95% al centro).
 > - Z=2.57Z = 2.57Z=2.57 deja 0.5% en cada cola (99% al centro).
