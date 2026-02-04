@@ -577,6 +577,16 @@ Si repitiéramos este proceso muchas veces, el **95% de los intervalos** calcula
 ### Intervalo de Confianza para una Media (σ desconocida)
 Cuando queremos estimar la **media poblacional μ** pero **no conocemos la desviación estándar de la población (σ)**, debemos utilizar la **distribución t de Student** en lugar de la distribución normal estándar.
 
+### ¿Qué es la Distribución t de Student?
+La distribución t de Student es una distribución de probabilidad continua que se usa principalmente cuando:
+
+- Queremos estimar la media poblacional μ,
+- La desviación estándar poblacional σ es desconocida,
+- Y tenemos un tamaño de muestra pequeño (generalmente n<30n < 30n<30).
+
+Fue desarrollada por William Gosset, quien publicó bajo el seudónimo “Student”.
+
+
 ---
 
 ### 1. Contexto del problema
@@ -820,5 +830,5 @@ Un intervalo de confianza del 95% significa que, si se tomaran muchas muestras y
 
 ---
 
-📌 **Nota:** Estos métodos son fundamentales en estadística inferencial y en el análisis de datos en ciencia, ingeniería y ciencias sociales.
+**Nota:** Estos métodos son fundamentales en estadística inferencial y en el análisis de datos en ciencia, ingeniería y ciencias sociales.
 
