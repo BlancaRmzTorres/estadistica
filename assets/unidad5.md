@@ -496,11 +496,7 @@ p_1 - p_2
 
 La fórmula es:
 
-$$\[
-(\hat{p}_1 - \hat{p}_2) \pm Z_{\alpha/2}
-\sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 - \hat{p}_2)}{n_2}}
-\]$$
-
+$$(\hat{p}_1 - \hat{p}_2) \pm Z_{\alpha/2} \sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 - \hat{p}_2)}{n_2}}$$
 ---
 
 ### Ejemplo 2: Intervalo de confianza para la diferencia de proporciones
