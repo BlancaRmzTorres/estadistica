@@ -42,7 +42,7 @@ Los **intervalos de confianza** se utilizan en estadística para **estimar un va
 
 ---
 
-## ¿Para qué se utilizan?
+### Utilidades de los intervalos de confianza
 
 ### 1. Expresar la incertidumbre de una estimación  
 Una sola medida (como la media muestral) es solo un punto.  
