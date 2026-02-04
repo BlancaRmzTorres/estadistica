@@ -37,11 +37,7 @@ Los **intervalos de confianza** se utilizan en estadística para **estimar un va
 
 ---
 
-### ¿Qué es un intervalo de confianza?
-
-Es un **rango de valores** dentro del cual es **muy probable** que se encuentre el parámetro real de la población.
-
-Ejemplo:  
+### Ejemplo:  
 > “La media está entre 45 y 52 con un 95% de confianza”.
 
 ---
