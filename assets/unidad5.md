@@ -233,14 +233,44 @@ En una encuesta, 60% de personas apoyan una propuesta, con un intervalo de confi
 
 ---
 
-#### Intervalo de confianza para la media (σ conocida)
-La fórmula general del intervalo de confianza (IC) para la media poblacional $$(\(\mu \))$$ con desviación estándar conocida $$(\(\sigma \))$$ es:
+### Intervalo de confianza para la media (σ conocida)
 
-$$\[
-IC = \bar{x} \pm Z_{\alpha/2} \left( \frac{\sigma}{\sqrt{n}} \right)
-\]$$
+Un **intervalo de confianza para la media con desviación estándar poblacional conocida (σ conocida)** es un rango de valores que se utiliza para **estimar el valor verdadero de la media poblacional (μ)** con un cierto **nivel de confianza** (por ejemplo, 90%, 95% o 99%).
+
+Este tipo de intervalo se basa en la **distribución normal estándar (Z)**.
 
 ---
+
+### Supuestos necesarios
+
+Para aplicar este intervalo de confianza se deben cumplir los siguientes supuestos:
+
+1. La **desviación estándar poblacional σ es conocida**.
+2. La población tiene **distribución normal**, o bien:
+3. El tamaño de la muestra es grande $$(\( n \ge 30 \))$$ y se aplica el **Teorema Central del Límite**.
+4. La muestra es **aleatoria e independiente**.
+
+---
+
+### Fórmula del intervalo de confianza
+
+El intervalo de confianza para la media con σ conocida está dado por:
+
+$$\[
+IC = \bar{x} \pm Z_{\alpha/2}\left(\frac{\sigma}{\sqrt{n}}\right)
+\]$$
+
+donde:
+
+- $$\( \bar{x} \)$$ = media muestral  
+- $$\( \mu \)$$ = media poblacional (desconocida)  
+- $$\( \sigma \)$$ = desviación estándar poblacional (conocida)  
+- $$\( n \)$$ = tamaño de la muestra  
+- $$\( Z_{\alpha/2} \)$$ = valor crítico de la distribución normal  
+- $$\( \alpha = 1 - \text{nivel de confianza} \)$$
+
+---
+
 
 ## ¿Cómo se lee la fórmula del intervalo de confianza?
 
