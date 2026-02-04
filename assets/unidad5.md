@@ -575,8 +575,6 @@ Si repitiéramos este proceso muchas veces, el **95% de los intervalos** calcula
 ### 5.2.1 Intervalo de confianza para una media (σ desconocida)
 
 ### Intervalo de Confianza para una Media (σ desconocida)
-### Teoría completa en Markdown
-
 Cuando queremos estimar la **media poblacional μ** pero **no conocemos la desviación estándar de la población (σ)**, debemos utilizar la **distribución t de Student** en lugar de la distribución normal estándar.
 
 ---
