@@ -327,6 +327,14 @@ $$\[
 
 ### Paso 3: Margen de error
 
+E = Z × SE
+
+Donde:
+
+- E = Margen de error
+- Z = Valor crítico de la distribución normal (por ej., 1.96 para 95%)
+- SE = Error estándar (standard error)
+
 $$\[
 E = 1.96 \times 1 = 1.96
 \]$$
