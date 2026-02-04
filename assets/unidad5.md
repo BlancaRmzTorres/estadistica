@@ -216,6 +216,69 @@ Con un **95% de confianza**, la media poblacional del tiempo de atención se enc
 
 ---
 
+### Ejemplo 2: Intervalo de confianza para la media poblacional (σ desconocida)
+
+### Planteamiento
+Se desea estimar el peso promedio de un grupo de estudiantes. Se obtiene:
+
+- Tamaño de muestra: $$\(n = 25\)$$
+- Media muestral: $$\(\bar{x} = 68\)$$
+- Desviación estándar muestral: $$\(s = 6\)$$
+- Nivel de confianza: **95%**
+
+---
+
+### Fórmula (distribución t de Student)
+
+$$\[
+IC = \bar{x} \pm t_{\alpha/2,\,n-1}\left(\frac{s}{\sqrt{n}}\right)
+\]$$
+
+---
+
+### Paso 1: Grados de libertad
+
+$$\[
+gl = n - 1 = 24
+\]$$
+
+De la tabla t:
+
+$$\[
+t_{0.025,24} = 2.064
+\]$$
+
+---
+
+### Paso 2: Error estándar
+
+$$\[
+\frac{s}{\sqrt{n}} = \frac{6}{\sqrt{25}} = 1.2
+\]$$
+
+---
+
+### Paso 3: Margen de error
+
+$$\[
+E = 2.064 \times 1.2 = 2.48
+\]$$
+
+---
+
+### Paso 4: Intervalo de confianza
+
+$$\[
+(68 - 2.48,\; 68 + 2.48) = (65.52,\; 70.48)
+\]$$
+
+---
+
+### Interpretación
+Con un **95% de confianza**, el peso promedio de los estudiantes se encuentra entre **65.52 y 70.48 kg**.
+
+---
+
 ### Intervalo de Confianza para una Proporción Poblacional
 
 ### 1. ¿Qué es una proporción poblacional?
@@ -315,70 +378,6 @@ IC = \hat{p} \pm Z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
 \]$$
 
 Este intervalo permite estimar el rango en el cual probablemente se encuentra la verdadera proporción poblacional $$\( p \)$$, considerando la variabilidad natural del muestreo.
-
----
-
-
-### Ejemplo 2: Intervalo de confianza para la media poblacional (σ desconocida)
-
-### Planteamiento
-Se desea estimar el peso promedio de un grupo de estudiantes. Se obtiene:
-
-- Tamaño de muestra: $$\(n = 25\)$$
-- Media muestral: $$\(\bar{x} = 68\)$$
-- Desviación estándar muestral: $$\(s = 6\)$$
-- Nivel de confianza: **95%**
-
----
-
-### Fórmula (distribución t de Student)
-
-$$\[
-IC = \bar{x} \pm t_{\alpha/2,\,n-1}\left(\frac{s}{\sqrt{n}}\right)
-\]$$
-
----
-
-### Paso 1: Grados de libertad
-
-$$\[
-gl = n - 1 = 24
-\]$$
-
-De la tabla t:
-
-$$\[
-t_{0.025,24} = 2.064
-\]$$
-
----
-
-### Paso 2: Error estándar
-
-$$\[
-\frac{s}{\sqrt{n}} = \frac{6}{\sqrt{25}} = 1.2
-\]$$
-
----
-
-### Paso 3: Margen de error
-
-$$\[
-E = 2.064 \times 1.2 = 2.48
-\]$$
-
----
-
-### Paso 4: Intervalo de confianza
-
-$$\[
-(68 - 2.48,\; 68 + 2.48) = (65.52,\; 70.48)
-\]$$
-
----
-
-### Interpretación
-Con un **95% de confianza**, el peso promedio de los estudiantes se encuentra entre **65.52 y 70.48 kg**.
 
 ---
 
