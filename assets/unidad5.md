@@ -265,12 +265,12 @@ IC = \bar{x} \pm Z_{\alpha/2}\left(\frac{\sigma}{\sqrt{n}}\right)
 
 Dondee:
 
-IC → “intervalo de confianza”
-x̄ → “equis barra” (la media muestral)
-± → “más o menos”
-Zα/2 → “Z sub alfa sobre dos” (valor crítico de la distribución normal)
-σ → “sigma” (desviación estándar poblacional)
-√n → “raíz cuadrada de n” (n es el tamaño de la muestra)
+- IC → “intervalo de confianza”
+- x̄ → “equis barra” (la media muestral)
+- ± → “más o menos”
+- Zα/2 → “Z sub alfa sobre dos” (valor crítico de la distribución normal)
+- σ → “sigma” (desviación estándar poblacional)
+- √n → “raíz cuadrada de n” (n es el tamaño de la muestra)
 
 **Supuestos:**
 - σ conocida
