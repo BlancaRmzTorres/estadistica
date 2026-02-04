@@ -261,6 +261,17 @@ $$\[
 IC = \bar{x} \pm Z_{\alpha/2}\left(\frac{\sigma}{\sqrt{n}}\right)
 \]$$
 
+**Intervalo de confianza igual a equis barra más o menos Z sub alfa entre dos, multiplicado por sigma entre raíz cuadrada de n.**
+
+Dondee:
+
+IC → “intervalo de confianza”
+x̄ → “equis barra” (la media muestral)
+± → “más o menos”
+Zα/2 → “Z sub alfa sobre dos” (valor crítico de la distribución normal)
+σ → “sigma” (desviación estándar poblacional)
+√n → “raíz cuadrada de n” (n es el tamaño de la muestra)
+
 **Supuestos:**
 - σ conocida
 - Población normal o muestra grande $$(\(n \ge 30\))$$
