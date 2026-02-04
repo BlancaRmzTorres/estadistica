@@ -72,6 +72,115 @@ Los valores de 1.96 y 2.57 representan percentiles específicos de la curva norm
 > - Z=1.96Z = 1.96Z=1.96 deja 2.5% en cada cola (95% al centro).
 > - Z=2.57Z = 2.57Z=2.57 deja 0.5% en cada cola (99% al centro).
 
+
+### ¿Qué significa “2.5% en cada cola” o “0.5% en cada cola”?
+
+Cuando trabajamos con **niveles de confianza** y la **distribución normal estándar (Z)**, imaginamos la famosa **curva en forma de campana**.
+
+- El **nivel de confianza** es el porcentaje del **área central** de la curva.
+- Lo que queda fuera de ese nivel se divide en **dos colas**:
+  - cola izquierda  
+  - cola derecha  
+
+---
+
+### Nivel de confianza del 95%
+
+La frase:
+
+> **Z = 1.96 deja 2.5% en cada cola (95% al centro)**
+
+significa que:
+
+- El **95% del área total** está entre:
+  
+ $$ \[
+  -1.96 \le Z \le 1.96
+  \]$$
+
+- El **5% restante** queda fuera del intervalo.
+- Ese 5% se reparte en dos partes iguales:
+  - **2.5% en la cola izquierda**
+  - **2.5% en la cola derecha**
+
+**Por eso**, $$\( Z = 1.96 \)$$ es el **valor crítico** para un **intervalo de confianza del 95%**.
+
+---
+
+### Nivel de confianza del 99%
+
+La frase:
+
+> **Z = 2.57 deja 0.5% en cada cola (99% al centro)**
+
+significa que:
+
+- El **99% del área total** está entre:
+  
+  $$\[
+  -2.57 \le Z \le 2.57
+  \]$$
+
+- El **1% queda fuera** del intervalo.
+- Ese 1% se divide en:
+  - **0.5% en la cola izquierda**
+  - **0.5% en la cola derecha**
+
+**Por eso**, $$\( Z = 2.57 \)$$ es el **valor crítico** para un **intervalo de confianza del 99%**.
+
+---
+
+### ¿Por qué se divide en dos colas?
+
+Porque los **intervalos de confianza suelen ser bilaterales**:  
+queremos capturar el valor verdadero **por arriba y por abajo** del estimador.
+
+La regla general es:
+
+$$\[
+\frac{1 - \text{nivel de confianza}}{2}
+=
+\text{proporción de cada cola}
+\]]$$
+
+---
+
+### Ejemplo con 95%
+
+$$\[
+\frac{1 - 0.95}{2}
+=
+\frac{0.05}{2}
+=
+0.025
+=
+2.5\%
+\]$$
+
+---
+
+### Ejemplo con 99%
+
+$$\[
+\frac{1 - 0.99}{2}
+=
+\frac{0.01}{2}
+=
+0.005
+=
+0.5\%
+\]$$
+
+---
+
+### Resumen
+
+- El área que **no** pertenece al nivel de confianza se reparte **en dos colas**.
+- Cada cola tiene la misma proporción.
+- De aquí surgen los valores críticos **Z** usados en los **intervalos de confianza**.
+
+
+
 ### Tabla de valores Z para intervalos de confianza
 
 | Nivel de confianza | Área central | α (cola total) | α/2 | Valor Z (±) |
