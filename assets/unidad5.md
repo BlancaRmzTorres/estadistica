@@ -72,6 +72,22 @@ Los valores de 1.96 y 2.57 representan percentiles específicos de la curva norm
 > - Z=1.96Z = 1.96Z=1.96 deja 2.5% en cada cola (95% al centro).
 > - Z=2.57Z = 2.57Z=2.57 deja 0.5% en cada cola (99% al centro).
 
+### Tabla de valores Z para intervalos de confianza
+
+| Nivel de confianza | Área central | α (cola total) | α/2 | Valor Z (±) |
+|-------------------|--------------|----------------|------|-------------|
+| 80%               | 0.80         | 0.20           | 0.10 | 1.28        |
+| 85%               | 0.85         | 0.15           | 0.075| 1.44        |
+| 90%               | 0.90         | 0.10           | 0.05 | 1.645       |
+| 92%               | 0.92         | 0.08           | 0.04 | 1.75        |
+| 95%               | 0.95         | 0.05           | 0.025| 1.96        |
+| 96%               | 0.96         | 0.04           | 0.02 | 2.05        |
+| 97%               | 0.97         | 0.03           | 0.015| 2.17        |
+| 98%               | 0.98         | 0.02           | 0.01 | 2.33        |
+| 99%               | 0.99         | 0.01           | 0.005| 2.57        |
+| 99.5%             | 0.995        | 0.005          | 0.0025| 2.81       |
+| 99.9%             | 0.999        | 0.001          | 0.0005| 3.29       |
+
 ## Ejemplo
 
 En una encuesta, 60% de personas apoyan una propuesta, con un intervalo de confianza del 95% entre 56% y 64%.
