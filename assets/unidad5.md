@@ -65,6 +65,8 @@ El intervalo evita depender solo de un valor puntual.
 
 El intervalo de confianza se calcula a partir de las estadísticas de la muestra y el nivel de confianza deseado (normalmente, el 95% o el 99%). Es importante señalar que un intervalo de confianza no indica si la hipótesis nula es verdadera o falsa, sino que proporciona un intervalo de valores que probablemente incluya el parámetro poblacional verdadero con un cierto nivel de confianza.
 
+<img width="486" height="600" alt="imagen1" src="/assets/intervalos.png" />
+
 ## Ejemplo
 
 En una encuesta, 60% de personas apoyan una propuesta, con un intervalo de confianza del 95% entre 56% y 64%.
