@@ -233,1049 +233,155 @@ En una encuesta, 60% de personas apoyan una propuesta, con un intervalo de confi
 
 ---
 
-### Intervalo de confianza para la media (σ conocida)
+## 5.2 Estimaciones para una y dos poblaciones.
 
-Un **intervalo de confianza para la media con desviación estándar poblacional conocida (σ conocida)** es un rango de valores que se utiliza para **estimar el valor verdadero de la media poblacional (μ)** con un cierto **nivel de confianza** (por ejemplo, 90%, 95% o 99%).
-
-Este tipo de intervalo se basa en la **distribución normal estándar (Z)**.
-
----
-
-### Supuestos necesarios
-
-Para aplicar este intervalo de confianza se deben cumplir los siguientes supuestos:
-
-1. La **desviación estándar poblacional σ es conocida**.
-2. La población tiene **distribución normal**, o bien:
-3. El tamaño de la muestra es grande $$(\( n \ge 30 \))$$ y se aplica el **Teorema Central del Límite**.
-4. La muestra es **aleatoria e independiente**.
+En estadística inferencial, la **estimación para una y dos poblaciones** permite comparar o describir características de una o más poblaciones a partir de muestras.  
+En este tema se construyen **intervalos de confianza para medias poblacionales**, considerando distintos escenarios.
 
 ---
 
-### Fórmula del intervalo de confianza
+### Estimación para una población (media poblacional)
 
-El intervalo de confianza para la media con σ conocida está dado por:
+Cuando se desea estimar la **media poblacional μ** a partir de una muestra, el tipo de intervalo de confianza depende de si la **desviación estándar poblacional σ** es conocida o desconocida.
+
+#### Caso 1: σ conocida
+
+Se utiliza la **distribución normal estándar (Z)**.
+
+**Fórmula:**
 
 $$\[
 IC = \bar{x} \pm Z_{\alpha/2}\left(\frac{\sigma}{\sqrt{n}}\right)
 \]$$
 
-donde:
+**Supuestos:**
+- σ conocida
+- Población normal o muestra grande $$(\(n \ge 30\))$$
+- Muestra aleatoria
 
-- $$\( \bar{x} \)$$ = media muestral  
-- $$\( \mu \)$$ = media poblacional (desconocida)  
-- $$\( \sigma \)$$ = desviación estándar poblacional (conocida)  
-- $$\( n \)$$ = tamaño de la muestra  
-- $$\( Z_{\alpha/2} \)$$ = valor crítico de la distribución normal  
-- $$\( \alpha = 1 - \text{nivel de confianza} \)$$
-
----
-
-
-## ¿Cómo se lee la fórmula del intervalo de confianza?
-
-> **"El intervalo de confianza es la media muestral más–menos el valor Z crítico multiplicado por la desviación estándar poblacional dividida entre la raíz cuadrada del tamaño de la muestra."**
-
----
-
-### Lectura completa de la fórmula
-
-> **$$IC = x̄ ± Z_{α/2} (σ / √n)$$**  
->  
-> Se lee como:  
-> **“El intervalo de confianza es la media muestral más o menos Z sub alfa sobre dos por sigma sobre raíz de n”.**
-
-### Ejemplos de Intervalos de Confianza
-
-### Ejemplo 1: Intervalo de confianza para la media poblacional (σ conocida)
-
-### Planteamiento
-Se desea estimar la media poblacional del tiempo de atención en una clínica.  
-Se toma una muestra de **64 pacientes** y se obtiene:
-
-- Media muestral: $$\(\bar{x} = 50\)$$
-- Desviación estándar poblacional: $$\(\sigma = 8\)$$
-- Nivel de confianza: **95%**
-
----
-
-### Fórmula
-
-$$\[
-IC = \bar{x} \pm Z_{\alpha/2}\left(\frac{\sigma}{\sqrt{n}}\right)
-\]$$
-
----
-
-### Paso 1: Valor crítico
-
-Para un nivel de confianza del 95%:
-
-$$\[
-Z_{0.025} = 1.96
-\]$$
-
----
-
-### Paso 2: Error estándar
-
-$$\[
-\frac{\sigma}{\sqrt{n}} = \frac{8}{\sqrt{64}} = 1
-\]$$
-
----
-
-### Paso 3: Margen de error
-
-E = Z × SE
-
-Donde:
-
-- E = Margen de error
-- Z = Valor crítico de la distribución normal (por ej., 1.96 para 95%)
-- SE = Error estándar (standard error)
-
-$$\[
-E = 1.96 \times 1 = 1.96
-\]$$
-
----
-
-### Paso 4: Intervalo de confianza
-
-$$\[
-(50 - 1.96,\; 50 + 1.96) = (48.04,\; 51.96)
-\]$$
-
----
-
-### Interpretación
-Con un **95% de confianza**, la media poblacional del tiempo de atención se encuentra entre **48.04 y 51.96** minutos.
-
----
-
-### Intervalo de confianza para la media poblacional (σ desconocida)
-
-### Introducción
-
-Cuando la **desviación estándar poblacional (σ) es desconocida**, el intervalo de confianza para la media poblacional **μ** se construye utilizando la **desviación estándar muestral (s)** y la **distribución t de Student**.
-
-Este caso es muy común en la práctica, ya que normalmente **σ no se conoce**.
-
----
-
-### Supuestos necesarios
-
-Para aplicar este intervalo de confianza se deben cumplir los siguientes supuestos:
-
-1. La **desviación estándar poblacional σ es desconocida**.
-2. Se dispone de una **muestra aleatoria e independiente**.
-3. La población tiene **distribución normal**, o bien:
-4. El tamaño de la muestra es **moderado o grande** y la t de Student es una buena aproximación.
-
----
-
-### Fórmula del intervalo de confianza
-
-El intervalo de confianza para la media poblacional con σ desconocida es:
-
-$$\[
-IC = \bar{x} \pm t_{\alpha/2,\;n-1}\left(\frac{s}{\sqrt{n}}\right)
-\]$$
-
-donde:
-
-- $$\( \bar{x} \)$$ = media muestral  
-- $$\( \mu \)$$ = media poblacional (desconocida)  
-- $$\( s \)$$ = desviación estándar muestral  
-- $$\( n \)$$ = tamaño de la muestra  
-- $$\( t_{\alpha/2,\;n-1} \)$$ = valor crítico de la distribución t de Student  
-- $$\( n - 1 \)$$ = grados de libertad  
-- $$\( \alpha = 1 - \text{nivel de confianza} \)$$
-
----
-
-### Valor crítico $$\( t_{\alpha/2,\;n-1} \)$$
-
-El valor crítico depende de:
-
-- El **nivel de confianza**
-- Los **grados de libertad** $$(\( n - 1 \))$$
-
-Ejemplo de valores comunes:
-
-| Nivel de confianza | Grados de libertad | Valor crítico |
-|--------------------|-------------------|---------------|
-| 95%                | 10                | 2.228         |
-| 95%                | 20                | 2.086         |
-| 95%                | 30                | 2.042         |
-
-⚠️ A medida que $$\( n \)$$ aumenta, la distribución t se **aproxima a la normal estándar (Z)**.
-
----
-
-### Interpretación del intervalo
-
-Una vez calculado el intervalo:
-
-$$\[
-(\bar{x} - t_{\alpha/2,n-1}\frac{s}{\sqrt{n}},\;
- \bar{x} + t_{\alpha/2,n-1}\frac{s}{\sqrt{n}})
-\]$$
-
-se interpreta así:
-
-> Con un **nivel de confianza del X%**, se estima que la **media poblacional μ** se encuentra dentro de este intervalo.
-
-⚠️ El nivel de confianza **no representa una probabilidad directa**, sino la confiabilidad del **procedimiento**.
-
----
-
-### ¿Por qué usar la distribución t de Student?
-
-Porque al desconocer σ:
-
-- Se introduce **incertidumbre adicional**.
-- La t de Student tiene **colas más pesadas** que la normal.
-- Esto produce **intervalos más amplios**, especialmente para muestras pequeñas.
-
-La estadística utilizada es:
-
-$$\[
-t = \frac{\bar{x} - \mu}{s/\sqrt{n}}
-\]$$
-
----
-
-### Comparación con σ conocida
-
-| Caso | Distribución | Desviación usada |
-|-----|-------------|------------------|
-| σ conocida | Normal (Z) | σ |
-| σ desconocida | t de Student | s |
-
----
-
-### Resumen
-
-- Se utiliza cuando **σ es desconocida**.
-- Se reemplaza σ por la **desviación estándar muestral (s)**.
-- Se usa la **distribución t de Student**.
-- Es el caso **más frecuente en aplicaciones reales**.
-- A mayor tamaño de muestra, **t ≈ Z**.
-
----
-
-
-### Ejemplo 2: Intervalo de confianza para la media poblacional (σ desconocida)
-
-### Planteamiento
-Se desea estimar el peso promedio de un grupo de estudiantes. Se obtiene:
-
-- Tamaño de muestra: $$\(n = 25\)$$
-- Media muestral: $$\(\bar{x} = 68\)$$
-- Desviación estándar muestral: $$\(s = 6\)$$
-- Nivel de confianza: **95%**
-
----
-
-### Fórmula (distribución t de Student)
-
-$$\[
-IC = \bar{x} \pm t_{\alpha/2,\,n-1}\left(\frac{s}{\sqrt{n}}\right)
-\]$$
-
----
-
-### Paso 1: Grados de libertad
-
-$$\[
-gl = n - 1 = 24
-\]$$
-
-De la tabla t:
-
-$$\[
-t_{0.025,24} = 2.064
-\]$$
-
----
-
-### Paso 2: Error estándar
-
-$$\[
-\frac{s}{\sqrt{n}} = \frac{6}{\sqrt{25}} = 1.2
-\]$$
-
----
-
-### Paso 3: Margen de error
-
-$$\[
-E = 2.064 \times 1.2 = 2.48
-\]$$
-
----
-
-### Paso 4: Intervalo de confianza
-
-$$\[
-(68 - 2.48,\; 68 + 2.48) = (65.52,\; 70.48)
-\]$$
-
----
-
-### Interpretación
-Con un **95% de confianza**, el peso promedio de los estudiantes se encuentra entre **65.52 y 70.48 kg**.
-
----
-
-### Intervalo de Confianza para una Proporción Poblacional
-
-### 1. ¿Qué es una proporción poblacional?
-
-Una **proporción poblacional** $$\( p \)$$ representa la fracción de individuos en una población que poseen cierta característica.
-
-Ejemplos:
-- Proporción de personas que apoyan una propuesta.
-- Porcentaje de defectos en una línea de producción.
-- Proporción de estudiantes que aprueban un examen.
-
-Como $$\( p \)$$ es desconocida, se estima mediante una muestra.
-
----
-
-## 2. Proporción muestral
-
-Si en una muestra de tamaño $$\( n \)$$ se observan $$\( x \)$$ "éxitos", la **proporción muestral** es:
-
-$$\[
-\hat{p} = \frac{x}{n}
-\]$$
-
-Esta es la mejor estimación puntual del parámetro real $$\( p \)$$.
-
----
-
-## 3. Distribución de la proporción muestral
-
-Bajo ciertas condiciones (criterio $$\( n\hat{p} \ge 5 \)$$ y $$\( n(1-\hat{p}) \ge 5 \))$$, la proporción muestral sigue una distribución:
-
-$$\[
-\hat{p} \sim N\left(p,\ \frac{p(1-p)}{n}\right)
-\]$$
-
-Como $$\( p \)$$ es desconocido, en el cálculo del intervalo se usa:
-
-$$\[
-SE = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
-\]$$
-
-Este valor es el **error estándar de la proporción**.
-
----
-
-## 4. Fórmula del intervalo de confianza
-
-El intervalo de confianza para una proporción poblacional, con nivel $$\((1 - \alpha) \cdot 100\%\)$$, es:
-
-$$\[
-IC = \hat{p} \pm Z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
-\]$$
-
-Donde:
-
-- $$\( \hat{p} \)$$: proporción muestral  
-- $$\( n \)$$: tamaño de la muestra  
-- $$\( Z_{\alpha/2} \)$$: valor crítico de la distribución normal estándar  
-- $$\( SE \)$$: error estándar de la proporción  
-
----
-
-## 5. Valores Z más comunes
-
-| Nivel de confianza | \( Z_{\alpha/2} \) |
-|-------------------|--------------------|
-| 90%               | 1.645              |
-| 95%               | 1.96               |
-| 99%               | 2.57               |
-
-Estos valores provienen de la distribución normal estándar y son constantes para cada nivel de confianza.
-
----
-
-## 6. Interpretación del intervalo de confianza
-
-Si el intervalo calculado es, por ejemplo:
-
-$$\[
-IC = (0.39,\ 0.45)
-\]$$
-
-La interpretación correcta es:
-
-> Si tomáramos muchas muestras del mismo tamaño y construyéramos intervalos de confianza de la misma forma, aproximadamente el **(1 - α)·100%** de ellos contendrían la proporción verdadera $$\( p \)$$.
-
-**Nota importante:**  
-No se debe interpretar como “hay un 95% de probabilidad de que $$\( p \)$$ esté dentro del intervalo”, porque el parámetro no es aleatorio; lo aleatorio es el intervalo.
-
----
-## 7. Resumen final
-
-El intervalo de confianza para una proporción poblacional se construye como:
-
-$$\[
-IC = \hat{p} \pm Z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
-\]$$
-
-Este intervalo permite estimar el rango en el cual probablemente se encuentra la verdadera proporción poblacional $$\( p \)$$, considerando la variabilidad natural del muestreo.
-
----
-
-## Ejemplo 3: Intervalo de confianza para una proporción poblacional
-
-### Planteamiento
-En una encuesta aplicada a **400 personas**, **160** indicaron que usan transporte público.
-
-- Tamaño de muestra: $$\(n = 400\)$$
-- Proporción muestral:
-$$\[
-\hat{p} = \frac{160}{400} = 0.4
-\]$$
-- Nivel de confianza: **95%**
-
----
-
-### Fórmula
-
-$$\[
-IC = \hat{p} \pm Z_{\alpha/2}
-\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
-\]$$
-
----
-
-### Paso 1: Error estándar
-
-$$\[
-\sqrt{\frac{0.4(0.6)}{400}} = \sqrt{0.0006} = 0.0245
-\]$$
-
----
-
-### Paso 2: Margen de error
-
-$$\[
-E = 1.96 \times 0.0245 = 0.048
-\]$$
-
----
-
-### Paso 3: Intervalo de confianza
-
-$$\[
-(0.4 - 0.048,\; 0.4 + 0.048) = (0.352,\; 0.448)
-\]$$
-
----
-
-### Interpretación
-Con un **95% de confianza**, la proporción poblacional de personas que usan transporte público se encuentra entre **35.2% y 44.8%**.
-
----
-
-**Nota:** A mayor tamaño de muestra, menor será el margen de error del intervalo de confianza.
-
----
-
-### Ejemplo 4. Intervalo de Confianza para una Proporción Poblacional
-
-### Planteamiento del problema
-
-Un investigador quiere estimar la proporción de empleados que están satisfechos con su trabajo.  
-En una muestra aleatoria de **250 empleados**, **170** respondieron que están satisfechos.
-
-Construye un **intervalo de confianza del 95%** para la proporción poblacional $$\( p \)$$.
-
----
-
-### Calcular la proporción muestral
-
-$$\[
-\hat{p} = \frac{x}{n} = \frac{170}{250}
-\]$$
-
-$$\[
-\hat{p} = 0.68
-\]$$
-
----
-
-### Verificar condiciones para usar la aproximación normal
-
-Se deben cumplir:
-
-$$\[
-n\hat{p} \ge 5, \qquad n(1 - \hat{p}) \ge 5
-\]$$
-
-Cálculo:
-
-$$\[
-n\hat{p} = 250 \cdot 0.68 = 170 \ge 5
-\]$$
-
-$$\[
-n(1 - \hat{p}) = 250 \cdot 0.32 = 80 \ge 5
-\]$$
-
-Ambas condiciones se cumplen.
-
----
-
-### Calcular el error estándar (SE)
-
-$$\[
-SE = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
-\]$$
-
-$$\[
-SE = \sqrt{\frac{0.68(1 - 0.68)}{250}}
-\]$$
-
-$$\[
-SE = \sqrt{\frac{0.2176}{250}}
-\]$$
-
-$$\[
-SE = \sqrt{0.0008704} = 0.0295
-\]$$
-
----
-
-### Valor crítico $$\( Z_{\alpha/2} \)$$
-
-Para un **95% de confianza**:
-
-$$\[
-Z_{\alpha/2} = 1.96
-\]$$
-
----
-
-### Construcción del intervalo de confianza
-
-Fórmula:
-
-$$\[
-IC = \hat{p} \pm Z_{\alpha/2} \cdot SE
-\]$$
-
-Sustitución:
-
-$$\[
-IC = 0.68 \pm 1.96(0.0295)
-\]$$
-
-$$\[
-ME = 1.96 \cdot 0.0295 = 0.0578
-\]$$
-
----
-
-### Cálculo de los límites
-
-### Límite inferior:
-
-$$\[
-0.68 - 0.0578 = 0.6222
-\]$$
-
-### Límite superior:
-
-$$\[
-0.68 + 0.0578 = 0.7378
-\]$$
-
----
-
-### Resultado final
-
-El intervalo de confianza del **95%** para la proporción poblacional es:
-
-$$\[
-\boxed{(0.6222,\ 0.7378)}
-\]$$
-
----
-
-### Interpretación
-
-Con un **95% de confianza**, la proporción verdadera de empleados satisfechos se encuentra entre:
-
-$$\[
-62.22\% \text{ y } 73.78\%
-\]$$
-
-Si repitiéramos este proceso muchas veces, el **95% de los intervalos** calculados de esta misma forma contendrían el valor real de $$\( p \)$$.
-
----
-
-### 5.2 Estimaciones para una y dos poblaciones
-
-### 5.2.1 Intervalo de confianza para una media (σ desconocida)
-
-### Intervalo de Confianza para una Media (σ desconocida)
-Cuando queremos estimar la **media poblacional μ** pero **no conocemos la desviación estándar de la población (σ)**, debemos utilizar la **distribución t de Student** en lugar de la distribución normal estándar.
-
-### ¿Qué es la Distribución t de Student?
-La distribución t de Student es una distribución de probabilidad continua que se usa principalmente cuando:
-
-- Queremos estimar la media poblacional μ,
-- La desviación estándar poblacional σ es desconocida,
-- Y tenemos un tamaño de muestra pequeño (generalmente n<30n < 30n<30).
-
-Fue desarrollada por William Gosset, quien publicó bajo el seudónimo “Student”.
-
-
----
-
-### 1. Contexto del problema
-
-En la práctica, rara vez se conoce la desviación estándar poblacional σ.  
-Por ello, cuando trabajamos con:
-
-- una **muestra aleatoria**,  
-- tamaño de muestra **n**,  
-- desviación estándar muestral **s**,  
-- y distribución aproximadamente normal,
-
-la estimación de μ se basa en la distribución **t**.
-
----
-
-## 2. Proporción muestral y estimación de σ
-
-### Media muestral
-$$\[
-\bar{X} = \frac{1}{n}\sum_{i=1}^{n} X_i
-\]$$
-
-### Desviación estándar muestral
-$$\[
-s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(X_i - \bar{X})^2}
-\]$$
-
-Esta s sustituye a σ, introduciendo más variabilidad, lo cual justifica el uso de t-Student.
-
----
-
-## 3. Distribución t de Student
-
-Cuando σ es desconocida, el estadístico:
-
-$$\[
-t = \frac{\bar{X} - \mu}{\frac{s}{\sqrt{n}}}
-\]$$
-
-sigue una distribución **t con $$\( n-1 \)$$ grados de libertad**.
-
-La distribución t:
-
-- Es similar a la normal, pero con **colas más pesadas**.  
-- Se vuelve más parecida a la normal conforme $$\( n \)$$ aumenta.  
-- Ajusta la incertidumbre por usar **s en lugar de σ**.
-
----
-
-## 4. Error estándar de la media
-
-$$\[
-SE = \frac{s}{\sqrt{n}}
-\]$$
-
----
-
-## 5. Fórmula del intervalo de confianza
-
-Para un nivel de confianza $$\((1 - \alpha) \cdot 100\%\)$$, el intervalo de confianza es:
-
-$$\[
-IC = \bar{X} \pm t_{\alpha/2, \, n-1} \cdot \frac{s}{\sqrt{n}}
-\]$$
-
-Donde:
-
-- $$\( \bar{X} \)$$ = media muestral  
-- $$\( s \)$$ = desviación estándar muestral  
-- $$\( n \)$$ = tamaño de la muestra  
-- $$\( t_{\alpha/2, \, n-1} \)$$ = valor crítico t con $$\(n-1\)$$ grados de libertad  
-- $$\( SE = \frac{s}{\sqrt{n}} \)$$ = error estándar  
-
----
-
-## 6. Valores t más comunes (colección)
-
-| Nivel de confianza | gl (df) | t crítico |
-|-------------------|---------|-----------|
-| 90% | grande | 1.645 (aprox. normal) |
-| 95% | grande | 1.96 (aprox. normal) |
-| 95% | n=10 | 2.262 |
-| 95% | n=20 | 2.093 |
-| 95% | n=30 | 2.042 |
-| 99% | n=10 | 3.169 |
-| 99% | n=20 | 2.845 |
-
-**Nota:** A medida que n crece, t se acerca al valor Z correspondiente.
-
----
-
-## 7. Interpretación del intervalo
-
-Si el intervalo obtenido es, por ejemplo:
-
-$$\[
-(23.1,\; 27.8)
-\]$$
-
-la interpretación correcta es:
-
-> Con un nivel de confianza del (1 − α)·100%, si repitiéramos el proceso muchas veces, **aproximadamente ese porcentaje de intervalos contaría con el valor real de la media poblacional μ**.
-
-No se interpreta como probabilidad de que μ esté dentro del intervalo, porque μ es fija.
-
----
-
-## 8. Resumen final
-
-Cuando **σ es desconocida**, usamos:
-
-- El valor t crítico (no Z).  
-- La desviación estándar muestral s.  
-- La fórmula:
-
-$$\[
-IC = \bar{X} \pm t_{\alpha/2, n-1}\left(\frac{s}{\sqrt{n}}\right)
-\]$$
-
-Este intervalo ajusta correctamente la incertidumbre adicional introducida por desconocer σ.
-
----
-
-
-Cuando la desviación poblacional no es conocida y la muestra es pequeña, se usa la **distribución t de Student**.
-
-$$\[
-IC = \bar{x} \pm t_{\alpha/2, n-1} \left( \frac{s}{\sqrt{n}} \right)
-\]$$
-
-> **" La fórmula se lee: El intervalo de confianza es la media muestral más o menos el valor t crítico con alfa entre dos y n menos uno grados de libertad, multiplicado por la desviación estándar muestral dividida entre la raíz cuadrada del tamaño de la muestra"
-
-### Ejemplo 1
-### Intervalo de Confianza para una Media (σ desconocida)
-
-## Datos del problema
-
-- Media muestral: $$\( \bar{x} = 68 \)$$
-- Desviación estándar muestral: $$\( s = 8 \)$$
-- Tamaño de la muestra: $$\( n = 25 \)$$
-- Nivel de confianza: **95%**
-- Valor crítico $$t: \( t_{0.025, 24} = 2.064 \)$$
-
----
-
-## Cálculo del error estándar
-
-$$\[
-SE = \frac{s}{\sqrt{n}} = \frac{8}{5} = 1.6
-\]$$
-
 ---
 
-### Cálculo del margen de error
+### Ejemplo 1: Intervalo de confianza para una media (σ conocida)
 
-$$\[
-E = t_{0.025,24} \cdot SE = 2.064 \times 1.6 = 3.30
-\]$$
+**Problema:**  
+Una población tiene desviación estándar σ = 8. Se toma una muestra de tamaño n = 64 y se obtiene una media muestral de $$\(\bar{x} = 70\)$$.  
+Construya un intervalo de confianza del 95% para la media poblacional.
 
----
-
-### Intervalo de confianza
-
-$$\[
-IC = (\bar{x} - E,\; \bar{x} + E)
-\]$$
-
-$$\[
-IC = (68 - 3.30,\; 68 + 3.30)
-\]$$
-
-$$\[
-IC = (64.7,\; 71.3)
-\]$$
-
----
-
-### Interpretación
-
-Con un **95% de confianza**, podemos afirmar que:
-
-> **El verdadero valor de la media poblacional $$\( \mu \)$$ se encuentra entre 64.7 y 71.3.**
-
-Esto significa que si tomáramos muchas muestras de tamaño 25 y construyéramos un intervalo de confianza del 95% con cada una, **aproximadamente el 95% de esos intervalos contendrían la media real de la población**.
+**Solución paso a paso:**
 
----
-
-### Interpretación incorrecta (pero común)
-
-No se debe decir:
-
-> “Hay un 95% de probabilidad de que la media esté entre 64.7 y 71.3.”
-
-La media poblacional $$\( \mu \)$$ **no es aleatoria**; lo aleatorio es la muestra y por eso el intervalo cambia cada vez.
+1. Nivel de confianza: 95%  
+   $$\[
+   Z_{\alpha/2} = 1.96
+   \]$$
 
----
+2. Fórmula:
+   $$\[
+   IC = \bar{x} \pm Z_{\alpha/2}\left(\frac{\sigma}{\sqrt{n}}\right)
+   \]$$
 
-### Resumen
-
-- Intervalo de confianza: **(64.7, 71.3)**
-- Nivel de confianza: **95%**
-- Se usa la distribución t porque **σ es desconocida**.
----
+3. Sustitución:
+   $$\[
+   IC = 70 \pm 1.96\left(\frac{8}{\sqrt{64}}\right)
+   \]$$
 
-### 5.2.2 Intervalo de confianza para la diferencia de medias (dos poblaciones)
+4. Cálculo:
+   $$\[
+   IC = 70 \pm 1.96(1)
+   \]$$
 
-### Intervalo de Confianza para la Diferencia de Medias (Dos Poblaciones)
+   $$\[
+   IC = 70 \pm 1.96
+   \]$$
 
-Cuando queremos comparar **dos poblaciones** y estimar la diferencia entre sus medias
-\$$[
-\mu_1 - \mu_2,
-\]$$
-se utiliza un **intervalo de confianza para la diferencia de medias**.  
-Este análisis es común en estudios comparativos como:
+5. Intervalo de confianza:
+   $$\[
+   (68.04,\;71.96)
+   \]$$
 
-- Hombres vs. mujeres  
-- Tratamiento A vs. Tratamiento B  
-- Industrial vs. artesanal  
-- Antes vs. después  
+**Interpretación:**  
+Con un 95% de confianza, la media poblacional se encuentra entre 68.04 y 71.96.
 
 ---
-
-### 1. Contexto del problema
-
-Tenemos **dos muestras independientes**:
-
-- Primera población:  
-  - Media muestral: $$\( \bar{X}_1 \)  $$
-  - Desviación estándar muestral: $$\( s_1 \)  $$
-  - Tamaño: $$\( n_1 \)$$
 
-- Segunda población:  
-  - Media muestral: $$\( \bar{X}_2 \)$$  
-  - Desviación estándar muestral: $$\( s_2 \)$$  
-  - Tamaño: $$\( n_2 \)$$
+### Estimación para dos poblaciones (diferencia de medias)
 
-Queremos estimar:
+Cuando se desea comparar **dos poblaciones independientes**, se estima la **diferencia de medias poblacionales**:
 
 $$\[
 \mu_1 - \mu_2
 \]$$
 
----
+Si ambas desviaciones estándar poblacionales son conocidas, se utiliza la **distribución Z**.
 
-### 2. Casos posibles
+**Fórmula:**
 
-El intervalo de confianza depende de si las **varianzas son conocidas, desconocidas, iguales o distintas**.
+$$\[
+(\bar{x}_1 - \bar{x}_2) \pm Z_{\alpha/2}
+\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}
+\]$$
 
-### Caso 1: σ₁ y σ₂ conocidas (poco común)
-Se usa Z, pero este caso casi nunca ocurre en la práctica.
-
-### Caso 2: σ₁ y σ₂ desconocidas y diferentes (caso real)
-Se usa la **distribución t** con **grados de libertad aproximados (fórmula de Welch)**.
-
-### Caso 3: σ₁ = σ₂ (varianzas iguales)
-Se usa una varianza combinada **pooled**.
-
-El caso que más se usa en la vida real es el **Caso 2** (t-Welch).
+**Supuestos:**
+- Poblaciones independientes
+- σ₁ y σ₂ conocidas
+- Muestras aleatorias
 
 ---
 
-### 3. Error estándar para la diferencia de medias
+### Ejemplo 2: Intervalo de confianza para la diferencia de medias
 
-Si las muestras son independientes:
+**Problema:**  
+Dos grupos de estudiantes presentan los siguientes datos:
 
-$$\[
-SE = \sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} }
-\]$$
+- Grupo 1: $$\(\bar{x}_1 = 85\)$$, σ₁ = 4, n₁ = 40  
+- Grupo 2: $$\(\bar{x}_2 = 80\)$$, σ₂ = 5, n₂ = 50  
 
----
+Construya un intervalo de confianza del 95% para la diferencia de medias poblacionales.
 
-### 4. Valor crítico t
+**Solución paso a paso:**
 
-Se usa:
+1. Nivel de confianza:
+   $$\[
+   Z_{\alpha/2} = 1.96
+   \]$$
 
-$$\[
-t_{\alpha/2,\; gl}
-\]$$
+2. Fórmula:
+   $$\[
+   (\bar{x}_1 - \bar{x}_2) \pm Z_{\alpha/2}
+   \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}
+   \]$$
 
-Donde los grados de libertad (gl) se calculan mediante la **aproximación de Welch**:
+3. Sustitución:
+   $$\[
+   (85 - 80) \pm 1.96
+   \sqrt{\frac{16}{40} + \frac{25}{50}}
+   \]$$
 
-$$\[
-gl = \frac{
-\left( \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} \right)^2
-}{
-\frac{(s_1^2/n_1)^2}{n_1 - 1}
-+
-\frac{(s_2^2/n_2)^2}{n_2 - 1}
-}
-\]$$
+4. Cálculo:
+   $$\[
+   5 \pm 1.96\sqrt{0.4 + 0.5}
+   \]$$
 
----
+   $$\[
+   5 \pm 1.96\sqrt{0.9}
+   \]$$
 
-### 5. Fórmula del intervalo de confianza
+   $$\[
+   5 \pm 1.86
+   \]$$
 
-El intervalo de confianza para  
-$$\[
-\mu_1 - \mu_2
-\]$$
-es:
+5. Intervalo de confianza:
+   $$\[
+   (3.14,\;6.86)
+   \]$$
 
-$$\[
-IC = (\bar{X}_1 - \bar{X}_2) \pm t_{\alpha/2,\,gl}
-\cdot
-\sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} }
-\]$$
-
----
-
-### 6. Interpretación del intervalo
-
-Si obtenemos un intervalo, por ejemplo:
-
-$$\[
-IC = (-3.2,\; 1.7)
-\]$$
-
-Interpretación correcta:
-
-> Con un nivel de confianza del (1 − α)·100%, el intervalo construido a partir de las muestras contiene el **valor verdadero de la diferencia de medias** de las dos poblaciones.
-
-Interpretaciones clave:
-
-- Si el intervalo **incluye 0**, entonces **no hay evidencia suficiente de diferencia** entre medias.  
-- Si todo el intervalo es **positivo**, entonces $$\( \mu_1 > \mu_2 \)$$.  
-- Si todo el intervalo es **negativo**, entonces $$\( \mu_1 < \mu_2 \)$$.
+**Interpretación:**  
+Con un 95% de confianza, la diferencia entre las medias poblacionales se encuentra entre 3.14 y 6.86 unidades.
 
 ---
 
-### 7. Resumen final
+### Conclusión del tema 5.2
 
-- Se usa la diferencia:
-  $$\[
-  \bar{X}_1 - \bar{X}_2
-  \]$$
-- La variabilidad se calcula con:
-  $$\[
-  SE = \sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} }
-  \]$$
-- Se utiliza t de Student, especialmente con la aproximación de Welch.
-- La fórmula general del intervalo es:
-
-$$\[
-IC = (\bar{X}_1 - \bar{X}_2) \pm t_{\alpha/2, gl}\cdot SE
-\]$$
-
-Este intervalo permite determinar si hay una **diferencia real** entre las dos poblaciones.
-
----
-
-$$\[
-IC = (\bar{x}_1 - \bar{x}_2) \pm Z_{\alpha/2}
-\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}
-\]$$
-
-#### Ejemplo 2
-
-Datos:
-- $$\(\bar{x}_1 = 80\), \(s_1 = 6\), \(n_1 = 40\)$$
-- $$\(\bar{x}_2 = 75\), \(s_2 = 5\), \(n_2 = 50\)$$
-- Nivel de confianza = 95%
-
-**Paso 1. Diferencia de medias**
-$$\[
-80 - 75 = 5
-\]$$
-
-**Paso 2. Error estándar**
-$$\[
-\sqrt{\frac{36}{40} + \frac{25}{50}} = \sqrt{0.9 + 0.5} = \sqrt{1.4} = 1.18
-\]$$
-
-**Paso 3. Margen de error**
-$$\[
-1.96 \times 1.18 = 2.31
-\]$$
-
-**Intervalo**
-$$\[
-(2.69,\; 7.31)
-\]$$
-
----
-
-## 5.3 Intervalos de confianza para proporciones y grandes muestras
-
-### 5.3.1 Intervalo de confianza para una proporción
-
-Se utiliza cuando:
-- $$\(np \geq 5\)$$
-- $$\(n(1-p) \geq 5\)$$
-
-$$\[
-IC = \hat{p} \pm Z_{\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
-\]$$
-
----
-
-#### Ejemplo 1 (paso a paso)
-
-Datos:
-- $$\(n = 400\)$$
-- Éxitos = 160
-- $$\(\hat{p} = 160/400 = 0.4\)$$
-- Nivel de confianza = 95%
-
-**Paso 1. Error estándar**
-$$\[
-\sqrt{\frac{0.4(0.6)}{400}} = \sqrt{0.0006} = 0.0245
-\]$$
-
-**Paso 2. Margen de error**
-$$\[
-1.96 \times 0.0245 = 0.048
-\]$$
-
-**Intervalo**
-$$\[
-(0.352,\; 0.448)
-\]$$
-
----
-
-### 5.3.2 Interpretación del intervalo de confianza
-
-Un intervalo de confianza del 95% significa que, si se tomaran muchas muestras y se construyeran intervalos de la misma forma, aproximadamente el 95% de ellos contendrían el verdadero parámetro poblacional.
-
----
-
-## Conclusiones
-
-- La estimación puntual proporciona un solo valor aproximado.
-- Los intervalos de confianza reflejan la incertidumbre del estimador.
-- A mayor tamaño de muestra, menor margen de error.
-- El nivel de confianza influye directamente en la amplitud del intervalo.
-
----
-
-**Nota:** Estos métodos son fundamentales en estadística inferencial y en el análisis de datos en ciencia, ingeniería y ciencias sociales.
+- Para **una población**, el intervalo depende de si σ es conocida o desconocida.
+- Para **dos poblaciones**, se estima la **diferencia de medias**.
+- Estos intervalos permiten **comparar grupos y tomar decisiones estadísticas fundamentadas**.
 
