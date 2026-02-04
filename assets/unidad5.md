@@ -794,6 +794,150 @@ La media poblacional $$\( \mu \)$$ **no es aleatoria**; lo aleatorio es la muest
 
 ### 5.2.2 Intervalo de confianza para la diferencia de medias (dos poblaciones)
 
+# Intervalo de Confianza para la Diferencia de Medias (Dos Poblaciones)
+
+Cuando queremos comparar **dos poblaciones** y estimar la diferencia entre sus medias
+\$$[
+\mu_1 - \mu_2,
+\]$$
+se utiliza un **intervalo de confianza para la diferencia de medias**.  
+Este análisis es común en estudios comparativos como:
+
+- Hombres vs. mujeres  
+- Tratamiento A vs. Tratamiento B  
+- Industrial vs. artesanal  
+- Antes vs. después  
+
+---
+
+# 1. Contexto del problema
+
+Tenemos **dos muestras independientes**:
+
+- Primera población:  
+  - Media muestral: $$\( \bar{X}_1 \)  $$
+  - Desviación estándar muestral: $$\( s_1 \)  $$
+  - Tamaño: $$\( n_1 \)$$
+
+- Segunda población:  
+  - Media muestral: $$\( \bar{X}_2 \)$$  
+  - Desviación estándar muestral: $$\( s_2 \)$$  
+  - Tamaño: $$\( n_2 \)$$
+
+Queremos estimar:
+
+$$\[
+\mu_1 - \mu_2
+\]$$
+
+---
+
+# 2. Casos posibles
+
+El intervalo de confianza depende de si las **varianzas son conocidas, desconocidas, iguales o distintas**.
+
+## Caso 1: σ₁ y σ₂ conocidas (poco común)
+Se usa Z, pero este caso casi nunca ocurre en la práctica.
+
+## Caso 2: σ₁ y σ₂ desconocidas y diferentes (caso real)
+Se usa la **distribución t** con **grados de libertad aproximados (fórmula de Welch)**.
+
+## Caso 3: σ₁ = σ₂ (varianzas iguales)
+Se usa una varianza combinada **pooled**.
+
+El caso que más se usa en la vida real es el **Caso 2** (t-Welch).
+
+---
+
+# 3. Error estándar para la diferencia de medias
+
+Si las muestras son independientes:
+
+$$\[
+SE = \sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} }
+\]$$
+
+---
+
+# 4. Valor crítico t
+
+Se usa:
+
+$$\[
+t_{\alpha/2,\; gl}
+\]$$
+
+Donde los grados de libertad (gl) se calculan mediante la **aproximación de Welch**:
+
+$$\[
+gl = \frac{
+\left( \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} \right)^2
+}{
+\frac{(s_1^2/n_1)^2}{n_1 - 1}
++
+\frac{(s_2^2/n_2)^2}{n_2 - 1}
+}
+\]$$
+
+---
+
+# 5. Fórmula del intervalo de confianza
+
+El intervalo de confianza para  
+$$\[
+\mu_1 - \mu_2
+\]$$
+es:
+
+$$\[
+IC = (\bar{X}_1 - \bar{X}_2) \pm t_{\alpha/2,\,gl}
+\cdot
+\sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} }
+\]$$
+
+---
+
+# 6. Interpretación del intervalo
+
+Si obtenemos un intervalo, por ejemplo:
+
+$$\[
+IC = (-3.2,\; 1.7)
+\]$$
+
+Interpretación correcta:
+
+> Con un nivel de confianza del (1 − α)·100%, el intervalo construido a partir de las muestras contiene el **valor verdadero de la diferencia de medias** de las dos poblaciones.
+
+Interpretaciones clave:
+
+- Si el intervalo **incluye 0**, entonces **no hay evidencia suficiente de diferencia** entre medias.  
+- Si todo el intervalo es **positivo**, entonces $$\( \mu_1 > \mu_2 \)$$.  
+- Si todo el intervalo es **negativo**, entonces $$\( \mu_1 < \mu_2 \)$$.
+
+---
+
+# 7. Resumen final
+
+- Se usa la diferencia:
+  $$\[
+  \bar{X}_1 - \bar{X}_2
+  \]$$
+- La variabilidad se calcula con:
+  $$\[
+  SE = \sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} }
+  \]$$
+- Se utiliza t de Student, especialmente con la aproximación de Welch.
+- La fórmula general del intervalo es:
+
+$$\[
+IC = (\bar{X}_1 - \bar{X}_2) \pm t_{\alpha/2, gl}\cdot SE
+\]$$
+
+Este intervalo permite determinar si hay una **diferencia real** entre las dos poblaciones.
+
+---
+
 $$\[
 IC = (\bar{x}_1 - \bar{x}_2) \pm Z_{\alpha/2}
 \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}
