@@ -138,9 +138,7 @@ queremos capturar el valor verdadero **por arriba y por abajo** del estimador.
 La regla general es:
 
 $$\[
-\frac{1 - \text{nivel de confianza}}{2}$$
-=
-$$\text{proporción de cada cola}
+\frac{1 - \text{nivel de confianza}}{2}=\ text{proporción de cada cola}
 \]]$$
 
 ---
