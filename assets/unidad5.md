@@ -720,24 +720,76 @@ IC = \bar{x} \pm t_{\alpha/2, n-1} \left( \frac{s}{\sqrt{n}} \right)
 
 > **" La fórmula se lee: El intervalo de confianza es la media muestral más o menos el valor t crítico con alfa entre dos y n menos uno grados de libertad, multiplicado por la desviación estándar muestral dividida entre la raíz cuadrada del tamaño de la muestra"
 
-#### Ejemplo 1
+### Ejemplo 1
+### Intervalo de Confianza para una Media (σ desconocida)
 
-Datos:
-- $$\(\bar{x} = 68\)$$
-- $$\(s = 8\)$$
-- $$\(n = 25\)$$
-- Nivel de confianza = 95%
-- $$\(t_{0.025,24} = 2.064\)$$
+## Datos del problema
 
-**Cálculo:**
+- Media muestral: $$\( \bar{x} = 68 \)$$
+- Desviación estándar muestral: $$\( s = 8 \)$$
+- Tamaño de la muestra: $$\( n = 25 \)$$
+- Nivel de confianza: **95%**
+- Valor crítico $$t: \( t_{0.025, 24} = 2.064 \)$$
+
+---
+
+## Cálculo del error estándar
+
 $$\[
-E = 2.064 \times \frac{8}{\sqrt{25}} = 2.064 \times 1.6 = 3.30
+SE = \frac{s}{\sqrt{n}} = \frac{8}{5} = 1.6
+\]$$
+
+---
+
+### Cálculo del margen de error
+
+$$\[
+E = t_{0.025,24} \cdot SE = 2.064 \times 1.6 = 3.30
+\]$$
+
+---
+
+### Intervalo de confianza
+
+$$\[
+IC = (\bar{x} - E,\; \bar{x} + E)
+\]$$
+
+$$\[
+IC = (68 - 3.30,\; 68 + 3.30)
 \]$$
 
 $$\[
 IC = (64.7,\; 71.3)
 \]$$
 
+---
+
+### Interpretación
+
+Con un **95% de confianza**, podemos afirmar que:
+
+> **El verdadero valor de la media poblacional $$\( \mu \)$$ se encuentra entre 64.7 y 71.3.**
+
+Esto significa que si tomáramos muchas muestras de tamaño 25 y construyéramos un intervalo de confianza del 95% con cada una, **aproximadamente el 95% de esos intervalos contendrían la media real de la población**.
+
+---
+
+### Interpretación incorrecta (pero común)
+
+No se debe decir:
+
+> “Hay un 95% de probabilidad de que la media esté entre 64.7 y 71.3.”
+
+La media poblacional $$\( \mu \)$$ **no es aleatoria**; lo aleatorio es la muestra y por eso el intervalo cambia cada vez.
+
+---
+
+### Resumen
+
+- Intervalo de confianza: **(64.7, 71.3)**
+- Nivel de confianza: **95%**
+- Se usa la distribución t porque **σ es desconocida**.
 ---
 
 ### 5.2.2 Intervalo de confianza para la diferencia de medias (dos poblaciones)
