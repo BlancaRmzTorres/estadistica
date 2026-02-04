@@ -138,36 +138,19 @@ queremos capturar el valor verdadero **por arriba y por abajo** del estimador.
 La regla general es:
 
 $$\[
-\frac{1 - \text{nivel de confianza}}{2}=\ text{proporción de cada cola}
-\]]$$
+\frac{1 - \text{nivel de confianza}}{2}=\ text{proporción de cada cola}\]]$$
 
 ---
 
 ### Ejemplo con 95%
 
-$$\[
-\frac{1 - 0.95}{2}$$
-=
-$$\frac{0.05}{2}
-=
-0.025$$
-=
-$$2.5\%
-\]$$
+$$\[\frac{1 - 0.95}{2}=\frac{0.05}{2}=0.025=2.5\%\]$$
 
 ---
 
 ### Ejemplo con 99%
 
-$$\[
-\frac{1 - 0.99}{2}$$
-=
-$$\frac{0.01}{2}$$
-=
-$$0.005
-=
-0.5\%
-\]$$$$
+$$\[\frac{1 - 0.99}{2}=\frac{0.01}{2}=0.005=0.5\%\]$$
 
 ---
 
