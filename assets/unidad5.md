@@ -173,6 +173,52 @@ $$\[
 
 ---
 
+### ¿Qué es un valor crítico en estadística?
+
+El **valor crítico** es un número que marca el **límite entre el área central y las colas** de una distribución estadística  
+(normal, *t* de Student, chi-cuadrada, etc.).
+
+En otras palabras:
+
+Es el **valor Z** que determina **hasta dónde debes ir desde la media** para cubrir un cierto **nivel de confianza**.
+
+---
+
+### Interpretación visual
+
+Un valor crítico divide la distribución de la siguiente forma:
+
+[ - valor crítico ] ---- área central ---- [ + valor crítico ]
+
+
+- El **área central** corresponde al nivel de confianza.
+- Las **colas** representan la probabilidad que queda fuera del intervalo.
+
+---
+
+### ¿Por qué Z = 1.96 es el valor crítico del 95%?
+
+Porque al moverte **1.96 desviaciones estándar** hacia la izquierda y hacia la derecha desde la media en una **distribución normal estándar**, cubres exactamente el **95% del área total**.
+
+Esto significa que:
+
+- Entre **-1.96 y +1.96** está el **95% de los valores**.
+- Fuera de ese rango queda el **5% restante**, repartido en:
+  - **2.5% en la cola izquierda**
+  - **2.5% en la cola derecha**
+
+---
+
+### Conclusión clave
+
+Por eso decimos que:
+
+> **1.96 es el valor crítico del 95%**
+
+Es el número que **corta la curva normal** de tal forma que deja **dentro exactamente el 95% del área**, lo que permite construir **intervalos de confianza** y realizar **pruebas de hipótesis** correctamente.
+
+---
+
 ### Resumen
 
 - El área que **no** pertenece al nivel de confianza se reparte **en dos colas**.
