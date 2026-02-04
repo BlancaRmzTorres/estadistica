@@ -72,8 +72,6 @@ En una encuesta, 60% de personas apoyan una propuesta, con un intervalo de confi
 
 ---
 
-¿Quieres que también te genere una versión con fórmulas matemáticas usando **LaTeX**?
-
 #### Intervalo de confianza para la media (σ conocida)
 
 $$\[
