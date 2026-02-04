@@ -354,6 +354,119 @@ Con un **95% de confianza**, la media poblacional del tiempo de atención se enc
 
 ---
 
+### Intervalo de confianza para la media poblacional (σ desconocida)
+
+### Introducción
+
+Cuando la **desviación estándar poblacional (σ) es desconocida**, el intervalo de confianza para la media poblacional **μ** se construye utilizando la **desviación estándar muestral (s)** y la **distribución t de Student**.
+
+Este caso es muy común en la práctica, ya que normalmente **σ no se conoce**.
+
+---
+
+### Supuestos necesarios
+
+Para aplicar este intervalo de confianza se deben cumplir los siguientes supuestos:
+
+1. La **desviación estándar poblacional σ es desconocida**.
+2. Se dispone de una **muestra aleatoria e independiente**.
+3. La población tiene **distribución normal**, o bien:
+4. El tamaño de la muestra es **moderado o grande** y la t de Student es una buena aproximación.
+
+---
+
+### Fórmula del intervalo de confianza
+
+El intervalo de confianza para la media poblacional con σ desconocida es:
+
+$$\[
+IC = \bar{x} \pm t_{\alpha/2,\;n-1}\left(\frac{s}{\sqrt{n}}\right)
+\]$$
+
+donde:
+
+- $$\( \bar{x} \)$$ = media muestral  
+- $$\( \mu \)$$ = media poblacional (desconocida)  
+- $$\( s \)$$ = desviación estándar muestral  
+- $$\( n \)$$ = tamaño de la muestra  
+- $$\( t_{\alpha/2,\;n-1} \)$$ = valor crítico de la distribución t de Student  
+- $$\( n - 1 \)$$ = grados de libertad  
+- $$\( \alpha = 1 - \text{nivel de confianza} \)$$
+
+---
+
+### Valor crítico $$\( t_{\alpha/2,\;n-1} \)$$
+
+El valor crítico depende de:
+
+- El **nivel de confianza**
+- Los **grados de libertad** $$(\( n - 1 \))$$
+
+Ejemplo de valores comunes:
+
+| Nivel de confianza | Grados de libertad | Valor crítico |
+|--------------------|-------------------|---------------|
+| 95%                | 10                | 2.228         |
+| 95%                | 20                | 2.086         |
+| 95%                | 30                | 2.042         |
+
+⚠️ A medida que $$\( n \)$$ aumenta, la distribución t se **aproxima a la normal estándar (Z)**.
+
+---
+
+### Interpretación del intervalo
+
+Una vez calculado el intervalo:
+
+$$\[
+(\bar{x} - t_{\alpha/2,n-1}\frac{s}{\sqrt{n}},\;
+ \bar{x} + t_{\alpha/2,n-1}\frac{s}{\sqrt{n}})
+\]$$
+
+se interpreta así:
+
+> Con un **nivel de confianza del X%**, se estima que la **media poblacional μ** se encuentra dentro de este intervalo.
+
+⚠️ El nivel de confianza **no representa una probabilidad directa**, sino la confiabilidad del **procedimiento**.
+
+---
+
+### ¿Por qué usar la distribución t de Student?
+
+Porque al desconocer σ:
+
+- Se introduce **incertidumbre adicional**.
+- La t de Student tiene **colas más pesadas** que la normal.
+- Esto produce **intervalos más amplios**, especialmente para muestras pequeñas.
+
+La estadística utilizada es:
+
+$$\[
+t = \frac{\bar{x} - \mu}{s/\sqrt{n}}
+\]$$
+
+---
+
+### Comparación con σ conocida
+
+| Caso | Distribución | Desviación usada |
+|-----|-------------|------------------|
+| σ conocida | Normal (Z) | σ |
+| σ desconocida | t de Student | s |
+
+---
+
+### Resumen
+
+- Se utiliza cuando **σ es desconocida**.
+- Se reemplaza σ por la **desviación estándar muestral (s)**.
+- Se usa la **distribución t de Student**.
+- Es el caso **más frecuente en aplicaciones reales**.
+- A mayor tamaño de muestra, **t ≈ Z**.
+
+---
+
+
 ### Ejemplo 2: Intervalo de confianza para la media poblacional (σ desconocida)
 
 ### Planteamiento
