@@ -37,7 +37,7 @@ Los **intervalos de confianza** se utilizan en estadística para **estimar un va
 
 ---
 
-## 🧠 ¿Qué es un intervalo de confianza?
+### ¿Qué es un intervalo de confianza?
 
 Es un **rango de valores** dentro del cual es **muy probable** que se encuentre el parámetro real de la población.
 
@@ -46,7 +46,7 @@ Ejemplo:
 
 ---
 
-## 📌 ¿Para qué se utilizan?
+## ¿Para qué se utilizan?
 
 ### 1. Expresar la incertidumbre de una estimación  
 Una sola medida (como la media muestral) es solo un punto.  
@@ -67,7 +67,7 @@ El intervalo evita depender solo de un valor puntual.
 
 ---
 
-## 🧪 Ejemplo
+## Ejemplo
 
 En una encuesta, 60% de personas apoyan una propuesta, con un intervalo de confianza del 95% entre 56% y 64%.
 
