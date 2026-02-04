@@ -454,8 +454,15 @@ $$\[
 
 2. Verificar condición de gran muestra:
 
-- $$\(n\hat{p} = 300(0.60) = 180 \ge 5\)
-- $$\(n(1 - \hat{p}) = 300(0.40) = 120 \ge 5\)
+
+$$
+n\hat{p} = 300(0.60) = 180 \ge 5
+$$
+
+$$
+n(1 - \hat{p}) = 300(0.40) = 120 \ge 5
+$$
+
 
 Se cumple la condición.
 
