@@ -794,7 +794,7 @@ La media poblacional $$\( \mu \)$$ **no es aleatoria**; lo aleatorio es la muest
 
 ### 5.2.2 Intervalo de confianza para la diferencia de medias (dos poblaciones)
 
-# Intervalo de Confianza para la Diferencia de Medias (Dos Poblaciones)
+### Intervalo de Confianza para la Diferencia de Medias (Dos Poblaciones)
 
 Cuando queremos comparar **dos poblaciones** y estimar la diferencia entre sus medias
 \$$[
@@ -810,7 +810,7 @@ Este análisis es común en estudios comparativos como:
 
 ---
 
-# 1. Contexto del problema
+### 1. Contexto del problema
 
 Tenemos **dos muestras independientes**:
 
@@ -832,24 +832,24 @@ $$\[
 
 ---
 
-# 2. Casos posibles
+### 2. Casos posibles
 
 El intervalo de confianza depende de si las **varianzas son conocidas, desconocidas, iguales o distintas**.
 
-## Caso 1: σ₁ y σ₂ conocidas (poco común)
+### Caso 1: σ₁ y σ₂ conocidas (poco común)
 Se usa Z, pero este caso casi nunca ocurre en la práctica.
 
-## Caso 2: σ₁ y σ₂ desconocidas y diferentes (caso real)
+### Caso 2: σ₁ y σ₂ desconocidas y diferentes (caso real)
 Se usa la **distribución t** con **grados de libertad aproximados (fórmula de Welch)**.
 
-## Caso 3: σ₁ = σ₂ (varianzas iguales)
+### Caso 3: σ₁ = σ₂ (varianzas iguales)
 Se usa una varianza combinada **pooled**.
 
 El caso que más se usa en la vida real es el **Caso 2** (t-Welch).
 
 ---
 
-# 3. Error estándar para la diferencia de medias
+### 3. Error estándar para la diferencia de medias
 
 Si las muestras son independientes:
 
@@ -859,7 +859,7 @@ SE = \sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} }
 
 ---
 
-# 4. Valor crítico t
+### 4. Valor crítico t
 
 Se usa:
 
@@ -881,7 +881,7 @@ gl = \frac{
 
 ---
 
-# 5. Fórmula del intervalo de confianza
+### 5. Fórmula del intervalo de confianza
 
 El intervalo de confianza para  
 $$\[
@@ -897,7 +897,7 @@ IC = (\bar{X}_1 - \bar{X}_2) \pm t_{\alpha/2,\,gl}
 
 ---
 
-# 6. Interpretación del intervalo
+### 6. Interpretación del intervalo
 
 Si obtenemos un intervalo, por ejemplo:
 
@@ -917,7 +917,7 @@ Interpretaciones clave:
 
 ---
 
-# 7. Resumen final
+### 7. Resumen final
 
 - Se usa la diferencia:
   $$\[
