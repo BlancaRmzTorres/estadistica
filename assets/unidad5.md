@@ -543,6 +543,7 @@ $$\[(\bar{x}_1 - \bar{x}_2) \pm Z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \fra
    \]$$
 
 5. Intervalo de confianza:
+
    $$\[
    (3.14,\;6.86)
    \]$$
@@ -639,9 +640,10 @@ $$\[
 ---
 
 #### 5. Intervalo de confianza
-$$\[
-IC_{99\%} = (5 \pm 2.4347) = (2.5653,\; 7.4347)
-\]$$
+
+$$
+IC_{99\%} = 5 \pm 2.4347 = \left(2.5653,\; 7.4347\right)
+$$
 
 Aproximando:
 $$\[
