@@ -641,10 +641,6 @@ $$\[
 
 #### 5. Intervalo de confianza
 
-$$
-IC_{99\%} = 5 \pm 2.4347 = \left(2.5653,\; 7.4347\right)
-$$
-
 Aproximando:
 $$\[
 (2.57,\; 7.43)
@@ -746,7 +742,6 @@ $$\[
 ---
 
 #### 5. Intervalo de confianza
-$$\[IC_{90\%} = (4 \pm 3.4901) = (0.5099,\; 7.4901)\]$$
 
 Aproximando:
 $$\[
