@@ -781,8 +781,6 @@ $$\[
 \hat{p} = \frac{x}{n}
 \]$$
 
-Intervalo de confianza igual a pe sombrero más o menos Z sub alfa entre dos, por la raíz cuadrada de pe sombrero por uno menos pe sombrero dividido entre n
-
 donde:
 - $$\(x\)$$ = número de éxitos
 - $$\(n\)$$ = tamaño de la muestra
@@ -808,6 +806,8 @@ $$\[
 \hat{p} \pm Z_{\alpha/2}
 \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}
 \]$$
+
+Intervalo de confianza igual a pe sombrero más o menos Z sub alfa entre dos, por la raíz cuadrada de pe sombrero por uno menos pe sombrero dividido entre n
 
 donde:
 - $$\(\hat{p}\)$$ = proporción muestral  
