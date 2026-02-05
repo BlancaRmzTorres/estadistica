@@ -552,6 +552,217 @@ Con un 95% de confianza, la diferencia entre las medias poblacionales se encuent
 
 ---
 
+## Ejemplo 5: Intervalo de confianza para la diferencia de medias (σ conocidas, 99%)
+
+### Problema
+Dos grupos presentan la siguiente información:
+
+**Grupo 1**  
+$$\[
+\bar{x}_1 = 75,\quad \sigma_1 = 6,\quad n_1 = 100
+\]$$
+
+**Grupo 2**  
+$$\[
+\bar{x}_2 = 70,\quad \sigma_2 = 8,\quad n_2 = 120
+\]$$
+
+Construir el **intervalo de confianza del 99%** para la diferencia de medias poblacionales  
+$$\[
+\mu_1 - \mu_2
+\]$$
+
+---
+
+### Solución paso a paso
+
+#### 1. Nivel de confianza
+Nivel de confianza: **99%**
+
+Valor crítico de la normal estándar:
+$$\[
+Z_{\alpha/2} = 2.576
+\]$$
+
+---
+
+#### 2. Fórmula del intervalo de confianza
+Para la diferencia de medias con desviaciones estándar conocidas:
+
+$$\[
+IC = (\bar{x}_1 - \bar{x}_2) \pm Z_{\alpha/2}
+\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}
+\]$$
+
+---
+
+#### 3. Sustitución de valores
+$$\[
+IC = (75 - 70) \pm 2.576
+\sqrt{\frac{6^2}{100} + \frac{8^2}{120}}
+\]$$
+
+---
+
+#### 4. Cálculo
+
+Calculamos cada término:
+
+$$\[
+\frac{6^2}{100} = \frac{36}{100} = 0.36
+\]$$
+
+$$\[
+\frac{8^2}{120} = \frac{64}{120} \approx 0.5333
+\]$$
+
+Sumamos los valores:
+$$\[
+0.36 + 0.5333 \approx 0.8933
+\]$$
+
+Error estándar:
+$$\[
+\sqrt{0.8933} \approx 0.9452
+\]$$
+
+Margen de error:
+$$\[
+ME = 2.576 \times 0.9452 \approx 2.4347
+\]$$
+
+Diferencia de medias muestrales:
+$$\[
+\hat{\Delta} = \bar{x}_1 - \bar{x}_2 = 5
+\]$$
+
+---
+
+#### 5. Intervalo de confianza
+$$\[
+IC_{99\%} = (5 \pm 2.4347) = (2.5653,\; 7.4347)
+\]$$
+
+Aproximando:
+$$\[
+(2.57,\; 7.43)
+\]$$
+
+---
+
+### Interpretación
+Con un **99% de confianza**, la diferencia entre las medias poblacionales  
+$$\[
+\mu_1 - \mu_2
+\]$$
+se encuentra entre **2.57 y 7.43** unidades.
+
+### Ejemplo 5: Intervalo de confianza para la diferencia de medias (σ conocidas, 90%) (Resolver)
+
+### Problema
+Dos grupos presentan la siguiente información:
+
+**Grupo 1**  
+$$\[
+\bar{x}_1 = 102,\quad \sigma_1 = 10,\quad n_1 = 64
+\]$$
+
+**Grupo 2**  
+$$\[
+\bar{x}_2 = 98,\quad \sigma_2 = 12,\quad n_2 = 49
+\]$$
+
+Construir el **intervalo de confianza del 90%** para la diferencia de medias poblacionales  
+$$\[
+\mu_1 - \mu_2
+\]$$
+
+---
+
+### Solución paso a paso
+
+#### 1. Nivel de confianza
+Nivel de confianza: **90%**
+
+Valor crítico de la normal estándar:
+$$\[
+Z_{\alpha/2} = 1.645
+\]$$
+
+---
+
+#### 2. Fórmula del intervalo de confianza
+Para la diferencia de medias con desviaciones estándar conocidas:
+
+$$\[
+IC = (\bar{x}_1 - \bar{x}_2) \pm Z_{\alpha/2}
+\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}
+\]$$
+
+---
+
+#### 3. Sustitución de valores
+$$\[
+IC = (102 - 98) \pm 1.645
+\sqrt{\frac{10^2}{64} + \frac{12^2}{49}}
+\]$$
+
+---
+
+#### 4. Cálculo
+
+Calculamos cada término:
+
+$$\[
+\frac{10^2}{64} = \frac{100}{64} = 1.5625
+\]$$
+
+$$\[
+\frac{12^2}{49} = \frac{144}{49} \approx 2.9388
+\]$$
+
+Sumamos los valores:
+$$\[
+1.5625 + 2.9388 \approx 4.5013
+\]$$
+
+Error estándar:
+$$\[
+\sqrt{4.5013} \approx 2.1216
+\]$$
+
+$$Margen de error:
+\[
+ME = 1.645 \times 2.1216 \approx 3.4901
+\]$$
+
+Diferencia de medias muestrales:
+$$\[
+\hat{\Delta} = \bar{x}_1 - \bar{x}_2 = 4
+\]$$
+
+---
+
+#### 5. Intervalo de confianza
+$$\[
+IC_{90\%} = (4 \pm 3.4901) = (0.5099,\; 7.4901)
+\]$$
+
+Aproximando:
+$$\[
+(0.51,\; 7.49)
+\]$$
+
+---
+
+### Interpretación
+Con un **90% de confianza**, la diferencia entre las medias poblacionales  
+$$\[
+\mu_1 - \mu_2
+\]$$
+se encuentra entre **0.51 y 7.49** unidades.
+
+
 ### Conclusión del tema 5.2
 
 - Para **una población**, el intervalo depende de si σ es conocida o desconocida.
