@@ -401,7 +401,7 @@ $$\[
 Con un **90% de confianza**, la media poblacional se encuentra entre **48.63 y 51.37**.
 
 
-### Ejemplo 3: Intervalo de confianza para una media (σ conocida)
+### Ejemplo 3: Intervalo de confianza para una media (σ conocida) (Resolver)
 
 ### Problema
 Una población tiene desviación estándar conocida  
@@ -502,7 +502,7 @@ $$\[(\bar{x}_1 - \bar{x}_2) \pm Z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \fra
 
 ---
 
-### Ejemplo 2: Intervalo de confianza para la diferencia de medias
+### Ejemplo 4: Intervalo de confianza para la diferencia de medias
 
 **Problema:**  
 Dos grupos de estudiantes presentan los siguientes datos:
