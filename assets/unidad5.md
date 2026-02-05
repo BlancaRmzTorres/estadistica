@@ -955,6 +955,113 @@ Con 95% de confianza, la diferencia entre las proporciones poblacionales se encu
 
 ---
 
+### Ejemplo 3: Intervalo de confianza para la diferencia de proporciones (Resolver)
+
+### Problema
+En dos hospitales se estudia el porcentaje de pacientes que reciben atención en menos de 30 minutos:
+
+**Hospital A:** 150 de 250 pacientes fueron atendidos a tiempo.  
+**Hospital B:** 130 de 300 pacientes fueron atendidos a tiempo.
+
+Construya un **intervalo de confianza del 95%** para la diferencia de proporciones poblacionales:
+$$\[
+p_1 - p_2
+\]$$
+
+---
+
+### Solución paso a paso
+
+#### 1. Proporciones muestrales
+$$\[
+\hat{p}_1 = \frac{150}{250} = 0.60
+\]$$
+
+$$\[
+\hat{p}_2 = \frac{130}{300} = 0.4333
+\]$$
+
+---
+
+#### 2. Valor crítico (95%)
+$$\[
+Z_{\alpha/2} = 1.96
+\]$$
+
+---
+
+#### 3. Sustitución en la fórmula del intervalo
+La fórmula para el intervalo de confianza para la diferencia de proporciones es:
+
+$$\[
+IC = (\hat{p}_1 - \hat{p}_2) \pm Z_{\alpha/2}
+\sqrt{
+\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}
++
+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}
+}
+\]$$
+
+Sustituyendo los valores:
+
+$$\[
+IC = (0.60 - 0.4333) \pm 1.96
+\sqrt{
+\frac{0.60(0.40)}{250}
++
+\frac{0.4333(0.5667)}{300}
+}
+\]$$
+
+---
+
+#### 4. Cálculo
+
+##### 4.1 Diferencia de proporciones
+$$\[
+\hat{p}_1 - \hat{p}_2 = 0.1667
+\]$$
+
+##### 4.2 Error estándar
+$$\[
+\frac{0.60(0.40)}{250} = 0.00096
+\]$$
+
+$$\[
+\frac{0.4333(0.5667)}{300} \approx 0.000818
+\]$$
+
+$$\[
+SE = \sqrt{0.00096 + 0.000818}
+= \sqrt{0.001778}
+\approx 0.04217
+\]$$
+
+##### 4.3 Margen de error
+$$\[
+ME = 1.96(0.04217) \approx 0.0826
+\]$$
+
+---
+
+#### 5. Intervalo de confianza
+$$\[
+IC = (0.1667 \pm 0.0826)
+\]$$
+
+$$\[
+IC = (0.0841,\; 0.2493)
+\]$$
+
+---
+
+### Interpretación
+Con un **95% de confianza**, la diferencia entre las proporciones poblacionales se encuentra entre **0.084 y 0.249**.
+
+Esto indica que el **Hospital A** atiende a más pacientes a tiempo que el **Hospital B**, con una ventaja estimada de entre **8.4% y 24.9%**.
+
+
+
 ### Conclusión del tema 5.3
 
 - Las proporciones se estiman usando la **distribución normal** en muestras grandes.
