@@ -894,6 +894,9 @@ $$
 \sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 - \hat{p}_2)}{n_2}}
 $$
 
+Intervalo de confianza igual a pe uno sombrero menos pe dos sombrero,
+más o menos Z sub alfa entre dos, por la raíz cuadrada de pe uno sombrero por uno menos pe uno sombrero entre n uno, más pe dos sombrero por uno menos pe dos sombrero entre n dos.
+
 ---
 
 ### Ejemplo 2: Intervalo de confianza para la diferencia de proporciones
