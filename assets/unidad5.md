@@ -520,7 +520,7 @@ Construya un intervalo de confianza del 95% para la diferencia de medias poblaci
    \]$$
 
 2. Fórmula:
-$$(\bar{x}_1 - \bar{x}_2) \pm Z_{\alpha/2}\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$$
+$$\[(\bar{x}_1 - \bar{x}_2) \pm Z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}} \]$$
 
 
 3. Sustitución:
