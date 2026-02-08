@@ -157,6 +157,112 @@ $$\[
 - Por cada unidad que aumenta $$\( x \)$$, $$\( y \)$$ aumenta en promedio **0.8 unidades**
 
 ---
+## Ejercicio 2: Cálculo de $$\( \beta_1 \)$$ y $$\( \beta_0 \)$$
+
+Se tienen los siguientes datos para ajustar un **modelo de regresión lineal simple**:
+
+### Datos
+
+| X | Y |
+|---|---|
+| 2 | 4 |
+| 5 | 7 |
+| 7 | 10 |
+| 9 | 15 |
+
+---
+
+## 1. Cálculo de las medias
+
+### Media de $$\( X \)}$$
+
+$$\[
+\bar{x} = \frac{2 + 5 + 7 + 9}{4} = 5.75
+\]$$
+
+### Media de $$\( Y \)$$
+
+$$\[
+\bar{y} = \frac{4 + 7 + 10 + 15}{4} = 9
+\]$$
+
+---
+
+## 2. Cálculo de $$\( \beta_1 \)$$
+
+### Fórmula
+
+$$\[
+\beta_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}
+\]$$
+
+---
+
+### Tabla de cálculos
+
+| $$\(x_i\)$$ | $$\(y_i\)$$ | $$\(x_i - \bar{x}\)$$ | $$\(y_i - \bar{y}\)$$ | $$\((x_i-\bar{x})(y_i-\bar{y})\)$$ | $$\((x_i-\bar{x})^2\)$$ |
+|--------|--------|------------------|------------------|-------------------------------|-------------------|
+| 2 | 4 | -3.75 | -5 | 18.75 | 14.06 |
+| 5 | 7 | -0.75 | -2 | 1.50 | 0.56 |
+| 7 | 10 | 1.25 | 1 | 1.25 | 1.56 |
+| 9 | 15 | 3.25 | 6 | 19.50 | 10.56 |
+
+---
+
+### Sumas
+
+$$\[
+\sum (x_i - \bar{x})(y_i - \bar{y}) = 41
+\]$$
+
+$$\[
+\sum (x_i - \bar{x})^2 = 26.75
+\]$$
+
+---
+
+### Cálculo de $$\( \beta_1 \)$$
+
+$$\[
+\beta_1 = \frac{41}{26.75} \approx 1.532
+\]$$
+
+---
+
+## 3. Cálculo de $$\( \beta_0 \)$$
+
+### Fórmula
+
+$$\[
+\beta_0 = \bar{y} - \beta_1 \bar{x}
+\]$$
+
+### Sustitución
+
+$$\[
+\beta_0 = 9 - (1.532)(5.75)
+\]$$
+
+$$\[
+\beta_0 = 9 - 8.799 = 0.201
+\]$$
+
+---
+
+## ✅ Modelo final de regresión
+
+$$\[
+\hat{y} = 0.201 + 1.532x
+\]$$
+
+---
+
+### Interpretación
+
+- El intercepto indica que cuando $$\( x = 0 \)$$, el valor estimado de $$\( y \)$$ es **0.201**
+- Por cada unidad que aumenta $$\( x \)$$, el valor de $$\( y \)$$ aumenta en promedio **1.532 unidades**
+
+---
 
 
 ### 6.1.2 Regresión lineal múltiple
