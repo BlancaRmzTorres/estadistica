@@ -58,13 +58,13 @@ $$\[
 \bar{x} = 3,\quad \bar{y} = 70
 \]$$
 
-#### Paso 2: Calcular \(\beta_1\)
+#### Paso 2: Calcular $$\(\beta_1\)$$
 
 $$\[
 \beta_1 = \frac{(1-3)(60-70)+\cdots+(5-3)(80-70)}{(1-3)^2+\cdots+(5-3)^2} = 5
 \]$$
 
-#### Paso 3: Calcular \(\beta_0\)
+#### Paso 3: Calcular $$\(\beta_0\)$$
 
 $$\[
 \beta_0 = 70 - 5(3) = 55
