@@ -21,11 +21,11 @@ Y = \beta_0 + \beta_1 X + \varepsilon
 \]$$
 
 Donde:
-- \(Y\): variable dependiente  
-- \(X\): variable independiente  
-- \(\beta_0\): intercepto  
-- \(\beta_1\): pendiente  
-- \(\varepsilon\): error aleatorio  
+- $$\(Y\)$$: variable dependiente  
+- $$\(X\)$$: variable independiente  
+- $$\(\beta_0\)$$: intercepto  
+- $$\(\beta_1\)$$: pendiente  
+- $$\(\varepsilon\)$$: error aleatorio  
 
 ---
 
