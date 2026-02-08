@@ -26,6 +26,11 @@
 - 5.1 Estimación puntual y por intervalos de confianza.
 - 5.2 Estimaciones para una y dos poblaciones.
 - 5.3 Intervalos de confianza para proporciones y grandes muestras.
+
+#### 6. [REGRESIÓN LINEAL Y ANÁLISIS DE VARIANZA (ANOVA)](assets/unidad6.md)
+- 6.1 Modelos de regresión lineal simple y múltiple.
+- 6.2 Generalizaciones del modelo de regresión lineal y regresión no lineal.
+- 6.3 Análisis de varianza (ANOVA) y técnicas avanzadas de modelado.
 _______________
 
 #### Referencias bibliográficas (APA)
