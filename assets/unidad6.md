@@ -35,51 +35,129 @@ $$\[
 \beta_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}
 \]$$
 
+**Beta uno es igual a la suma de los productos de las desviaciones de X respecto a su media por las desviaciones de Y respecto a su media, dividido entre la suma de los cuadrados de las desviaciones de X respecto a su media.**
+
 $$\[
 \beta_0 = \bar{y} - \beta_1 \bar{x}
 \]$$
 
+**Beta cero es igual a la media de Y menos beta uno multiplicado por la media de X**
+
+- **β₁ = pendiente**
+  - Indica cuánto cambia Y cuando X aumenta en 1 unidad.
+
+- **β₀ = intercepto**
+  - Es el valor de Y cuando X = 0.
+
 ---
 
-### Ejercicio 1: Regresión lineal simple
+## Ejercicio 1: Cálculo de $$\( \beta_1 \)$$ y $$\( \beta_0 \)$$
 
-Se desea analizar la relación entre **horas de estudio (X)** y **calificación (Y)**.
+Se tienen los siguientes datos para ajustar un **modelo de regresión lineal simple**:
+
+### Datos
 
 | X | Y |
 |---|---|
-| 1 | 60 |
-| 2 | 65 |
-| 3 | 70 |
-| 4 | 75 |
-| 5 | 80 |
-
-#### Paso 1: Calcular medias
-$$\[
-\bar{x} = 3,\quad \bar{y} = 70
-\]$$
-
-#### Paso 2: Calcular $$\(\beta_1\)$$
-
-$$\[
-\beta_1 = \frac{(1-3)(60-70)+\cdots+(5-3)(80-70)}{(1-3)^2+\cdots+(5-3)^2} = 5
-\]$$
-
-#### Paso 3: Calcular $$\(\beta_0\)$$
-
-$$\[
-\beta_0 = 70 - 5(3) = 55
-\]$$
-
-#### Modelo final
-
-$$\[
-\hat{Y} = 55 + 5X
-\]$$
-
-**Interpretación:**  
-Cada hora adicional de estudio incrementa la calificación en **5 puntos**.
+| 1 | 2 |
+| 2 | 3 |
+| 3 | 5 |
+| 4 | 4 |
 
 ---
+
+## 1. Cálculo de las medias
+
+### Media de $$\( X \)$$
+
+$$\[
+\bar{x} = \frac{1 + 2 + 3 + 4}{4} = 2.5
+\]$$
+
+### Media de $$\( Y \)$$
+
+$$\[
+\bar{y} = \frac{2 + 3 + 5 + 4}{4} = 3.5
+\]$$
+
+---
+
+## 2. Cálculo de $$\( \beta_1 \)$$
+
+### Fórmula
+
+$$\[
+\beta_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}
+\]$$
+
+---
+
+### Tabla de cálculos
+
+| $$\(x_i\)$$ | $$\(y_i\)$$ | $$\(x_i - \bar{x}\)$$ | $$\(y_i - \bar{y}\)$$ | $$\((x_i-\bar{x})(y_i-\bar{y})\)$$ | $$\((x_i-\bar{x})^2\)$$ |
+|--------|--------|------------------|------------------|-------------------------------|-------------------|
+| 1 | 2 | -1.5 | -1.5 | 2.25 | 2.25 |
+| 2 | 3 | -0.5 | -0.5 | 0.25 | 0.25 |
+| 3 | 5 | 0.5 | 1.5 | 0.75 | 0.25 |
+| 4 | 4 | 1.5 | 0.5 | 0.75 | 2.25 |
+
+---
+
+### Sumas
+
+$$\[
+\sum (x_i - \bar{x})(y_i - \bar{y}) = 4
+\]$$
+
+$$\[
+\sum (x_i - \bar{x})^2 = 5
+\]$$
+
+---
+
+### Cálculo de $$\( \beta_1 \)$$
+
+$$\[
+\beta_1 = \frac{4}{5} = 0.8
+\]$$
+
+---
+
+## 3. Cálculo de $$\( \beta_0 \)$$
+
+### Fórmula
+
+$$\[
+\beta_0 = \bar{y} - \beta_1 \bar{x}
+\]$$
+
+### Sustitución
+
+$$\[
+\beta_0 = 3.5 - (0.8)(2.5)
+\]$$
+
+$$\[
+\beta_0 = 3.5 - 2 = 1.5
+\]$$
+
+---
+
+### ✅ Modelo final de regresión
+
+$$\[
+\hat{y} = 1.5 + 0.8x
+\]$$
+
+---
+
+### Interpretación
+
+- Cuando $$\( x = 0 \)$$, el valor estimado de $$\( y \)$$ es **1.5**
+- Por cada unidad que aumenta $$\( x \)$$, $$\( y \)$$ aumenta en promedio **0.8 unidades**
+
+---
+
 
 ### 6.1.2 Regresión lineal múltiple
 
