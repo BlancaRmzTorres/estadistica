@@ -23,7 +23,7 @@ Y = \beta_0 + \beta_1 X + \varepsilon
 Donde:
 - $$\(Y\)$$: variable dependiente  
 - $$\(X\)$$: variable independiente  
-- $$\(\beta_0\)$$: intercepto  
+- $$\(\beta_0\)$$: intercepto (ordenada al origen)  
 - $$\(\beta_1\)$$: pendiente  
 - $$\(\varepsilon\)$$: error aleatorio  
 
