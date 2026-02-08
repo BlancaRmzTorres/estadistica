@@ -174,9 +174,9 @@ Se tienen los siguientes datos para ajustar un **modelo de regresión lineal sim
 
 ## 1. Cálculo de las medias
 
-### Media de $$\( X \)}$$
+### Media de $$\( X \)$$
 
-$$\[bar{x} = \frac{2 + 5 + 7 + 9}{4} = 5.75\]$$
+$$\\[bar{x} = \frac{2 + 5 + 7 + 9}{4} = 5.75\]$$
 
 ### Media de $$\( Y \)$$
 
