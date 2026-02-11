@@ -314,7 +314,9 @@ $$
 
 ### 📘 Interpretación de coeficientes
 
-### ➤ Intercepto $ \beta_0 = 8500 $
+### ➤ Intercepto $$\[
+\beta_0 = 8500
+\]$$
 
 Representa el salario de una persona **sin experiencia** ($X_1 = 0$) y con **educación básica** ($X_2 = 0$).
 
