@@ -1,3 +1,4 @@
+
 # 6. REGRESIÓN LINEAL Y ANÁLISIS DE VARIANZA (ANOVA)
 
 La regresión y el análisis de varianza son herramientas fundamentales de la **estadística inferencial** que permiten analizar relaciones entre variables, explicar fenómenos y tomar decisiones basadas en datos.
@@ -419,16 +420,14 @@ $$
 ### 📘 Interpretación de coeficientes
 
 ### Intercepto 
-$$\[
-\beta_0 = 95{,}000
-\]$$
+$$\( \beta_1 = 1{,}200 \)$$
 
 Precio base teórico cuando $$\(X_1 = 0\)$$ y $$\(X_2 = 0\)$$.  
 (No tiene interpretación literal práctica, ya que una casa no puede tener 0 m²).
 
 ---
 
-### Tamaño $$ \(beta_1 = 1{,}200\) $$
+### Tamaño $$ \( \beta_1 = 1{,}200\) $$
 
 Cada metro cuadrado adicional incrementa el precio en:
 
