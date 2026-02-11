@@ -133,6 +133,8 @@ $$\[
 \beta_0 = \bar{y} - \beta_1 \bar{x}
 \]$$
 
+**Beta cero es igual a y barra menos beta uno por x barra.**
+
 ### Sustitución
 
 $$\[
