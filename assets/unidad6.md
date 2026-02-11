@@ -559,32 +559,14 @@ Donde:
 
 ---
 
-### 🎯 Tipo de modelo
-
-Este es un **modelo de regresión polinómica de segundo grado** (regresión cuadrática), porque incluye el término $X^2$.
-
-Esto implica que la relación entre $X$ y $Y$ no es una línea recta, sino una **curva (parábola)**.
-
----
-
-### 📈 Interpretación del coeficiente cuadrático
-
-- Si $\beta_2 > 0$ → La parábola abre hacia arriba (forma de "U").
-- Si $\beta_2 < 0$ → La parábola abre hacia abajo (forma de "∩").
-
-
-Se usa cuando los datos presentan **curvatura**.
-
----
-
-# Regresión Polinómica Cuadrática – Ejercicio Paso a Paso
+### Ejercicio 1.
 
 ## 1. Objetivo
 
 Ajustar un modelo de regresión polinómica de segundo grado que explique la relación entre:
 
-- \( x \): número de unidades producidas  
-- \( y \): costo total asociado  
+- $$\( x \)$$: número de unidades producidas  
+- $$\( y \)$$: costo total asociado  
 
 Modelo general:
 
@@ -611,8 +593,8 @@ $$
 Se construyen tres columnas:
 
 - 1 (intercepto)
-- \( x \)
-- \( x^2 \)
+- $$\( x \)$$
+- $$\( x^2 \)$$
 
 | 1 | x | x^2 | y |
 |---|---|-----|---|
