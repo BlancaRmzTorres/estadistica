@@ -294,9 +294,9 @@ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \varepsilon
 
 Este modelo permite analizar el **efecto individual de cada variable** sobre la respuesta.
 
-# 📊 Ejercicio 1 — Salario según experiencia y nivel educativo
+### 📊 Ejercicio 1 — Salario según experiencia y nivel educativo
 
-## ✏️ Modelo estimado
+### ✏️ Modelo estimado
 
 $$
 \hat{Y} = 8500 + 1200X_1 + 2500X_2
@@ -312,7 +312,7 @@ $$
 
 ---
 
-## 📘 Interpretación de coeficientes
+### 📘 Interpretación de coeficientes
 
 ### ➤ Intercepto $ \beta_0 = 8500 $
 
@@ -344,7 +344,7 @@ En comparación con una persona con educación básica, manteniendo constante la
 
 ---
 
-## 📐 Cálculo de un ejemplo
+### 📐 Cálculo de un ejemplo
 
 Calcular el salario estimado para una persona con:
 
@@ -383,7 +383,7 @@ $$
 
 ---
 
-## ✅ Resultado final
+### ✅ Resultado final
 
 $$
 \hat{Y} = \mathbf{17,000}
@@ -393,9 +393,9 @@ $$
 Una persona con **5 años de experiencia** y **educación universitaria** tiene un salario mensual estimado de **$17,000** según el modelo de regresión.
 
 
-# 🏠 Ejercicio 2 — Precio de casa según tamaño y antigüedad
+### 🏠 Ejercicio 2 — Precio de casa según tamaño y antigüedad
 
-## ✏️ Modelo estimado
+### ✏️ Modelo estimado
 
 $$
 \hat{Y} = 95{,}000 + 1{,}200X_1 - 800X_2
@@ -409,7 +409,7 @@ $$
 
 ---
 
-## 📘 Interpretación de coeficientes
+### 📘 Interpretación de coeficientes
 
 ### ➤ Intercepto $ \beta_0 = 95{,}000 $
 
@@ -442,7 +442,7 @@ Manteniendo constante el tamaño.
 
 ---
 
-## 📐 Cálculo de un ejemplo
+### 📐 Cálculo de un ejemplo
 
 Casa con:
 
@@ -487,7 +487,7 @@ $$
 
 ---
 
-## ✅ Resultado final
+### ✅ Resultado final
 
 $$
 \hat{Y} = \mathbf{256{,}600}
