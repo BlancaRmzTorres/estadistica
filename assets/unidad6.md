@@ -543,9 +543,7 @@ $$
 
 ---
 
-### 📖 ¿Cómo se lee la fórmula?
-
-Se lee:
+Donde: 
 
 > **“Y es igual a beta cero más beta uno por X más beta dos por X al cuadrado más épsilon.”**
 
