@@ -418,31 +418,35 @@ $$
 
 ### 📘 Interpretación de coeficientes
 
-### ➤ Intercepto $$ \beta_0 = 95{,}000 $$
+### Intercepto 
+$$\[
+\beta_0 = 95{,}000
+\]$$
 
-Precio base teórico cuando $X_1 = 0$ y $X_2 = 0$.  
+Precio base teórico cuando $$\(X_1 = 0\)$$ y $$\(X_2 = 0\)$$.  
 (No tiene interpretación literal práctica, ya que una casa no puede tener 0 m²).
 
 ---
 
-### ➤ Tamaño $$ \beta_1 = 1{,}200 $$
+### Tamaño $$ \(beta_1 = 1{,}200\) $$
 
 Cada metro cuadrado adicional incrementa el precio en:
 
-$$
+$$\[
 \$1{,}200
+\]
 $$
 
 Manteniendo constante la antigüedad.
 
 ---
 
-### ➤ Antigüedad $$ \beta_2 = -800 $$
+### Antigüedad $$ \(beta_2 = -800\) $$
 
 Cada año adicional de antigüedad reduce el precio en:
 
-$$
-\$800
+$$\[
+\$800\]
 $$
 
 Manteniendo constante el tamaño.
@@ -460,8 +464,8 @@ Casa con:
 
 ### 🧮 Sustitución en el modelo
 
-$$
-\hat{Y} = 95{,}000 + 1{,}200(140) - 800(8)
+$$\[
+\hat{Y} = 95{,}000 + 1{,}200(140) - 800(8)\]
 $$
 
 ---
@@ -470,34 +474,34 @@ $$
 
 **Paso 1:**
 
-$$
-1{,}200 \times 140 = 168{,}000
+$$\[
+1{,}200 \times 140 = 168{,}000\]
 $$
 
 **Paso 2:**
 
-$$
-800 \times 8 = 6{,}400
+$$\[
+800 \times 8 = 6{,}400\]
 $$
 
 **Paso 3:**
 
-$$
-95{,}000 + 168{,}000 = 263{,}000
+$$\[
+95{,}000 + 168{,}000 = 263{,}000\]
 $$
 
 **Paso 4:**
 
-$$
-263{,}000 - 6{,}400 = 256{,}600
+$$\[
+263{,}000 - 6{,}400 = 256{,}600\]
 $$
 
 ---
 
 ### ✅ Resultado final
 
-$$
-\hat{Y} = \mathbf{256{,}600}
+$$\[
+\hat{Y} = \mathbf{256{,}600}\]
 $$
 
 📌 **Interpretación:**  
@@ -524,8 +528,8 @@ Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon
 
 ### ✏️ Modelo
 
-$$
-Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon
+$$\[
+Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon\]
 $$
 
 ---
