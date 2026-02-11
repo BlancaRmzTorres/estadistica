@@ -304,9 +304,9 @@ $$
 
 **Donde:**
 
-- $Y$: Salario mensual  
-- $X_1$: Años de experiencia  
-- $X_2$: Nivel educativo  
+- $$Y$$: Salario mensual  
+- $$X_1$$: Años de experiencia  
+- $$X_2$$: Nivel educativo  
   - 0 = Educación básica  
   - 1 = Educación universitaria  
 
@@ -314,13 +314,13 @@ $$
 
 ### 📘 Interpretación de coeficientes
 
-### ➤ Intercepto $ \beta_0 = 8500 $
+### ➤ Intercepto $$ \beta_0 = 8500 $$
 
 Representa el salario de una persona **sin experiencia** ($X_1 = 0$) y con **educación básica** ($X_2 = 0$).
 
 ---
 
-### ➤ Experiencia $ \beta_1 = 1200 $
+### ➤ Experiencia $$ \beta_1 = 1200 $$
 
 Por cada año adicional de experiencia, el salario aumenta en:
 
@@ -332,7 +332,7 @@ Manteniendo constante el nivel educativo.
 
 ---
 
-### ➤ Educación $ \beta_2 = 2500 $
+### ➤ Educación $$ \beta_2 = 2500 $$
 
 Tener educación universitaria incrementa el salario en:
 
@@ -349,7 +349,7 @@ En comparación con una persona con educación básica, manteniendo constante la
 Calcular el salario estimado para una persona con:
 
 - 5 años de experiencia  
-- Nivel educativo universitario ($X_2 = 1$)
+- Nivel educativo universitario $$($X_2 = 1$)$$
 
 ---
 
@@ -403,22 +403,22 @@ $$
 
 **Donde:**
 
-- $Y$: Precio estimado (pesos)  
-- $X_1$: Metros cuadrados  
-- $X_2$: Antigüedad en años  
+- $$Y$$: Precio estimado (pesos)  
+- $$X_1$$: Metros cuadrados  
+- $$X_2$$: Antigüedad en años  
 
 ---
 
 ### 📘 Interpretación de coeficientes
 
-### ➤ Intercepto $ \beta_0 = 95{,}000 $
+### ➤ Intercepto $$ \beta_0 = 95{,}000 $$
 
 Precio base teórico cuando $X_1 = 0$ y $X_2 = 0$.  
 (No tiene interpretación literal práctica, ya que una casa no puede tener 0 m²).
 
 ---
 
-### ➤ Tamaño $ \beta_1 = 1{,}200 $
+### ➤ Tamaño $$ \beta_1 = 1{,}200 $$
 
 Cada metro cuadrado adicional incrementa el precio en:
 
@@ -430,7 +430,7 @@ Manteniendo constante la antigüedad.
 
 ---
 
-### ➤ Antigüedad $ \beta_2 = -800 $
+### ➤ Antigüedad $$ \beta_2 = -800 $$
 
 Cada año adicional de antigüedad reduce el precio en:
 
