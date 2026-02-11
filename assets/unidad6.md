@@ -688,6 +688,249 @@ Donde:
 - $$\(MS_{entre} = \frac{SS_{entre}}{k-1}\)$$
 - $$\(MS_{dentro} = \frac{SS_{dentro}}{n-k}\)$$
 
+### 📊 ANOVA — Ejercicio 1: Rendimiento académico según método de enseñanza
+
+Tres grupos de estudiantes usaron distintos métodos de estudio. Sus calificaciones fueron:
+
+- **Método A:** 80, 85, 83  
+- **Método B:** 75, 78, 72  
+- **Método C:** 90, 88, 92  
+
+---
+
+### 📌 1. Hipótesis
+
+$$
+H_0:\ \mu_1 = \mu_2 = \mu_3
+$$
+
+$$
+H_1:\ \text{Al menos una media es diferente}
+$$
+
+---
+
+### 📌 2. Media de cada grupo
+
+**Media A**
+
+$$
+\bar{X}_A = \frac{80 + 85 + 83}{3} = 82.67
+$$
+
+**Media B**
+
+$$
+\bar{X}_B = \frac{75 + 78 + 72}{3} = 75.00
+$$
+
+**Media C**
+
+$$
+\bar{X}_C = \frac{90 + 88 + 92}{3} = 90.00
+$$
+
+### Media general
+
+$$
+\bar{X} = \frac{80 + 85 + 83 + 75 + 78 + 72 + 90 + 88 + 92}{9} = 82.56
+$$
+
+---
+
+### 📌 3. Suma de cuadrados entre grupos ($SS_{entre}$)
+
+$$
+SS_{entre} = n(\bar{X}_A - \bar{X})^2 + n(\bar{X}_B - \bar{X})^2 + n(\bar{X}_C - \bar{X})^2
+$$
+
+Cálculos:
+
+- A: $3(82.67 - 82.56)^2 = 0.0363$  
+- B: $3(75 - 82.56)^2 = 171.6168$  
+- C: $3(90 - 82.56)^2 = 165.2544$  
+
+$$
+SS_{entre} = 336.9075
+$$
+
+---
+
+### 📌 4. Suma de cuadrados dentro de los grupos ($SS_{dentro}$)
+
+Grupo A:
+
+$$
+(80-82.67)^2 + (85-82.67)^2 + (83-82.67)^2 = 12.67
+$$
+
+Grupo B:
+
+$$
+(75-75)^2 + (78-75)^2 + (72-75)^2 = 18
+$$
+
+Grupo C:
+
+$$
+(90-90)^2 + (88-90)^2 + (92-90)^2 = 8
+$$
+
+$$
+SS_{dentro} = 38.67
+$$
+
+---
+
+### 📌 5. Cálculo de MS y estadístico F
+
+$$
+MS_{entre} = \frac{SS_{entre}}{k-1} = \frac{336.9075}{2} = 168.45
+$$
+
+$$
+MS_{dentro} = \frac{SS_{dentro}}{n-k} = \frac{38.67}{6} = 6.445
+$$
+
+$$
+F = \frac{MS_{entre}}{MS_{dentro}} = \frac{168.45}{6.445} = 26.14
+$$
+
+---
+
+### 📌 6. Conclusión
+
+Como el valor calculado:
+
+$$
+F = 26.14
+$$
+
+es grande:
+
+👉 Se **rechaza $H_0$**  
+👉 Al menos una de las medias es diferente  
+
+---
+
+---
+
+### 🟩 ANOVA — Ejercicio 2: Productividad de tres máquinas
+
+Producción (unidades por hora):
+
+- **Máquina 1:** 50, 52, 48  
+- **Máquina 2:** 45, 47, 46  
+- **Máquina 3:** 55, 53, 56  
+
+---
+
+### 📌 1. Hipótesis
+
+$$
+H_0:\ \mu_1 = \mu_2 = \mu_3
+$$
+
+$$
+H_1:\ \text{Al menos una media es diferente}
+$$
+
+---
+
+### 📌 2. Cálculo de medias
+
+$$
+\bar{X}_1 = \frac{50 + 52 + 48}{3} = 50
+$$
+
+$$
+\bar{X}_2 = \frac{45 + 47 + 46}{3} = 46
+$$
+
+$$
+\bar{X}_3 = \frac{55 + 53 + 56}{3} = 54.67
+$$
+
+### Media general
+
+$$
+\bar{X} = \frac{50 + 52 + 48 + 45 + 47 + 46 + 55 + 53 + 56}{9} = 50.22
+$$
+
+---
+
+### 📌 3. Suma de cuadrados entre grupos
+
+$$
+SS_{entre} = n(\bar{X}_i - \bar{X})^2
+$$
+
+Cálculos:
+
+- M1: $3(50 - 50.22)^2 = 0.145$  
+- M2: $3(46 - 50.22)^2 = 53.38$  
+- M3: $3(54.67 - 50.22)^2 = 59.39$  
+
+$$
+SS_{entre} = 112.92
+$$
+
+---
+
+### 📌 4. Suma de cuadrados dentro de los grupos
+
+M1:
+
+$$
+(50-50)^2 + (52-50)^2 + (48-50)^2 = 8
+$$
+
+M2:
+
+$$
+(45-46)^2 + (47-46)^2 + (46-46)^2 = 2
+$$
+
+M3:
+
+$$
+(55-54.67)^2 + (53-54.67)^2 + (56-54.67)^2 = 4.67
+$$
+
+$$
+SS_{dentro} = 14.67
+$$
+
+---
+
+### 📌 5. Cálculo de MS y F
+
+$$
+MS_{entre} = \frac{112.92}{2} = 56.46
+$$
+
+$$
+MS_{dentro} = \frac{14.67}{6} = 2.445
+$$
+
+$$
+F = \frac{56.46}{2.445} = 23.10
+$$
+
+---
+
+### 📌 6. Conclusión
+
+Como:
+
+$$
+F = 23.10
+$$
+
+👉 Se **rechaza $H_0$**  
+👉 Al menos una máquina tiene productividad diferente.
+
+
 ---
 
 ### 6.3.2 ANOVA de un factor – Ejercicio
