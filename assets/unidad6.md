@@ -513,6 +513,48 @@ $$\[
 Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon
 \]$$
 
+### 📊 Lectura e interpretación de la fórmula
+
+### ✏️ Modelo
+
+$$
+Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon
+$$
+
+---
+
+### 📖 ¿Cómo se lee la fórmula?
+
+Se lee:
+
+> **“Y es igual a beta cero más beta uno por X más beta dos por X al cuadrado más épsilon.”**
+
+---
+
+### 📘 Interpretación estadística
+
+- $Y$: Variable dependiente (lo que queremos explicar o predecir).
+- $\beta_0$: Intercepto (valor de $Y$ cuando $X = 0$).
+- $\beta_1 X$: Efecto lineal de $X$ sobre $Y$.
+- $\beta_2 X^2$: Efecto cuadrático de $X$ (introduce curvatura en el modelo).
+- $\varepsilon$: Término de error (parte no explicada por el modelo).
+
+---
+
+### 🎯 Tipo de modelo
+
+Este es un **modelo de regresión polinómica de segundo grado** (regresión cuadrática), porque incluye el término $X^2$.
+
+Esto implica que la relación entre $X$ y $Y$ no es una línea recta, sino una **curva (parábola)**.
+
+---
+
+### 📈 Interpretación del coeficiente cuadrático
+
+- Si $\beta_2 > 0$ → La parábola abre hacia arriba (forma de "U").
+- Si $\beta_2 < 0$ → La parábola abre hacia abajo (forma de "∩").
+
+
 Se usa cuando los datos presentan **curvatura**.
 
 ---
