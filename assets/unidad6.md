@@ -268,6 +268,8 @@ $$\[
 - El intercepto indica que cuando $$\( x = 0 \)$$, el valor estimado de $$\( y \)$$ es **0.201**
 - Por cada unidad que aumenta $$\( x \)$$, el valor de $$\( y \)$$ aumenta en promedio **1.532 unidades**
 
+<img width="486" height="600" alt="imagen1" src="/assets/grafica2.png" />
+
 ---
 
 
