@@ -117,7 +117,7 @@ $$\[
 
 ---
 
-### Cálculo de $$\( \beta_1 \)$$
+### Cálculo de $$\beta_1$$
 
 $$\[
 \beta_1 = \frac{4}{5} = 0.8
@@ -125,7 +125,7 @@ $$\[
 
 ---
 
-## 3. Cálculo de $$\( \beta_0 \)$$
+## 3. Cálculo de $$\beta_0$$
 
 ### Fórmula
 
