@@ -526,15 +526,16 @@ Cuando la relación entre variables no es lineal, se utilizan modelos más flexi
 
 ### 6.2.1 Regresión polinómica
 
-Modelo:
+La regresión polinómica es una extensión del modelo lineal que permite capturar relaciones no lineales entre la variable dependiente yyy y la(s) variable(s) independiente(s) xxx. Aunque su nombre indica que es polinómica, sigue siendo un modelo lineal en los parámetros, lo que permite usar el método de mínimos cuadrados ordinarios (MCO) para estimarlo.
 
-$$\[
-Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon
-\]$$
+###  ¿Cuándo se usa? ###
+Se utiliza cuando los datos muestran una relación curva, por ejemplo:
 
-### 📊 Lectura e interpretación de la fórmula
+- Crecimiento poblacional
+- Rendimiento de un proceso físico
+- Elasticidad no lineal en economía
+- Series temporales con patrones curvos
 
-### ✏️ Modelo
 
 $$\[
 Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon\]
