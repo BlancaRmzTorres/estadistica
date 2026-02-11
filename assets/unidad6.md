@@ -577,66 +577,179 @@ Se usa cuando los datos presentan **curvatura**.
 
 ---
 
-### Ejercicio 2: Regresión polinómica
+# Regresión Polinómica Cuadrática – Ejercicio Paso a Paso
 
-Suponga la relación entre velocidad y consumo de combustible:
+## 1. Objetivo
 
-| X | Y |
+Ajustar un modelo de regresión polinómica de segundo grado que explique la relación entre:
+
+- \( x \): número de unidades producidas  
+- \( y \): costo total asociado  
+
+Modelo general:
+
+$$
+y = \beta_0 + \beta_1 x + \beta_2 x^2 + \varepsilon
+$$
+
+---
+
+## 2. Datos del ejercicio
+
+| x | y |
 |---|---|
-| 1 | 4 |
+| 1 | 5 |
 | 2 | 7 |
-| 3 | 15 |
-| 4 | 28 |
+| 3 | 12 |
+| 4 | 20 |
+| 5 | 33 |
 
-El comportamiento no es lineal, por lo que se propone un modelo cuadrático.
+---
 
-$$\[
-Y = \beta_0 + \beta_1 X + \beta_2 X^2
-\]$$
+## 3. Construcción de la matriz de diseño
 
-# 📊 Lectura e interpretación de la fórmula
+Se construyen tres columnas:
 
-## ✏️ Modelo
+- 1 (intercepto)
+- \( x \)
+- \( x^2 \)
+
+| 1 | x | x^2 | y |
+|---|---|-----|---|
+| 1 | 1 | 1   | 5 |
+| 1 | 2 | 4   | 7 |
+| 1 | 3 | 9   | 12 |
+| 1 | 4 | 16  | 20 |
+| 1 | 5 | 25  | 33 |
+
+---
+
+## 4. Forma matricial
+
+Matriz de diseño:
 
 $$
-Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon
+X =
+\begin{bmatrix}
+1 & 1 & 1 \\
+1 & 2 & 4 \\
+1 & 3 & 9 \\
+1 & 4 & 16 \\
+1 & 5 & 25
+\end{bmatrix}
+$$
+
+Vector respuesta:
+
+$$
+y =
+\begin{bmatrix}
+5 \\
+7 \\
+12 \\
+20 \\
+33
+\end{bmatrix}
 $$
 
 ---
 
-## 📖 ¿Cómo se lee la fórmula?
+## 5. Estimación por Mínimos Cuadrados
 
-Se lee:
+La estimación se obtiene con:
 
-> **“Y es igual a beta cero más beta uno por X más beta dos por X al cuadrado más épsilon.”**
+$$
+\hat{\beta} = (X^T X)^{-1} X^T y
+$$
+
+### 5.1 Cálculo de \( X^T X \)
+
+$$
+X^T X =
+\begin{bmatrix}
+5 & 15 & 55 \\
+15 & 55 & 225 \\
+55 & 225 & 979
+\end{bmatrix}
+$$
+
+### 5.2 Cálculo de \( X^T y \)
+
+$$
+X^T y =
+\begin{bmatrix}
+77 \\
+273 \\
+1103
+\end{bmatrix}
+$$
+
+### 5.3 Inversa de \( X^T X \)
+
+$$
+(X^T X)^{-1} =
+\begin{bmatrix}
+7.72 & -2.37 & 0.18 \\
+-2.37 & 1.03 & -0.09 \\
+0.18 & -0.09 & 0.01
+\end{bmatrix}
+$$
+
+### 5.4 Cálculo final de los coeficientes
+
+$$
+\hat{\beta} =
+\begin{bmatrix}
+3.94 \\
+-2.05 \\
+1.00
+\end{bmatrix}
+$$
 
 ---
 
-## 📘 Interpretación estadística
+## 6. Modelo estimado
 
-- $Y$: Variable dependiente (lo que queremos explicar o predecir).
-- $\beta_0$: Intercepto (valor de $Y$ cuando $X = 0$).
-- $\beta_1 X$: Efecto lineal de $X$ sobre $Y$.
-- $\beta_2 X^2$: Efecto cuadrático de $X$ (introduce curvatura en el modelo).
-- $\varepsilon$: Término de error (parte no explicada por el modelo).
+$$
+\hat{y} = 3.94 - 2.05x + 1.00x^2
+$$
 
 ---
 
-## 🎯 Tipo de modelo
+## 7. Interpretación
 
-Este es un **modelo de regresión polinómica de segundo grado** (regresión cuadrática), porque incluye el término $X^2$.
-
-Esto implica que la relación entre $X$ y $Y$ no es una línea recta, sino una **curva (parábola)**.
+- \( \beta_0 = 3.94 \): costo base cuando \( x = 0 \).
+- \( \beta_1 = -2.05 \): pendiente inicial negativa.
+- \( \beta_2 = 1.00 \): crecimiento acelerado del costo.
 
 ---
 
-## 📈 Interpretación del coeficiente cuadrático
+## 8. Predicción
 
-- Si $\beta_2 > 0$ → La parábola abre hacia arriba (forma de "U").
-- Si $\beta_2 < 0$ → La parábola abre hacia abajo (forma de "∩").
+Para \( x = 6 \):
 
+$$
+\hat{y} = 3.94 - 2.05(6) + 1.00(6^2)
+$$
 
-Este modelo se ajusta mediante mínimos cuadrados extendidos.
+$$
+\hat{y} = 3.94 - 12.3 + 36
+$$
+
+$$
+\hat{y} = 27.64
+$$
+
+---
+
+## Resultado
+
+Cuando se producen 6 unidades, el costo estimado es:
+
+$$
+27.64
+$$
+
 
 ---
 
