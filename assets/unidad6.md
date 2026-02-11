@@ -294,6 +294,209 @@ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \varepsilon
 
 Este modelo permite analizar el **efecto individual de cada variable** sobre la respuesta.
 
+# 📊 Ejercicio 1 — Salario según experiencia y nivel educativo
+
+## ✏️ Modelo estimado
+
+$$
+\hat{Y} = 8500 + 1200X_1 + 2500X_2
+$$
+
+**Donde:**
+
+- $Y$: Salario mensual  
+- $X_1$: Años de experiencia  
+- $X_2$: Nivel educativo  
+  - 0 = Educación básica  
+  - 1 = Educación universitaria  
+
+---
+
+## 📘 Interpretación de coeficientes
+
+### ➤ Intercepto $ \beta_0 = 8500 $
+
+Representa el salario de una persona **sin experiencia** ($X_1 = 0$) y con **educación básica** ($X_2 = 0$).
+
+---
+
+### ➤ Experiencia $ \beta_1 = 1200 $
+
+Por cada año adicional de experiencia, el salario aumenta en:
+
+$$
+\$1,200
+$$
+
+Manteniendo constante el nivel educativo.
+
+---
+
+### ➤ Educación $ \beta_2 = 2500 $
+
+Tener educación universitaria incrementa el salario en:
+
+$$
+\$2,500
+$$
+
+En comparación con una persona con educación básica, manteniendo constante la experiencia.
+
+---
+
+## 📐 Cálculo de un ejemplo
+
+Calcular el salario estimado para una persona con:
+
+- 5 años de experiencia  
+- Nivel educativo universitario ($X_2 = 1$)
+
+---
+
+### 🧮 Sustitución en el modelo
+
+$$
+\hat{Y} = 8500 + 1200(5) + 2500(1)
+$$
+
+---
+
+### 🔎 Desglose paso a paso
+
+**Paso 1:**
+
+$$
+1200 \times 5 = 6000
+$$
+
+**Paso 2:**
+
+$$
+2500 \times 1 = 2500
+$$
+
+**Paso 3:**
+
+$$
+8500 + 6000 + 2500 = 17000
+$$
+
+---
+
+## ✅ Resultado final
+
+$$
+\hat{Y} = \mathbf{17,000}
+$$
+
+📌 **Interpretación:**  
+Una persona con **5 años de experiencia** y **educación universitaria** tiene un salario mensual estimado de **$17,000** según el modelo de regresión.
+
+
+# 🏠 Ejercicio 2 — Precio de casa según tamaño y antigüedad
+
+## ✏️ Modelo estimado
+
+$$
+\hat{Y} = 95{,}000 + 1{,}200X_1 - 800X_2
+$$
+
+**Donde:**
+
+- $Y$: Precio estimado (pesos)  
+- $X_1$: Metros cuadrados  
+- $X_2$: Antigüedad en años  
+
+---
+
+## 📘 Interpretación de coeficientes
+
+### ➤ Intercepto $ \beta_0 = 95{,}000 $
+
+Precio base teórico cuando $X_1 = 0$ y $X_2 = 0$.  
+(No tiene interpretación literal práctica, ya que una casa no puede tener 0 m²).
+
+---
+
+### ➤ Tamaño $ \beta_1 = 1{,}200 $
+
+Cada metro cuadrado adicional incrementa el precio en:
+
+$$
+\$1{,}200
+$$
+
+Manteniendo constante la antigüedad.
+
+---
+
+### ➤ Antigüedad $ \beta_2 = -800 $
+
+Cada año adicional de antigüedad reduce el precio en:
+
+$$
+\$800
+$$
+
+Manteniendo constante el tamaño.
+
+---
+
+## 📐 Cálculo de un ejemplo
+
+Casa con:
+
+- 140 m²  
+- 8 años de antigüedad  
+
+---
+
+### 🧮 Sustitución en el modelo
+
+$$
+\hat{Y} = 95{,}000 + 1{,}200(140) - 800(8)
+$$
+
+---
+
+### 🔎 Desglose paso a paso
+
+**Paso 1:**
+
+$$
+1{,}200 \times 140 = 168{,}000
+$$
+
+**Paso 2:**
+
+$$
+800 \times 8 = 6{,}400
+$$
+
+**Paso 3:**
+
+$$
+95{,}000 + 168{,}000 = 263{,}000
+$$
+
+**Paso 4:**
+
+$$
+263{,}000 - 6{,}400 = 256{,}600
+$$
+
+---
+
+## ✅ Resultado final
+
+$$
+\hat{Y} = \mathbf{256{,}600}
+$$
+
+📌 **Interpretación:**  
+Una casa de **140 m²** y **8 años de antigüedad** tiene un precio estimado de **$256,600 pesos** según el modelo de regresión.
+
+
 ---
 
 ## 6.2 Generalizaciones del modelo de regresión lineal y regresión no lineal
