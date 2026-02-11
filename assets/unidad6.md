@@ -314,13 +314,13 @@ $$
 
 ### 📘 Interpretación de coeficientes
 
-### ➤ Intercepto $$ \beta_0 = 8500 $$
+### ➤ Intercepto $ \beta_0 = 8500 $
 
 Representa el salario de una persona **sin experiencia** ($X_1 = 0$) y con **educación básica** ($X_2 = 0$).
 
 ---
 
-### ➤ Experiencia $$ \beta_1 = 1200 $$
+### ➤ Experiencia $ \beta_1 = 1200 $
 
 Por cada año adicional de experiencia, el salario aumenta en:
 
@@ -332,7 +332,7 @@ Manteniendo constante el nivel educativo.
 
 ---
 
-### ➤ Educación $$ \beta_2 = 2500 $$
+### ➤ Educación $ \beta_2 = 2500 $
 
 Tener educación universitaria incrementa el salario en:
 
