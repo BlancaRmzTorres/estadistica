@@ -356,7 +356,7 @@ En comparación con una persona con educación básica, manteniendo constante la
 Calcular el salario estimado para una persona con:
 
 - 5 años de experiencia  
-- Nivel educativo universitario $$\($X_2 = 1$)$$
+- Nivel educativo universitario $$\( X_2 = 1 \)$$
 
 ---
 
