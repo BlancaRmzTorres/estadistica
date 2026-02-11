@@ -674,6 +674,7 @@ $$\[
 H_1: \text{Al menos una media es diferente}
 \]$$
 
+**H cero: todas las medias poblacionales son iguales**
 ---
 
 ### Estadístico F
@@ -682,6 +683,7 @@ $$\[
 F = \frac{MS_{entre}}{MS_{dentro}}
 \]$$
 
+**F es igual a eme-ese entre, dividido entre eme-ese dentro.**
 Donde:
 - $$\(MS_{entre} = \frac{SS_{entre}}{k-1}\)$$
 - $$\(MS_{dentro} = \frac{SS_{dentro}}{n-k}\)$$
