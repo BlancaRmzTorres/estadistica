@@ -1126,6 +1126,199 @@ Es un valor grande, por lo tanto:
 👉 Existe diferencia significativa entre al menos uno de los
 
 
+### 📊 6.3.2 ANOVA de un factor – Ejercicio
+
+Tres métodos de enseñanza producen los siguientes resultados:
+
+| Método | Calificaciones |
+|--------|---------------|
+| A | 70, 72, 68 |
+| B | 75, 78, 74 |
+| C | 65, 67, 66 |
+
+---
+
+### 📌 Paso 1: Planteamiento de hipótesis
+
+$$
+H_0:\ \mu_A = \mu_B = \mu_C
+$$
+
+$$
+H_1:\ \text{Al menos una media es diferente}
+$$
+
+---
+
+### 📌 Paso 2: Calcular medias
+
+### Media del Método A
+
+$$
+\bar{X}_A = \frac{70 + 72 + 68}{3} = \frac{210}{3} = 70
+$$
+
+### Media del Método B
+
+$$
+\bar{X}_B = \frac{75 + 78 + 74}{3} = \frac{227}{3} = 75.67
+$$
+
+### Media del Método C
+
+$$
+\bar{X}_C = \frac{65 + 67 + 66}{3} = \frac{198}{3} = 66
+$$
+
+### Media general
+
+$$
+\bar{X} = \frac{70 + 72 + 68 + 75 + 78 + 74 + 65 + 67 + 66}{9}
+$$
+
+$$
+\bar{X} = \frac{635}{9} = 70.56
+$$
+
+---
+
+### 📌 Paso 3: Suma de cuadrados entre grupos ($SS_{entre}$)
+
+Fórmula:
+
+$$
+SS_{entre} = n \sum (\bar{X}_i - \bar{X})^2
+$$
+
+Donde $n = 3$
+
+### Método A
+
+$$
+3(70 - 70.56)^2 = 3(0.3136) = 0.9408
+$$
+
+### Método B
+
+$$
+3(75.67 - 70.56)^2 = 3(26.1121) = 78.3363
+$$
+
+### Método C
+
+$$
+3(66 - 70.56)^2 = 3(20.7936) = 62.3808
+$$
+
+$$
+SS_{entre} = 0.9408 + 78.3363 + 62.3808 = 141.66
+$$
+
+---
+
+### 📌 Paso 4: Suma de cuadrados dentro de los grupos ($SS_{dentro}$)
+
+### Grupo A
+
+$$
+(70-70)^2 + (72-70)^2 + (68-70)^2
+$$
+
+$$
+= 0 + 4 + 4 = 8
+$$
+
+### Grupo B
+
+$$
+(75-75.67)^2 + (78-75.67)^2 + (74-75.67)^2
+$$
+
+$$
+= 0.45 + 5.43 + 2.79 = 8.67
+$$
+
+### Grupo C
+
+$$
+(65-66)^2 + (67-66)^2 + (66-66)^2
+$$
+
+$$
+= 1 + 1 + 0 = 2
+$$
+
+$$
+SS_{dentro} = 8 + 8.67 + 2 = 18.67
+$$
+
+---
+
+### 📌 Paso 5: Calcular cuadrados medios (MS)
+
+Número de grupos: $k = 3$  
+Número total de datos: $n = 9$
+
+### Grados de libertad
+
+$$
+gl_{entre} = k - 1 = 2
+$$
+
+$$
+gl_{dentro} = n - k = 6
+$$
+
+---
+
+### MS entre
+
+$$
+MS_{entre} = \frac{SS_{entre}}{gl_{entre}} = \frac{141.66}{2} = 70.83
+$$
+
+### MS dentro
+
+$$
+MS_{dentro} = \frac{SS_{dentro}}{gl_{dentro}} = \frac{18.67}{6} = 3.11
+$$
+
+---
+
+### 📌 Paso 6: Calcular estadístico F
+
+$$
+F = \frac{MS_{entre}}{MS_{dentro}}
+$$
+
+$$
+F = \frac{70.83}{3.11} = 22.78
+$$
+
+---
+
+### 📌 Paso 7: Decisión
+
+Si:
+
+$$
+F > F_{crítico}
+$$
+
+Se rechaza $H_0$.
+
+Como:
+
+$$
+F = 22.78
+$$
+
+Es un valor grande, por lo tanto:
+
+👉 **Se rechaza $H_0$**  
+👉 Existe diferencia significativa entre al menos uno de los
+
+
 ---
 
 ### 6.3.3 Relación entre ANOVA y regresión
