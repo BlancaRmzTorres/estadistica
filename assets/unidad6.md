@@ -561,136 +561,126 @@ Donde:
 
 ### Ejercicio 1.
 
-## 1. Objetivo
+# 📘 Regresión Polinómica de Segundo Grado (Método Estadístico)
 
-Ajustar un modelo de regresión polinómica de segundo grado que explique la relación entre:
+---
 
-- $$\( x \)$$: número de unidades producidas  
-- $$\( y \)$$: costo total asociado  
+# 1️⃣ Objetivo
 
-Modelo general:
+Ajustar el modelo:
 
 $$
 y = \beta_0 + \beta_1 x + \beta_2 x^2 + \varepsilon
 $$
 
+donde:
+
+- \( x \): número de unidades producidas  
+- \( y \): costo total asociado  
+
 ---
 
-## 2. Datos del ejercicio
+# 2️⃣ Datos del ejercicio
 
 | x | y |
 |---|---|
-| 1 | 5 |
-| 2 | 7 |
-| 3 | 12 |
-| 4 | 20 |
-| 5 | 33 |
+|1|5|
+|2|7|
+|3|12|
+|4|20|
+|5|33|
 
 ---
 
-## 3. Construcción de la matriz de diseño
+# 3️⃣ Tabla con cálculos auxiliares
 
-Se construyen tres columnas:
-
-- 1 (intercepto)
-- $$\( x \)$$
-- $$\( x^2 \)$$
-
-| 1 | x | x^2 | y |
-|---|---|-----|---|
-| 1 | 1 | 1   | 5 |
-| 1 | 2 | 4   | 7 |
-| 1 | 3 | 9   | 12 |
-| 1 | 4 | 16  | 20 |
-| 1 | 5 | 25  | 33 |
+| x | y | x² | x³ | x⁴ | xy | x²y |
+|---|---|----|----|----|----|-----|
+|1|5|1|1|1|5|5|
+|2|7|4|8|16|14|28|
+|3|12|9|27|81|36|108|
+|4|20|16|64|256|80|320|
+|5|33|25|125|625|165|825|
 
 ---
 
-## 4. Forma matricial
-
-Matriz de diseño:
+## 🔹 Sumatorias
 
 $$
-X =
-\begin{bmatrix}
-1 & 1 & 1 \\
-1 & 2 & 4 \\
-1 & 3 & 9 \\
-1 & 4 & 16 \\
-1 & 5 & 25
-\end{bmatrix}
+\sum x = 15
 $$
 
-Vector respuesta:
+$$
+\sum x^2 = 55
+$$
 
 $$
-y =
-\begin{bmatrix}
-5 \\
-7 \\
-12 \\
-20 \\
-33
-\end{bmatrix}
+\sum x^3 = 225
+$$
+
+$$
+\sum x^4 = 979
+$$
+
+$$
+\sum y = 77
+$$
+
+$$
+\sum xy = 300
+$$
+
+$$
+\sum x^2 y = 1286
 $$
 
 ---
 
-## 5. Estimación por Mínimos Cuadrados
-
-La estimación se obtiene con:
+# 4️⃣ Ecuaciones Normales
 
 $$
-\hat{\beta} = (X^T X)^{-1} X^T y
+\sum y = n\beta_0 + \beta_1 \sum x + \beta_2 \sum x^2
 $$
 
-### 5.1 Cálculo de \( X^T X \)
-
 $$
-X^T X =
-\begin{bmatrix}
-5 & 15 & 55 \\
-15 & 55 & 225 \\
-55 & 225 & 979
-\end{bmatrix}
+\sum xy = \beta_0 \sum x + \beta_1 \sum x^2 + \beta_2 \sum x^3
 $$
 
-### 5.2 Cálculo de \( X^T y \)
-
 $$
-X^T y =
-\begin{bmatrix}
-77 \\
-273 \\
-1103
-\end{bmatrix}
+\sum x^2 y = \beta_0 \sum x^2 + \beta_1 \sum x^3 + \beta_2 \sum x^4
 $$
 
-### 5.3 Inversa de \( X^T X \)
+Sustituyendo valores:
 
 $$
-(X^T X)^{-1} =
-\begin{bmatrix}
-7.72 & -2.37 & 0.18 \\
--2.37 & 1.03 & -0.09 \\
-0.18 & -0.09 & 0.01
-\end{bmatrix}
+77 = 5\beta_0 + 15\beta_1 + 55\beta_2
 $$
 
-### 5.4 Cálculo final de los coeficientes
+$$
+300 = 15\beta_0 + 55\beta_1 + 225\beta_2
+$$
 
 $$
-\hat{\beta} =
-\begin{bmatrix}
-3.94 \\
--2.05 \\
-1.00
-\end{bmatrix}
+1286 = 55\beta_0 + 225\beta_1 + 979\beta_2
+$$
+
+Resolviendo el sistema:
+
+$$
+\hat{\beta}_0 = 3.94
+$$
+
+$$
+\hat{\beta}_1 = -2.05
+$$
+
+$$
+\hat{\beta}_2 = 1.00
 $$
 
 ---
 
-## 6. Modelo estimado
+# 5️⃣ Modelo Estimado
 
 $$
 \hat{y} = 3.94 - 2.05x + 1.00x^2
@@ -698,15 +688,19 @@ $$
 
 ---
 
-## 7. Interpretación
+# 7️⃣ Coeficiente de Determinación
 
-- \( \beta_0 = 3.94 \): costo base cuando \( x = 0 \).
-- \( \beta_1 = -2.05 \): pendiente inicial negativa.
-- \( \beta_2 = 1.00 \): crecimiento acelerado del costo.
+$$
+R^2 = \frac{SSR}{SST}
+$$
+
+$$
+R^2 = 0.485
+$$
 
 ---
 
-## 8. Predicción
+# 8️⃣ Predicción
 
 Para \( x = 6 \):
 
@@ -715,22 +709,17 @@ $$
 $$
 
 $$
-\hat{y} = 3.94 - 12.3 + 36
-$$
-
-$$
 \hat{y} = 27.64
 $$
 
 ---
 
-## Resultado
+# ✅ Conclusión
 
-Cuando se producen 6 unidades, el costo estimado es:
+- El modelo explica el **48.5%** de la variabilidad del costo.
+- Con tan pocos datos el modelo no resulta altamente significativo.
+- Se recomienda aumentar el tamaño de muestra.
 
-$$
-27.64
-$$
 
 
 ---
