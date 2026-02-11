@@ -283,6 +283,7 @@ $$\[
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \varepsilon
 \]$$
 
+**Y es igual a beta cero más beta uno por equis uno, más beta dos por equis dos, y así sucesivamente hasta beta k por equis k, más épsilon.**
 ---
 
 ### Ejemplo de aplicación
