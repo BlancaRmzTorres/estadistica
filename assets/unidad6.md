@@ -160,7 +160,7 @@ $$\[
 - Cuando $$\( x = 0 \)$$, el valor estimado de $$\( y \)$$ es **1.5**
 - Por cada unidad que aumenta $$\( x \)$$, $$\( y \)$$ aumenta en promedio **0.8 unidades**
 
-<img width="486" height="600" alt="imagen1" src="/assets/intervalos.png" />
+<img width="486" height="600" alt="imagen1" src="/assets/grafica_regresion.png" />
 
 ---
 ## Ejercicio 2: Cálculo de $$\( \beta_1 \)$$ y $$\( \beta_0 \)$$
