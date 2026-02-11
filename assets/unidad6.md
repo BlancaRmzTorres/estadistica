@@ -20,6 +20,8 @@ $$\[
 Y = \beta_0 + \beta_1 X + \varepsilon
 \]$$
 
+**Y es igual a una constante (beta cero) más un coeficiente (beta uno) multiplicado por la variable X, más un término de error épsilon.**
+
 Donde:
 - $$\(Y\)$$: variable dependiente  
 - $$\(X\)$$: variable independiente  
