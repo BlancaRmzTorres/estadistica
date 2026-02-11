@@ -314,7 +314,8 @@ $$
 
 ### 📘 Interpretación de coeficientes
 
-### ➤ Intercepto $$\[
+### Intercepto
+$$\[
 \beta_0 = 8500
 \]$$
 
@@ -322,7 +323,8 @@ Representa el salario de una persona **sin experiencia** ($X_1 = 0$) y con **edu
 
 ---
 
-### ➤ Experiencia $ \beta_1 = 1200 $
+### Experiencia
+$$ \[beta_1 = 1200\] $$
 
 Por cada año adicional de experiencia, el salario aumenta en:
 
