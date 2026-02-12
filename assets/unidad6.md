@@ -561,26 +561,19 @@ Donde:
 
 ### Ejercicio 1.
 
-# 📘 Regresión Polinómica de Segundo Grado (Método Estadístico)
+### Regresión Polinómica de Segundo Grado (Resolución Correcta)
 
 ---
 
-# 1️⃣ Objetivo
-
-Ajustar el modelo:
+### Modelo
 
 $$
 y = \beta_0 + \beta_1 x + \beta_2 x^2 + \varepsilon
 $$
 
-donde:
-
-- \( x \): número de unidades producidas  
-- \( y \): costo total asociado  
-
 ---
 
-# 2️⃣ Datos del ejercicio
+ ### Datos
 
 | x | y |
 |---|---|
@@ -592,7 +585,7 @@ donde:
 
 ---
 
-# 3️⃣ Tabla con cálculos auxiliares
+### Tabla auxiliar
 
 | x | y | x² | x³ | x⁴ | xy | x²y |
 |---|---|----|----|----|----|-----|
@@ -604,7 +597,7 @@ donde:
 
 ---
 
-## 🔹 Sumatorias
+### Sumatorias Correctas
 
 $$
 \sum x = 15
@@ -636,21 +629,7 @@ $$
 
 ---
 
-# 4️⃣ Ecuaciones Normales
-
-$$
-\sum y = n\beta_0 + \beta_1 \sum x + \beta_2 \sum x^2
-$$
-
-$$
-\sum xy = \beta_0 \sum x + \beta_1 \sum x^2 + \beta_2 \sum x^3
-$$
-
-$$
-\sum x^2 y = \beta_0 \sum x^2 + \beta_1 \sum x^3 + \beta_2 \sum x^4
-$$
-
-Sustituyendo valores:
+### Ecuaciones Normales
 
 $$
 77 = 5\beta_0 + 15\beta_1 + 55\beta_2
@@ -664,62 +643,200 @@ $$
 1286 = 55\beta_0 + 225\beta_1 + 979\beta_2
 $$
 
-Resolviendo el sistema:
+---
+
+### Eliminación Paso a Paso
+
+---
+
+### Paso 1: Eliminar β₀ entre (1) y (2)
+
+Multiplicamos (1) por 3:
 
 $$
-\hat{\beta}_0 = 3.94
+231 = 15\beta_0 + 45\beta_1 + 165\beta_2
+$$
+
+Restamos a (2):
+
+$$
+300 - 231 = (15\beta_0 + 55\beta_1 + 225\beta_2)
+- (15\beta_0 + 45\beta_1 + 165\beta_2)
 $$
 
 $$
-\hat{\beta}_1 = -2.05
+69 = 10\beta_1 + 60\beta_2
+$$
+
+Dividimos entre 1:
+
+$$
+69 = 10\beta_1 + 60\beta_2
+$$
+
+Ecuación (A)
+
+---
+
+###  Paso 2: Eliminar β₀ entre (1) y (3)
+
+Multiplicamos (1) por 11:
+
+$$
+847 = 55\beta_0 + 165\beta_1 + 605\beta_2
+$$
+
+Restamos a (3):
+
+$$
+1286 - 847 = (55\beta_0 + 225\beta_1 + 979\beta_2)
+- (55\beta_0 + 165\beta_1 + 605\beta_2)
 $$
 
 $$
-\hat{\beta}_2 = 1.00
+439 = 60\beta_1 + 374\beta_2
+$$
+
+Ecuación (B)
+
+---
+
+### Resolver sistema reducido
+
+Sistema:
+
+$$
+69 = 10\beta_1 + 60\beta_2
+$$
+
+$$
+439 = 60\beta_1 + 374\beta_2
 $$
 
 ---
 
-# 5️⃣ Modelo Estimado
+Multiplicamos la primera por 6:
 
 $$
-\hat{y} = 3.94 - 2.05x + 1.00x^2
+414 = 60\beta_1 + 360\beta_2
 $$
 
----
-
-# 7️⃣ Coeficiente de Determinación
+Restamos a la segunda:
 
 $$
-R^2 = \frac{SSR}{SST}
-$$
-
-$$
-R^2 = 0.485
-$$
-
----
-
-# 8️⃣ Predicción
-
-Para \( x = 6 \):
-
-$$
-\hat{y} = 3.94 - 2.05(6) + 1.00(6^2)
+439 - 414 = (60\beta_1 + 374\beta_2)
+- (60\beta_1 + 360\beta_2)
 $$
 
 $$
-\hat{y} = 27.64
+25 = 14\beta_2
+$$
+
+$$
+\beta_2 = \frac{25}{14}
+$$
+
+$$
+\beta_2 = 1.7857
 $$
 
 ---
 
-# ✅ Conclusión
+### Sustituimos en (A)
 
-- El modelo explica el **48.5%** de la variabilidad del costo.
-- Con tan pocos datos el modelo no resulta altamente significativo.
-- Se recomienda aumentar el tamaño de muestra.
+$$
+69 = 10\beta_1 + 60(1.7857)
+$$
 
+$$
+69 = 10\beta_1 + 107.142
+$$
+
+$$
+10\beta_1 = -38.142
+$$
+
+$$
+\beta_1 = -3.8142
+$$
+
+---
+
+### Sustituimos en la primera ecuación original
+
+$$
+77 = 5\beta_0 + 15(-3.8142) + 55(1.7857)
+$$
+
+$$
+77 = 5\beta_0 - 57.213 + 98.214
+$$
+
+$$
+77 = 5\beta_0 + 41.001
+$$
+
+$$
+5\beta_0 = 35.999
+$$
+
+$$
+\beta_0 = 7.1998
+$$
+
+---
+
+### Coeficientes Correctos
+
+$$
+\beta_0 = 7.20
+$$
+
+$$
+\beta_1 = -3.81
+$$
+
+$$
+\beta_2 = 1.79
+$$
+
+---
+
+### Modelo Final Correcto
+
+$$
+\hat{y} = 7.20 - 3.81x + 1.79x^2
+$$
+
+---
+
+### Predicción para x = 6
+
+$$
+\hat{y} = 7.20 - 3.81(6) + 1.79(36)
+$$
+
+$$
+\hat{y} = 7.20 - 22.86 + 64.44
+$$
+
+$$
+\hat{y} = 48.78
+$$
+
+---
+
+### Conclusión
+
+Los coeficientes anteriores (3.94, -2.05, 1.00) eran incorrectos para estos datos.
+
+Los coeficientes correctos son:
+
+$$
+\boxed{
+\hat{y} = 7.20 - 3.81x + 1.79x^2
+}
+$$
 
 
 ---
