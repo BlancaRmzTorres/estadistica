@@ -653,16 +653,17 @@ $$
 
 Multiplicamos (1) por 3:
 
-$$
+
 \[231 = 15\beta_0 + 45\beta_1 + 165\beta_2\]
-$$
 
 Restamos a (2):
 
-$$
-\[300 - 231 = (15\beta_0 + 55\beta_1 + 225\beta_2)
-- (15\beta_0 + 45\beta_1 + 165\beta_2)\]
-$$
+\[
+300 - 231 = 
+(15\beta_0 + 55\beta_1 + 225\beta_2)
+- (15\beta_0 + 45\beta_1 + 165\beta_2)
+\]
+
 
 $$
 \[69 = 10\beta_1 + 60\beta_2\]
