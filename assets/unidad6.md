@@ -1543,7 +1543,7 @@ Es un valor grande, por lo tanto:
 
 ---
 
-## Conclusión
+### Conclusión
 
 La regresión y el ANOVA permiten:
 - Explicar relaciones entre variables
@@ -1559,12 +1559,5 @@ Estas técnicas son fundamentales en:
 
 ---
 
-## Actividad sugerida
 
-1. Ajusta un modelo de regresión lineal con datos reales  
-2. Interpreta los coeficientes  
-3. Aplica un ANOVA para comparar al menos tres grupos  
-4. Presenta conclusiones estadísticas
-
----
 
