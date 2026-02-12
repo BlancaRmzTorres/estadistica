@@ -826,8 +826,6 @@ $$
 
 ### Conclusión
 
-Los coeficientes anteriores (3.94, -2.05, 1.00) eran incorrectos para estos datos.
-
 Los coeficientes correctos son:
 
 $$
