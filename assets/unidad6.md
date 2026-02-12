@@ -651,19 +651,20 @@ $$
 
 ### Paso 1: Eliminar β₀ entre (1) y (2)
 
-Multiplicamos (1) por 3:
+Multiplicamos la ecuación (1) por 3:
 
+$$
+231 = 15\beta_0 + 45\beta_1 + 165\beta_2
+$$
 
-\[231 = 15\beta_0 + 45\beta_1 + 165\beta_2\]
+Ahora restamos esta ecuación de la ecuación (2):
 
-Restamos a (2):
-
-\[
-300 - 231 = 
+$$
+300 - 231 =
 (15\beta_0 + 55\beta_1 + 225\beta_2)
-- (15\beta_0 + 45\beta_1 + 165\beta_2)
-\]
-
+-
+(15\beta_0 + 45\beta_1 + 165\beta_2)
+$$
 
 $$
 \[69 = 10\beta_1 + 60\beta_2\]
