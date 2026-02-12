@@ -681,15 +681,14 @@ Ecuación (A)
 
 Multiplicamos (1) por 11:
 
-$$\[ 
-847 = 55\beta_0 + 165\beta_1 + 605\beta_2\]
+$$
+847 = 55\beta_0 + 165\beta_1 + 605\beta_2
 $$
 
 Restamos a (3):
 
 $$\[ 
-1286 - 847 = (55\beta_0 + 225\beta_1 + 979\beta_2)
-- (55\beta_0 + 165\beta_1 + 605\beta_2)\]
+1286 - 847 = (55\beta_0 + 225\beta_1 + 979\beta_2) - (55\beta_0 + 165\beta_1 + 605\beta_2)\]
 $$
 
 $$\[ 
