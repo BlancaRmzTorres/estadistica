@@ -682,19 +682,19 @@ Ecuación (A)
 
 Multiplicamos (1) por 11:
 
-$$
-847 = 55\beta_0 + 165\beta_1 + 605\beta_2
+$$\[ 
+847 = 55\beta_0 + 165\beta_1 + 605\beta_2\]
 $$
 
 Restamos a (3):
 
-$$
+$$\[ 
 1286 - 847 = (55\beta_0 + 225\beta_1 + 979\beta_2)
-- (55\beta_0 + 165\beta_1 + 605\beta_2)
+- (55\beta_0 + 165\beta_1 + 605\beta_2)\]
 $$
 
-$$
-439 = 60\beta_1 + 374\beta_2
+$$\[ 
+439 = 60\beta_1 + 374\beta_2\]
 $$
 
 Ecuación (B)
@@ -705,39 +705,39 @@ Ecuación (B)
 
 Sistema:
 
-$$
-69 = 10\beta_1 + 60\beta_2
+$$\[ 
+69 = 10\beta_1 + 60\beta_2\]
 $$
 
-$$
-439 = 60\beta_1 + 374\beta_2
+$$\[ 
+439 = 60\beta_1 + 374\beta_2\]
 $$
 
 ---
 
 Multiplicamos la primera por 6:
 
-$$
-414 = 60\beta_1 + 360\beta_2
+$$\[ 
+414 = 60\beta_1 + 360\beta_2\]
 $$
 
 Restamos a la segunda:
 
-$$
+$$\[ 
 439 - 414 = (60\beta_1 + 374\beta_2)
-- (60\beta_1 + 360\beta_2)
+- (60\beta_1 + 360\beta_2)\]
 $$
 
-$$
-25 = 14\beta_2
-$$
-
-$$
-\beta_2 = \frac{25}{14}
+$$\[ 
+25 = 14\beta_2\]
 $$
 
+$$\[ 
+\beta_2 = \frac{25}{14}\]
 $$
-\beta_2 = 1.7857
+
+$$\[ 
+\beta_2 = 1.7857\]
 $$
 
 ---
